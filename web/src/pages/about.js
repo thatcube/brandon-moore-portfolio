@@ -52,7 +52,6 @@ const ArchivePage = props => {
       <SEO title='About' />
       <Container>
         <h1 className={responsiveTitle1}>About Me</h1>
-        {projectNodes && projectNodes.length > 0 && <ProjectPreviewGrid nodes={projectNodes} />}
       </Container>
     </Layout>
   )
