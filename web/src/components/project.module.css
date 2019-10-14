@@ -40,6 +40,7 @@
 
 .mainContent {
   @nest & a {
+    transition: all 0.2s ease-in 0s;
     color: var(--color-accent);
 
     @media (hover: hover) {

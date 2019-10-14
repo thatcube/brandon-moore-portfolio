@@ -27,6 +27,7 @@
     padding: 0.5em;
     color: inherit;
     text-decoration: none;
+    transition: all 0.1s ease-in 0s;
 
     @media (hover: hover) {
       @nest &:hover {
@@ -68,6 +69,7 @@
     display: block;
     color: inherit;
     text-decoration: none;
+    transition: all 0.1s ease-in 0s;
   }
 
   @media (hover: hover) {
