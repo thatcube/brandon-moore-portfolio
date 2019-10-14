@@ -11,6 +11,11 @@
   position: relative;
   background: var(--color-navigation);
   padding-bottom: calc(9 / 16 * 100%);
+  @media (--media-min-medium) {
+    padding-bottom: calc(9 / 16 * 100vh);
+  }
+  max-width: 1200px;
+  margin: 0 auto;
 
   @nest & img {
     position: absolute;

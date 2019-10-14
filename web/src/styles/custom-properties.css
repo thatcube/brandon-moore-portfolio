@@ -33,9 +33,9 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: #2c2b2e;
-    --color-navigation: #3d3d3d;
-    --color-border: #6b6770;
+    --color-background: #100e17;
+    --color-navigation: #17141c;
+    --color-border: #282430;
     --color-text: rgba(255, 255, 255, 0.87);
     --color-text-light: rgba(255, 255, 255, 0.6);
   }
