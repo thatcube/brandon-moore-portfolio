@@ -12,6 +12,7 @@
   --color-text: rgba(0, 0, 0, 0.87);
   --color-text-light: rgba(0, 0, 0, 0.6);
   --color-border: #d0cad6;
+  --color-card: #fff;
 
   /* Typography */
   --unit: 16;
@@ -38,5 +39,6 @@
     --color-border: #282430;
     --color-text: rgba(255, 255, 255, 0.87);
     --color-text-light: rgba(255, 255, 255, 0.6);
+    --color-card: var(--color-navigation);
   }
 }

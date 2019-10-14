@@ -1,0 +1,8 @@
+@import '../styles/custom-media.css';
+
+.root {
+  text-align: center;
+  @nest & svg {
+    width: 100%;
+  }
+}
