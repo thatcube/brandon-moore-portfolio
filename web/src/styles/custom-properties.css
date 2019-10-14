@@ -5,9 +5,13 @@
   --color-dark-gray: #32373e;
   --color-gray: #697a90;
   --color-light-gray: #b4bcc7;
-  --color-very-light-gray: #e7ebed;
   --color-white: #fff;
   --color-accent: #675ae8;
+  --color-background: #f7f6f8;
+  --color-navigation: #f1eef5;
+  --color-text: rgba(0, 0, 0, 0.87);
+  --color-text-light: rgba(0, 0, 0, 0.6);
+  --color-border: #d0cad6;
 
   /* Typography */
   --unit: 16;
@@ -26,4 +30,13 @@
   --font-title2-line-height: calc(33 / 24); /* 33px */
   --font-title1-size: calc(49 / var(--unit) * 1rem); /* 49px */
   --font-title1-line-height: calc(57 / 49); /* 57px */
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #2c2b2e;
+    --color-navigation: #3d3d3d;
+    --color-border: #6b6770;
+    --color-text: rgba(255, 255, 255, 0.87);
+    --color-text-light: rgba(255, 255, 255, 0.6);
+  }
 }

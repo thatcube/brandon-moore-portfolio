@@ -9,7 +9,7 @@
 
 .mainImage {
   position: relative;
-  background: #eee;
+  background: var(--color-navigation);
   padding-bottom: calc(9 / 16 * 100%);
 
   @nest & img {
@@ -51,11 +51,11 @@
 .publishedAt {
   composes: small from './typography.module.css';
   margin: 1.5rem 0 3rem;
-  color: var(--color-gray);
+  color: var(--color-text-light);
 }
 
 .categories {
-  border-top: 1px solid var(--color-very-light-gray);
+  border-top: 0.0625rem solid var(--color-border);
   margin: 2rem 0 3rem;
 
   @nest & ul {
@@ -75,7 +75,7 @@
 }
 
 .relatedProjects {
-  border-top: 1px solid var(--color-very-light-gray);
+  border-top: 0.0625rem solid var(--color-border);
   margin: 2rem 0 3rem;
 
   @nest & ul {
