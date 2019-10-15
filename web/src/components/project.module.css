@@ -16,6 +16,9 @@
   }
   max-width: 1200px;
   margin: 0 auto;
+  @media (--media-min-extralarge) {
+    border-radius: 0 0 2rem 2rem;
+  }
 
   @nest & img {
     position: absolute;
@@ -25,6 +28,9 @@
     height: 100%;
     vertical-align: top;
     object-fit: cover;
+    @media (--media-min-extralarge) {
+      border-radius: 0 0 2rem 2rem;
+    }
   }
 }
 
