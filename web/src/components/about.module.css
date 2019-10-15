@@ -1,0 +1,12 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.image {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    @media (--media-min-small) {
+        margin-right: 0;
+        width: 33.33333%;
+    }
+}

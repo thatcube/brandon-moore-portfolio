@@ -8,6 +8,7 @@ import Container from './container'
 import RoleList from './role-list'
 
 import styles from './project.module.css'
+import {button} from './button.module.css'
 
 function Project(props) {
   const { _rawBody, title, categories, mainImage, members, publishedAt, relatedProjects } = props
@@ -57,7 +58,7 @@ function Project(props) {
                   {relatedProjects.map(project => (
                     <li key={`related_${project._id}`}>
                       {project.slug ? (
-                        <Link to={`/project/${project.slug.current}`}>{project.title}</Link>
+                        <Link className={button} to={`/project/${project.slug.current}`}>{project.title}</Link>
                       ) : (
                           <span>{project.title}</span>
                         )}
