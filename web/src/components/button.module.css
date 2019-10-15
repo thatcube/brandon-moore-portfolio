@@ -1,0 +1,11 @@
+@import '../styles/custom-properties.css';
+
+.button {
+    color: var(--color-text);
+    border: 0.0625rem solid var(--color-border);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: var(--font-small);
+    font-weight: 600;
+}

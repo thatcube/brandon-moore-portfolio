@@ -4,6 +4,7 @@ import Icon from './icon'
 import { cn } from '../lib/helpers'
 
 import styles from './header.module.css'
+import { button } from './button.module.css'
 
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div className={styles.root}>
@@ -11,11 +12,13 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
       <div className={styles.branding}>
         <Link to='/'>Brandon Moore</Link>
       </div>
-
-      <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}>
-        <Icon symbol='hamburger' />
+      <div className={styles.toggleNavButton}>
+        {/* <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}> */}
+        <button className={button} onClick={showNav ? onHideNav : onShowNav}>
+          {/* <Icon symbol='hamburger' /> */}
+          Menu
       </button>
-
+      </div>
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>

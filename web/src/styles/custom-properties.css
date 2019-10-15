@@ -42,3 +42,7 @@
     --color-card: var(--color-navigation);
   }
 }
+
+button {
+  all: unset;
+}
