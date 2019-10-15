@@ -3,10 +3,10 @@
 
 .content {
   background: var(--color-background);
-  min-height: calc(100% - 73px - 120px);
+  min-height: calc(100% - 226px - 72px);
 
   @media (--media-min-small) {
-    min-height: calc(100% - 88px - 150px);
+    min-height: calc(100% - 290px - 88px);
   }
 }
 
@@ -40,7 +40,7 @@
     }
   }
   @nest & svg {
-    height: 1.5rem;
+    height: 2rem;
     @media (--media-min-small) {
       height: 2.5rem;
     }

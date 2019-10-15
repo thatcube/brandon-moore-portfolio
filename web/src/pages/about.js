@@ -1,60 +1,24 @@
 import React from 'react'
-import {graphql} from 'gatsby'
+import { Link } from 'gatsby'
 import Container from '../components/container'
-import GraphQLErrorList from '../components/graphql-error-list'
-import ProjectPreviewGrid from '../components/project-preview-grid'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import {mapEdgesToNodes, filterOutDocsWithoutSlugs} from '../lib/helpers'
 
-import {responsiveTitle1} from '../components/typography.module.css'
+import {responsiveTitle1, responsiveTitle3} from '../components/typography.module.css'
 
-export const query = graphql`
-  query ArchivePageQuery {
-    projects: allSanityProject(
-      limit: 12
-      sort: {fields: [publishedAt], order: DESC}
-      filter: {slug: {current: {ne: null}}, publishedAt: {ne: null}}
-    ) {
-      edges {
-        node {
-          id
-          mainImage {
-            asset {
-              _id
-            }
-            alt
-          }
-          title
-          _rawExcerpt
-          slug {
-            current
-          }
-        }
-      }
-    }
-  }
-`
-
-const ArchivePage = props => {
-  const {data, errors} = props
-  if (errors) {
-    return (
-      <Layout>
-        <GraphQLErrorList errors={errors} />
-      </Layout>
-    )
-  }
-  const projectNodes =
-    data && data.projects && mapEdgesToNodes(data.projects).filter(filterOutDocsWithoutSlugs)
-  return (
+const AboutPage = () => (
+  <>
     <Layout>
       <SEO title='About' />
       <Container>
-        <h1 className={responsiveTitle1}>About Me</h1>
+        <h1 className={responsiveTitle1}>Hi there 👋</h1>
+        <h3 className={responsiveTitle3}>I'm Brandon, a product designer with a passion for design and tech. I love design systems, CSS, and beautiful products that are built for everyone.</h3>
+        <p>I'm currently working for CBORD, focusing on their consumer-facing products. I've been <Link to={`/project/get`}>redesigning an entire app</Link> in the higher education space and in that process, I learned a lot about inclusive design and accessibility. I believe that designing for some leads to better solutions for all. Some other design-related interests include iconography, illustration, and animation.</p>
+        <p>Outside of work, I love soccer, volleyball, and running.</p>
+        <p>Thanks for stopping by!</p>
       </Container>
     </Layout>
-  )
-}
+    </>
+)
 
-export default ArchivePage
+export default AboutPage

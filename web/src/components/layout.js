@@ -29,7 +29,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
           </li>
         </ul>
         <div className={styles.siteInfo}>
-          Copyright whenever, this is <a target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">open source</a>.
+          Designed and built by me. Copyright whenever, this is <a target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">open source</a>.
         </div>
       </div>
     </footer>
