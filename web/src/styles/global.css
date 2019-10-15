@@ -1,0 +1,14 @@
+button {
+    all: unset;
+}
+
+a {
+    color: var(--color-accent);
+    @nest & :visited {
+        color: var(--color-accent);
+    }
+}
+::selection {
+    color: var(--color-white);
+    background: var(--color-accent);
+}

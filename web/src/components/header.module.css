@@ -4,6 +4,10 @@
 .root {
   position: relative;
   z-index: 100;
+  position: sticky;
+  top: 0;
+  background: var(--color-navigation);
+  border-bottom: 0.0625rem solid var(--color-border-header);
 }
 
 .wrapper {
@@ -82,7 +86,7 @@
     position: absolute;
     background: var(--color-background);
     color: var(--color-text);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); */
     border-top: 0.0625rem solid var(--color-border);
     border-bottom: 0.0625rem solid var(--color-border);
     left: 0;
