@@ -12,3 +12,6 @@ a {
     color: var(--color-white);
     background: var(--color-accent);
 }
+.tl-edges {
+    overflow: visible;
+}

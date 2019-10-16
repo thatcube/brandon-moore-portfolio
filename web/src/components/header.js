@@ -1,4 +1,5 @@
 import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import React from 'react'
 import Icon from './icon'
 import { cn } from '../lib/helpers'
@@ -10,7 +11,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
-        <Link to='/'>Brandon Moore</Link>
+        <AniLink fade duration={0.5} to='/'>Brandon Moore</AniLink>
       </div>
       <div className={styles.toggleNavButton}>
         {/* <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}> */}
@@ -22,10 +23,10 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-            <Link to='/'>Work</Link>
+            <AniLink fade duration={0.5} to='/'>Work</AniLink>
           </li>
           <li>
-            <Link to='/about/'>About</Link>
+            <AniLink fade duration={0.5} to='/about/'>About</AniLink>
           </li>
         </ul>
       </nav>

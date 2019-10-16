@@ -1,6 +1,7 @@
 import { format, distanceInWords, differenceInDays } from 'date-fns'
 import React from 'react'
 import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { buildImageObj } from '../lib/helpers'
 import { imageUrlFor } from '../lib/image-url'
 import BlockContent from './block-content'
@@ -58,7 +59,7 @@ function Project(props) {
                   {relatedProjects.map(project => (
                     <li key={`related_${project._id}`}>
                       {project.slug ? (
-                        <Link className={button} to={`/project/${project.slug.current}`}>{project.title}</Link>
+                        <AniLink fade duration={0.5} className={button} to={`/project/${project.slug.current}`}>{project.title}</AniLink>
                       ) : (
                           <span>{project.title}</span>
                         )}
