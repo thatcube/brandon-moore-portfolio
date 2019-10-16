@@ -1,6 +1,5 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
-
 .root {
   position: relative;
   z-index: 100;
@@ -16,7 +15,6 @@
   max-width: 960px;
   padding: 1em;
   display: flex;
-
   @media (--media-min-small) {
     padding: 1.5em 1.5em;
   }
@@ -25,14 +23,13 @@
 .branding {
   font-weight: 600;
   flex: 1;
-
   @nest & a {
     display: inline-block;
     padding: 0.5em;
     color: inherit;
     text-decoration: none;
     transition: all 0.1s ease-in 0s;
-
+    
     @media (hover: hover) {
       @nest &:hover {
         color: var(--color-accent);
@@ -55,7 +52,6 @@
     display: block;
     fill: inherit;
   } */
-
   @media (--media-min-small) {
     display: none;
   }
@@ -63,25 +59,30 @@
 
 .nav {
   display: none;
-
   @nest & ul {
     margin: 0;
     padding: 0;
   }
-
   @nest & ul li a {
     display: block;
     color: inherit;
     text-decoration: none;
     transition: all 0.1s ease-in 0s;
+    
   }
-
+  @nest & ul li a:after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
   @media (hover: hover) {
     @nest & ul li a:hover {
       color: var(--color-accent);
     }
   }
-
   @media (--media-max-small) {
     position: absolute;
     background: var(--color-background);
@@ -92,25 +93,20 @@
     left: 0;
     right: 0;
     top: 4.3rem;
-
     @nest & ul {
       padding: 1rem 0;
     }
-
     @nest & ul li a {
       padding: 0.5rem 1.5rem;
     }
   }
-
   @media (--media-min-small) {
     display: block;
-
     @nest & ul {
       list-style: none;
       display: flex;
       justify-content: flex-end;
     }
-
     @nest & ul li a {
       padding: 0.5rem;
     }

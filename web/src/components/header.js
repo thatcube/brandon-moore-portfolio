@@ -7,6 +7,11 @@ import { cn } from '../lib/helpers'
 import styles from './header.module.css'
 import { button } from './button.module.css'
 
+const carrot = {
+  color: 'var(--color-accent)',
+  fontWeight: '600'
+}
+
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
@@ -23,10 +28,10 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-            <AniLink fade duration={0.5} to='/'>Work</AniLink>
+            <AniLink fade duration={0.5} to='/' activeStyle={carrot} title="Work">Work</AniLink>
           </li>
           <li>
-            <AniLink fade duration={0.5} to='/about/'>About</AniLink>
+            <AniLink fade duration={0.5} to='/about/' activeStyle={carrot} title="About">About</AniLink>
           </li>
         </ul>
       </nav>
