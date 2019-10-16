@@ -1,5 +1,4 @@
 import {Link} from 'part:@sanity/base/router'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import FolderIcon from 'part:@sanity/base/folder-icon'
 import FileIcon from 'part:@sanity/base/file-icon'
 import React from 'react'
@@ -23,12 +22,12 @@ function StructureMenuWidget (props) {
           const Icon = getIconComponent(item)
           return (
             <div key={item.id}>
-              <AniLink fade duration={0.5} className={styles.link} href={`/desk/${item.id}`}>
+              <Link className={styles.link} href={`/desk/${item.id}`}>
                 <div className={styles.iconWrapper}>
                   <Icon />
                 </div>
                 <div>{item.title}</div>
-              </AniLink>
+              </Link>
             </div>
           )
         })}
