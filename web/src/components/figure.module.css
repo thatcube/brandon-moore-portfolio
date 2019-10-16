@@ -1,7 +1,11 @@
 @import '../styles/custom-properties.css';
+@import '../styles/custom-media.css';
 
 .root {
   margin: 2rem 0;
+  @media (--media-min-extralarge) {
+    margin: 2rem -10rem;
+  }
 
   @nest & figcaption {
     font-size: var(--font-small-size);

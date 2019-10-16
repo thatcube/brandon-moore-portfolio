@@ -10,7 +10,7 @@ export default ({node}) => {
     return null
   }
 
-  const fluidProps = getFluidGatsbyImage(node.asset._ref, {maxWidth: 896}, clientConfig.sanity)
+  const fluidProps = getFluidGatsbyImage(node.asset._ref, {maxWidth: 1000}, clientConfig.sanity)
 
   return (
     <figure className={styles.root}>

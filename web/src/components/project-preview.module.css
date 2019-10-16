@@ -1,3 +1,5 @@
+@import '../styles/custom-media.css';
+
 .root {
   display: block;
   color: inherit;
@@ -7,10 +9,30 @@
   border-radius: 1rem;
   background: var(--color-card);
   @nest &:hover {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0.5rem 1.5rem;
     @nest & p {
       color: var(--color-text);
     }
+    @nest & img {
+      transform: scale(1.05);
+    }
+  }
+  @nest &:active {
+    box-shadow: rgba(0,0,0,0.1) 0 0 0.25rem;
+    @nest & img {
+      transform: scale(1.0);
+    }
+  }
+  @media (--media-max-small) {
+    transition: all 0.15s ease-in 0s;
+    @nest &:hover {
+      transform: scale(0.97);
+      box-shadow: rgba(0,0,0,0.1) 0 0 0.25rem;
+      @nest & img {
+        transform: scale(1);
+      }
+    }
+    
   }
 }
 
@@ -22,7 +44,8 @@
   position: relative;
   padding-bottom: 66.666%;
   background: var(--color-navigation);
-  border-radius: inherit;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
 
   @nest & img {
     position: absolute;
@@ -32,6 +55,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
+    transition: all 0.2s ease-in;
     /* border: 0.125rem solid var(--color-border); */
   }
 }
