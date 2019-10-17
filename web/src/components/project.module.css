@@ -110,7 +110,7 @@
   composes: base from './typography.module.css';
   margin: 0.5rem 0 0;
 }
-
+/* 
 p, ul {
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
@@ -125,4 +125,4 @@ p, ul {
     font-size: var(--font-large-size);
     line-height: var(--font-large-line-height);
   }
-}
+} */

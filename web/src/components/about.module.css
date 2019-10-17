@@ -1,6 +1,5 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
-
 .image {
     display: block;
     margin: 15% auto;
@@ -11,4 +10,9 @@
         margin-right: 0;
         width: 33.33333%;
     }
+}
+
+h3 span {
+    margin-bottom: 0.5em;
+    display: inline-block;
 }
