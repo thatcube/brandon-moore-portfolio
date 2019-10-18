@@ -92,7 +92,7 @@
     border-bottom: 0.0625rem solid var(--color-border);
     left: 0;
     right: 0;
-    top: 4.3rem;
+    top: 3.6rem;
     @nest & ul {
       padding: 1rem 0;
     }

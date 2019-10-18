@@ -10,6 +10,7 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import ProjectPreviewGrid from '../components/project-preview-grid'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
+import { hero } from '../components/hero.module.css'
 
 export const query = graphql`
   query IndexPageQuery {
@@ -87,7 +88,7 @@ const IndexPage = props => {
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
-        <h1 hidden>Projects</h1>
+        <h1 className={hero}>Brandon — a product designer focusing on visual design & accessibility, currently at CBORD</h1>
         {projectNodes && (
           <ProjectPreviewGrid
             nodes={projectNodes}

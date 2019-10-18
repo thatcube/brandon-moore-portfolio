@@ -15,7 +15,7 @@ const AboutPage = () => (
       <SEO title='About' />
       <Container>
         <h1 className={responsiveTitle1}>Hi there 👋</h1>
-        <h3 className={responsiveTitle3}><span>I'm Brandon, a product designer with a passion for design and tech. I love design systems, CSS, and beautiful products that are built for everyone.</span></h3>
+        <h3 className={responsiveTitle3}><span>I'm Brandon — a product designer with a passion for design and tech. I love design systems, CSS, and beautiful products that are built for everyone.</span></h3>
         <p>I'm currently working for CBORD, focusing on their consumer-facing products. I've been <AniLink fade duration={0.5} to={`/project/get`}>redesigning an entire app</AniLink> in the higher education space and in that process, I learned a lot about inclusive design and accessibility. I believe that designing for some leads to better solutions for all. Some other design-related interests include iconography, illustration, and animation.</p>
         <p>Outside of work, I enjoy soccer, volleyball, and running.</p>
         <p>Thanks for stopping by!</p>
