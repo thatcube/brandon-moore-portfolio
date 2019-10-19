@@ -6,7 +6,7 @@ import {imageUrlFor} from '../lib/image-url'
 import BlockText from './block-text'
 
 import styles from './project-preview.module.css'
-import {responsiveTitle3} from './typography.module.css'
+import {responsiveTitle1} from './typography.module.css'
 
 function ProjectPreview (props) {
   return (
@@ -16,14 +16,14 @@ function ProjectPreview (props) {
           <img
             src={imageUrlFor(buildImageObj(props.mainImage))
               .width(1000)
-              .height(Math.floor((9 / 16) * 1000))
+              .height(Math.floor((9 / 19.5) * 1000))
               .url()}
             alt={props.mainImage.alt}
           />
         )}
       </div>
       <div className={styles.cardBottom}>
-      <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
+      <h2 className={cn(responsiveTitle1, styles.title)}>{props.title}</h2>
       {props._rawExcerpt && (
         <div className={styles.excerpt}>
           <BlockText blocks={props._rawExcerpt} />

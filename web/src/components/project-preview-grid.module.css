@@ -22,13 +22,14 @@
   grid-template-columns: 1fr;
   grid-gap: 2em;
 
-  @media (--media-min-small) {
-    grid-template-columns: 1fr 1fr;
+   @media (--media-min-small) {
+    /* grid-template-columns: 1fr 1fr; */
+    grid-gap: 5em;
   }
-
+  /*
   @media (--media-min-medium) {
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 }
 
 .browseMoreNav {
