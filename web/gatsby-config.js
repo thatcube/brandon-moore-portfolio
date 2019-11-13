@@ -19,7 +19,8 @@ module.exports = {
         ...clientConfig.sanity,
         token,
         watchMode: !isProd,
-        overlayDrafts: !isProd && token
+        overlayDrafts: !isProd && token,
+        icon: 'src/images/favicon.png'
       }
     }
   ]

@@ -9,4 +9,7 @@
   @media (--media-min-small) {
     padding: 2em;
   }
+  @media (--media-min-extralarge) {
+    max-width: 1150px;
+  }
 }

@@ -5,17 +5,18 @@
     color: var(--color-text-dark);
     line-height: 1.2;
     font-size: 2em;
-    margin: 3em 0;
-    
+    margin: 0 auto;
+    padding: 20vh 2rem;
+    max-width: 1200px; 
     @media (--media-min-medium) {
         font-size: 3em;
     }
     @media (--media-min-large) {
-        margin: 3em -0.5em;
+        /* margin: 3em -0.5em; */
         font-size: 3.5em;
     }
     @media (--media-min-extralarge) {
-        margin: 4em -2em;
+        /* margin: 4em -2em; */
         font-size: 4.5em;
     }
 }

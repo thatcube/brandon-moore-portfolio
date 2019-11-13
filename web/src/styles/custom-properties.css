@@ -34,7 +34,7 @@
   --font-title1-size: calc(49 / var(--unit) * 1rem); /* 49px */
   --font-title1-line-height: calc(57 / 49); /* 57px */
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color-background: #050505;
     --color-navigation: #07060C;
@@ -46,4 +46,4 @@
     --color-text-dark: rgb(255, 255, 255);
     --color-card: var(--color-navigation);
   }
-}
+} */
