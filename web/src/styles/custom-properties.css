@@ -8,13 +8,14 @@
   --color-white: #fff;
   --color-accent: #675ae8;
   --color-background: #f7f6f8;
+  --color-background-rgb: 247, 246, 248;
   --color-navigation: #f3f1f5;
   --color-text: rgba(0, 0, 0, 0.87);
   --color-text-light: rgba(0, 0, 0, 0.55);
   --color-text-dark: rgb(0, 0, 0);
   --color-border: #d0cad6;
   --color-card: #fff;
-  --color-border-header: rgba(0,0,0,0.05);
+  --color-black-light: rgba(0,0,0,0.05);
 
   /* Typography */
   --unit: 16;
@@ -34,9 +35,10 @@
   --font-title1-size: calc(49 / var(--unit) * 1rem); /* 49px */
   --font-title1-line-height: calc(57 / 49); /* 57px */
 }
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --color-background: #050505;
+    --color-background-rgb: 5, 5, 5;
     --color-navigation: #07060C;
     --color-border: #282430;
     --color-accent: #857bed;
@@ -45,5 +47,6 @@
     --color-text-light: rgba(255, 255, 255, 0.6);
     --color-text-dark: rgb(255, 255, 255);
     --color-card: var(--color-navigation);
+    --color-black-light: rgba(255, 255, 255, 0.05);
   }
-} */
+}

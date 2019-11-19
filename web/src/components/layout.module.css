@@ -1,10 +1,8 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
-
 .content {
   background: var(--color-background);
   min-height: calc(100% - 226px - 72px);
-
   @media (--media-min-small) {
     min-height: calc(100% - 290px - 88px);
   }
@@ -14,24 +12,29 @@
   /* border-top: 0.0625rem solid var(--color-border); */
   display: flex;
   @nest & a {
+    display: inline-block;
     color: inherit;
     text-decoration: none;
     text-align: center;
     font-size: var(--font-small-size);
     font-weight: 500;
     transition: all 0.1s ease-in 0s;
-
-    @media (hover: hover) {
-      @nest &:hover {
-        color: var(--color-accent);
-      }
-    }
   }
   @nest & ul {
     display: flex;
     list-style-type: none;
     margin: 0 0 1rem 0;
     padding: 0;
+    @nest & a {
+      border-radius: 1rem;
+      padding: 0.5rem;
+      @media (hover: hover) {
+        @nest &:hover {
+          /* color: var(--color-accent); */
+          background: var(--color-black-light);
+        }
+      }
+    }
   }
   @nest & li {
     display: inline-block;
@@ -56,7 +59,6 @@
   max-width: 960px;
   padding: 4.5em 1.5em 4.5em;
   margin: 0 auto;
-
   @media (--media-min-small) {
     padding: 6em 2em 6em;
   }
