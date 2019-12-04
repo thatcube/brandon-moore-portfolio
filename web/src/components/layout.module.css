@@ -38,8 +38,10 @@
   }
   @nest & li {
     display: inline-block;
-    @media (--media-min-medium) {
-      min-width: 6rem;
+    @nest & a {
+      @media (--media-min-medium) {
+        min-width: 6rem;
+      }
     }
   }
   @nest & svg {
