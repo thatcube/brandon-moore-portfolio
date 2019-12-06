@@ -1,5 +1,6 @@
 :root {
   --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-almost-black: #050505;
 
   --color-black: #202123;
   --color-dark-gray: #32373e;
@@ -8,10 +9,12 @@
   --color-white: #fff;
   --color-accent: #675ae8;
   --color-background: #f7f6f8;
+  --color-background: var(--color-white);
   --color-background-rgb: 247, 246, 248;
   --color-navigation: #f3f1f5;
   --color-text: rgba(0, 0, 0, 0.87);
   --color-text-light: rgba(0, 0, 0, 0.55);
+  --color-text-light-white: rgba(255, 255, 255, 0.6);
   --color-text-dark: rgb(0, 0, 0);
   --color-border: #d0cad6;
   --color-card: #fff;
@@ -45,8 +48,11 @@
     --color-border-header: rgba(255,255,255,0.08);
     --color-text: rgba(255, 255, 255, 0.87);
     --color-text-light: rgba(255, 255, 255, 0.6);
+    --color-text-light-white: rgba(0,0,0,0.6);
     --color-text-dark: rgb(255, 255, 255);
     --color-card: var(--color-navigation);
     --color-black-light: rgba(255, 255, 255, 0.05);
+    --color-almost-black: #fff;
+    --color-white: #000;
   }
 }
