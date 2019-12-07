@@ -4,11 +4,11 @@
     display: block;
     margin: 15% auto;
     width: 80%;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     @media (--media-min-small) {
         margin: 0 auto;
         margin-right: 0;
-        width: 33.33333%;
+        width: 40%;
     }
 }
 
