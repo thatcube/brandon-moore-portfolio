@@ -6,11 +6,7 @@
     line-height: 1.2;
     font-size: 2em;
     margin: 0 auto;
-<<<<<<< HEAD
-    padding: 22vh 2rem;
-=======
     padding: 20vh 2rem;
->>>>>>> hello
     max-width: 1450px; 
     /* text-align: center; */
     @nest & span {
