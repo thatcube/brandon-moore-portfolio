@@ -1,6 +1,6 @@
 # Brandon Moore's portfolio
 
-A custom portfolio using structured content and a static site builder.
+[brandonmoore.io](https://brandonmoore.io)
 
 Deployed from [sanity.io/create](https://www.sanity.io/create/?template=sanity-io%2Fsanity-template-gatsby-portfolio).
 
