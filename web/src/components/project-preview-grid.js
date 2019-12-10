@@ -9,6 +9,7 @@ function ProjectPreviewGrid (props) {
   return (
     <div className={styles.root}>
       {props.title && <h2 className={styles.headline}>{props.title}</h2>}
+      <span>{props.projectNumber}</span>
       <ul className={styles.grid}>
         {props.nodes &&
           props.nodes.map(node => (
@@ -28,6 +29,7 @@ function ProjectPreviewGrid (props) {
 
 ProjectPreviewGrid.defaultProps = {
   title: '',
+  projectNumber: '',
   nodes: [],
   browseMoreHref: ''
 }

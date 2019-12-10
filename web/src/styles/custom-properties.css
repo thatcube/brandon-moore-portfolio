@@ -1,7 +1,7 @@
 :root {
   --font-family-sans: "PT Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --color-almost-black: #050505;
-
   --color-black: #202123;
   --color-dark-gray: #32373e;
   --color-gray: #697a90;
@@ -18,26 +18,39 @@
   --color-text-dark: rgb(0, 0, 0);
   --color-border: #d0cad6;
   --color-card: #fff;
-  --color-black-light: rgba(0,0,0,0.05);
-
+  --color-black-light: rgba(0, 0, 0, 0.05);
   /* Typography */
   --unit: 16;
-  --font-micro-size: calc(10 / var(--unit) * 1rem); /* 10px */
-  --font-micro-line-height: calc(12 / 10); /* 12px */
-  --font-small-size: calc(14 / var(--unit) * 1rem); /* 14px */
-  --font-small-line-height: calc(21 / 14); /* 21px */
-  --font-base-size: 1em; /* 16px */
-  --font-base-line-height: calc(24 / var(--unit)); /* 24px */
-  --font-large-size: calc(18 / var(--unit) * 1rem); /* 18px */
-  --font-large-line-height: calc(27 / 18); /* 27px */
-
-  --font-title3-size: calc(21 / var(--unit) * 1rem); /* 21px */
-  --font-title3-line-height: calc(30 / 21); /* 30px */
-  --font-title2-size: calc(24 / var(--unit) * 1rem); /* 24px */
-  --font-title2-line-height: calc(33 / 24); /* 33px */
-  --font-title1-size: calc(49 / var(--unit) * 1rem); /* 49px */
-  --font-title1-line-height: calc(57 / 49); /* 57px */
+  --font-micro-size: calc(10 / var(--unit) * 1rem);
+  /* 10px */
+  --font-micro-line-height: calc(12 / 10);
+  /* 12px */
+  --font-small-size: calc(14 / var(--unit) * 1rem);
+  /* 14px */
+  --font-small-line-height: calc(21 / 14);
+  /* 21px */
+  --font-base-size: 1em;
+  /* 16px */
+  --font-base-line-height: calc(24 / var(--unit));
+  /* 24px */
+  --font-large-size: calc(18 / var(--unit) * 1rem);
+  /* 18px */
+  --font-large-line-height: calc(27 / 18);
+  /* 27px */
+  --font-title3-size: calc(21 / var(--unit) * 1rem);
+  /* 21px */
+  --font-title3-line-height: calc(30 / 21);
+  /* 30px */
+  --font-title2-size: calc(24 / var(--unit) * 1rem);
+  /* 24px */
+  --font-title2-line-height: calc(33 / 24);
+  /* 33px */
+  --font-title1-size: calc(49 / var(--unit) * 1rem);
+  /* 49px */
+  --font-title1-line-height: calc(57 / 49);
+  /* 57px */
 }
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --color-background: #050505;

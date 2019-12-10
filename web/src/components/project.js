@@ -12,7 +12,7 @@ import styles from './project.module.css'
 import {button} from './button.module.css'
 
 function Project(props) {
-  const { _rawBody, title, categories, mainImage, members, publishedAt, relatedProjects } = props
+  const { _rawBody, projectNumber, title, categories, mainImage, members, publishedAt, relatedProjects } = props
   return (
     <article className={styles.root}>
         {props.mainImage && mainImage.asset && (
@@ -31,6 +31,7 @@ function Project(props) {
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
+            <span>{projectNumber}</span>
             {_rawBody && <BlockContent blocks={_rawBody || []} />}
           </div>
           <aside className={styles.metaContent}>

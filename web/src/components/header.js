@@ -8,14 +8,15 @@ import styles from './header.module.css'
 import { button } from './button.module.css'
 
 const active = {
-  color: 'var(--color-text-dark)'
+  color: 'var(--color-white)',
+  background: 'var(--color-black)'
 }
 
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
-        <AniLink fade duration={0.5} to='/'>Brandon Moore</AniLink>
+        <AniLink fade duration={0.5} to='/'>bm.</AniLink>
       </div>
       <div className={styles.toggleNavButton}>
         {/* <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}> */}
@@ -27,7 +28,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-            <AniLink fade duration={0.5} to='/' activeStyle={active} title="Work">Work</AniLink>
+            <AniLink fade duration={0.5} to='/' activeStyle={active} title="Projects">Projects</AniLink>
           </li>
           <li>
             <AniLink fade duration={0.5} to='/about/' activeStyle={active} title="About">About</AniLink>
