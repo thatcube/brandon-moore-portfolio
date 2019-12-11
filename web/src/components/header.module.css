@@ -38,6 +38,7 @@
     padding: 0.5em 1em;
     color: var(--color-text-dark);
     text-decoration: none;
+    border: none;
     /* transition: all 0.1s ease-in 0s; */
   }
 }
@@ -102,19 +103,22 @@
     @nest & ul {
       padding: 1rem 0;
     }
-    @nest & ul li a {
+    /* @nest & ul li a {
       padding: 0.5rem 1.5rem;
-    }
+    } */
   }
   @media (--media-min-small) {
     display: block;
     @nest & ul {
       list-style: none;
       display: flex;
+      align-items: center;
+      height: 100%;
       justify-content: flex-end;
     }
     @nest & ul li a {
       padding: 0.4rem 1rem;
+      border: none;
     }
   }
 }

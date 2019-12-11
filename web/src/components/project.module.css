@@ -46,7 +46,7 @@
   } */
 }
 
-.mainContent {
+/* .mainContent {
   @nest & a {
     transition: all 0.2s ease-in 0s;
     color: var(--color-accent);
@@ -57,7 +57,7 @@
       }
     }
   }
-}
+} */
 
 .metaContent {
 }
@@ -93,8 +93,10 @@
   margin: 2rem 0 3rem;
 
   @nest & ul {
-    list-style: none;
+    /* list-style: none; */
     margin: 0.75rem 0;
+    display: flex;
+    justify-content: space-between;
     padding: 0;
   }
 

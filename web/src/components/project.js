@@ -9,29 +9,28 @@ import Container from './container'
 import RoleList from './role-list'
 
 import styles from './project.module.css'
-import {button} from './button.module.css'
+import { button } from './button.module.css'
 
 function Project(props) {
-  const { _rawBody, projectNumber, title, categories, mainImage, members, publishedAt, relatedProjects } = props
+  const { _rawBody, title, categories, mainImage, members, publishedAt, relatedProjects } = props
   return (
     <article className={styles.root}>
-        {props.mainImage && mainImage.asset && (
-          <div className={styles.mainImage}>
-            <img
-              src={imageUrlFor(buildImageObj(mainImage))
-                .width(3000)
-                .height(Math.floor((9 / 16) * 3000))
-                .fit('crop')
-                .url()}
-              alt={mainImage.alt}
-            />
-          </div>
-        )}
+      {props.mainImage && mainImage.asset && (
+        <div className={styles.mainImage}>
+          <img
+            src={imageUrlFor(buildImageObj(mainImage))
+              .width(3000)
+              .height(Math.floor((9 / 16) * 3000))
+              .fit('crop')
+              .url()}
+            alt={mainImage.alt}
+          />
+        </div>
+      )}
       <Container>
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
-            <span>{projectNumber}</span>
             {_rawBody && <BlockContent blocks={_rawBody || []} />}
           </div>
           <aside className={styles.metaContent}>
@@ -55,16 +54,16 @@ function Project(props) {
             )}
             {relatedProjects && relatedProjects.length > 0 && (
               <div className={styles.relatedProjects}>
-                <h3 className={styles.relatedProjectsHeadline}>Related projects</h3>
+                <h3 className={styles.relatedProjectsHeadline}>Other Projects</h3>
                 <ul>
                   {relatedProjects.map(project => (
-                    <li key={`related_${project._id}`}>
+                    <React.Fragment key={`related_${project._id}`}>
                       {project.slug ? (
                         <AniLink fade duration={0.5} className={button} to={`/project/${project.slug.current}`}>{project.title}</AniLink>
                       ) : (
                           <span>{project.title}</span>
                         )}
-                    </li>
+                    </React.Fragment>
                   ))}
                 </ul>
               </div>

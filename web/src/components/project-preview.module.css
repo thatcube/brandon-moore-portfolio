@@ -12,6 +12,7 @@
   text-decoration: none;
   transition: 0.75s cubic-bezier(.2, .8, .2, 1) all;
   align-items: center;
+  border: none;
   /* box-shadow: rgba(0, 0, 0, 0.08) 0 0.25rem 0.5rem; */
   /* border-radius: 1rem; */
   /* background: var(--color-card); */

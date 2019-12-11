@@ -11,11 +11,6 @@ export default {
       type: 'string'
     },
     {
-      name: 'projectNumber',
-      title: 'projecto numero',
-      type: 'string'
-    },
-    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -78,7 +73,6 @@ export default {
   preview: {
     select: {
       title: 'title',
-      projectNumber: 'projectNumber',
       publishedAt: 'publishedAt',
       slug: 'slug',
       media: 'mainImage'
@@ -88,7 +82,6 @@ export default {
       const path = `/${dateSegment}/${slug.current}/`
       return {
         title,
-        projectNumber,
         media,
         subtitle: publishedAt ? path : 'Missing publishing date'
       }

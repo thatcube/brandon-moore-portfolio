@@ -22,11 +22,14 @@
     text-align: center;
     /* font-size: var(--font-small-size); */
     /* font-weight: bold; */
-    transition: all 0.1s ease-in 0s;
+    /* transition: all 0.1s ease-in 0s; */
   }
   @nest & ul {
     list-style-type: none;
-    line-height: 2.4;
+    /* line-height: 2.4; */
+  }
+  @nest & li {
+    margin-bottom: 1rem;
   }
   /* @nest & ul {
     display: flex;
@@ -65,13 +68,15 @@
 }
 
 .footerWrapper {
-  box-sizing: border-box;
-  max-width: 960px;
-  padding: 4.5em 1.5em 4.5em;
-  margin: 0 auto;
-  @media (--media-min-small) {
+  /* box-sizing: border-box; */
+  /* max-width: 960px; */
+  /* padding: 4.5em 1.5em 4.5em; */
+  /* margin: 0 auto; */
+  /* @media (--media-min-small) {
     padding: 6em 2em 6em;
-  }
+  } */
+  background: var(--color-black);
+  color: var(--color-white);
 }
 
 .companyAddress {

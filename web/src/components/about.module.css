@@ -16,3 +16,12 @@ h3 span {
     margin-bottom: 0.5em;
     display: inline-block;
 }
+
+.about {
+    height: 100%;
+    @media (--media-min-small) {
+        height: calc(100vh - 140px);
+    }
+    display: flex;
+    align-items: center;
+}

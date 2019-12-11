@@ -12,30 +12,32 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
     <Header siteTitle={siteTitle} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet"></link>
     <div className={styles.content}>{children}</div>
-    <Container>
-      <footer className={styles.footer}>
-        <div className="row">
-          <div className="col-6">
-            <ul>
-              <li>
-                <a target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a>
+    <div className={styles.footerWrapper}>
+      <Container>
+        <footer className={styles.footer}>
+          <div className="row">
+            <div className="col-6">
+              <ul>
+                <li>
+                  <a className="link__light" target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a>
+                </li>
+                <li>
+                  <a className="link__light" target="_blank" href="https://docs.google.com/document/d/1eYQDi11GeTIo30D9yK7Mw17uhCRexPD26naHEPob2_A/edit?usp=sharing">Resume</a>
+                </li>
+                <li>
+                  hi@brandonmoore.io
               </li>
-              <li>
-                <a target="_blank" href="https://docs.google.com/document/d/1eYQDi11GeTIo30D9yK7Mw17uhCRexPD26naHEPob2_A/edit?usp=sharing">Resume</a>
-              </li>
-              <li>
-                hi@brandonmoore.io
-              </li>
-            </ul>
-          </div>
-          <div className="col-6">
-            <p>
-              Designed and built by me. Copyright whenever, this is <a target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">open source</a>.
+              </ul>
+            </div>
+            <div className="col-6">
+              <p>
+                Designed and built by me. Copyright whenever, this is <a className="link__light" target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">open source</a>.
             </p>
+            </div>
           </div>
-        </div>
-      </footer>
-    </Container>
+        </footer>
+      </Container>
+    </div>
   </>
 )
 

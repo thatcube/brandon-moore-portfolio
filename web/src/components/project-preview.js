@@ -23,7 +23,6 @@ function ProjectPreview (props) {
         )}
       </div>
       <div className={styles.cardBottom}>
-      <span>{props.projectNumber}</span>
       <h2 className={cn(responsiveTitle2, styles.title)}>{props.title}</h2>
       {props._rawExcerpt && (
         <div className={styles.excerpt}>
