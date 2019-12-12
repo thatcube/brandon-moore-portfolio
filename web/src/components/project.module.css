@@ -101,10 +101,13 @@
   }
 
   @nest & a {
-    display: inline-block;
+    display: flex;
     color: inherit;
     text-decoration: none;
     /* padding: 0.25rem 0; */
+    & svg {
+      margin-left: 0.5rem;
+    }
   }
 }
 

@@ -15,8 +15,8 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
     <div className={styles.footerWrapper}>
       <Container>
         <footer className={styles.footer}>
-          <div className="row">
-            <div className="col-6">
+          <div className="row center-v">
+            <div className="col">
               <ul>
                 <li>
                   <a className="link__light" target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a>
@@ -29,7 +29,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
               </li>
               </ul>
             </div>
-            <div className="col-6">
+            <div className="col">
               <p>
                 Designed and built by me. Copyright whenever, this is <a className="link__light" target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">open source</a>.
             </p>

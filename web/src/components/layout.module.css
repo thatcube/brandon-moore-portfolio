@@ -26,10 +26,12 @@
   }
   @nest & ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     /* line-height: 2.4; */
   }
   @nest & li {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
   /* @nest & ul {
     display: flex;
@@ -92,4 +94,9 @@
     text-decoration: underline;
   }
   line-height: var(--font-small-line-height);
+}
+.center {
+  font-size: 200%;
+  color: yellow;
+  background: green;
 }
