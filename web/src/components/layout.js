@@ -25,7 +25,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
                   <a className="link__light" target="_blank" href="https://docs.google.com/document/d/1eYQDi11GeTIo30D9yK7Mw17uhCRexPD26naHEPob2_A/edit?usp=sharing">Resume</a>
                 </li>
                 <li>
-                  hi@brandonmoore.io
+                  brandoncmoore4@gmail.com
               </li>
               </ul>
             </div>

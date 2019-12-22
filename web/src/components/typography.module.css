@@ -1,4 +1,5 @@
 @import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
 
 :root {
   --base-unit: 50;
@@ -152,5 +153,14 @@
   @media (--media-min-medium) {
     font-size: var(--font-large-size);
     line-height: var(--font-large-line-height);
+  }
+}
+
+.headline {
+  font-size: var(--font-title2-size);
+  font-weight: bold;
+  @nest & a {
+    color: var(--color-text-light);
+    border-color: var(--color-text-light);
   }
 }

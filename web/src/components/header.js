@@ -16,7 +16,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
-        <AniLink fade duration={0.5} to='/'>bm.</AniLink>
+        <AniLink fade duration={0.5} to='/'>Brandon Moore</AniLink>
       </div>
       <div className={styles.toggleNavButton}>
         {/* <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}> */}

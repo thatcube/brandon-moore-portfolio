@@ -3,11 +3,11 @@
 .root {
   position: relative;
   z-index: 100;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   /* background: var(--color-navigation); */
   /* border-bottom: 0.0625rem solid var(--color-border-header); */
-  background: rgba(var(--color-background-rgb), 0.9);
+  /* background: rgba(var(--color-background-rgb), 0.9); */
   /* color: var(--color-text-light); */
   backdrop-filter: blur(0.5em);
   @media (hover: hover) {
@@ -26,6 +26,9 @@
   display: flex;
   @media (--media-min-small) {
     padding: 1em;
+  }
+  @media (--media-min-extralarge) {
+    max-width: 1150px;
   }
 }
 
@@ -64,6 +67,7 @@
 
 .nav {
   display: none;
+  font-weight: bold;
   @nest & ul {
     margin: 0;
     padding: 0;
