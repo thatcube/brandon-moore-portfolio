@@ -20,7 +20,7 @@ const AboutPage = () => (
             <div className="col col-66">
               <h1 className="sr-only">About Brandon Moore</h1>
               <p className={headline}><span>I'm Brandon — currently creating products built for everyone at CBORD.</span></p>
-              <p className={headline}>I'm passionate about accessibility and I'm not afraid to challenge the status quo. I'm a huge supporter of <a target="_blank" href="https://universaldesign.org/definition">Universal Design</a> and the <a target="_blank" href="https://a11yproject.com/">A11y Project</a>. I've spent a lot of time establishing design and development standards across the company that encourage accessibility best-practices.</p>
+              <p className={headline}>I'm passionate about accessibility and I'm not afraid to challenge the status quo. I'm a huge supporter of <a target="_blank" href="http://universaldesign.ie/What-is-Universal-Design/">Universal Design</a> and the <a target="_blank" href="https://a11yproject.com/">A11y Project</a>. I've spent a lot of time establishing design and development standards across the company that encourage accessibility best-practices.</p>
               <p></p>
             </div>
             <div className="col">

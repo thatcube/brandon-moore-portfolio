@@ -17,6 +17,7 @@ a {
     @nest &:hover {
         color: var(--color-white);
         background: var(--color-black);
+        border-radius: 0.2em;
     }
     border-bottom: 0.075em solid var(--color-black);
 }
@@ -28,6 +29,7 @@ a {
     @nest &:hover {
         color: var(--color-black);
         background: var(--color-white);
+        border-radius: 0.2em;
     }
     border-bottom: 0.075em solid var(--color-white);
 }

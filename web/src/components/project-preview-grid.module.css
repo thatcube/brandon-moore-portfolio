@@ -1,6 +1,5 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
-
 .root {
   margin: 2em 0 10em;
 }
@@ -17,14 +16,44 @@
 .grid {
   margin: 0;
   padding: 0;
+  @media (--media-min-small) {
+    padding: 1rem;
+  }
   list-style: none;
   display: grid;
-  grid-gap: 10em;
+  grid-gap: 5em;
+  @media (--media-min-small) {
+    grid-gap: 10em;
+  }
+  position: relative;
+  @nest & li {
+    z-index: 1;
+    position: relative;
+  }
+  @nest & li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -2rem;
+    left: 0;
+    margin: -1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: -1;
+    background: var(--color-navigation);
+    clip-path: inset(2rem 0 2rem 2rem round 1rem);
+    contain: strict;
+    transition: clip-path 0.3s ease 0.1s;
+  }
+  @nest & li:hover:after {
+    clip-path: inset(0 0 2rem 0 round 1rem);
+    transition-delay: 0s;
+  }
   /* grid-gap: 2em; */
-
-   /* @media (--media-min-small) {
+  /* @media (--media-min-small) {
     /* grid-template-columns: 1fr 1fr; */
-    /* grid-gap: 5em;
+  /* grid-gap: 5em;
   } */
   /*
   @media (--media-min-medium) {
@@ -36,7 +65,6 @@
   composes: small from './typography.module.css';
   margin-top: 1rem;
   text-align: right;
-
   @nest & a {
     display: inline-block;
     padding: 0.5rem 0;
@@ -44,7 +72,6 @@
     text-decoration: none;
     transition: all 0.1s ease-in 0s;
     border: none;
-
     @media (hover: hover) {
       @nest &:hover {
         color: var(--color-accent);

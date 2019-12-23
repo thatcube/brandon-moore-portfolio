@@ -79,6 +79,7 @@
     margin-left: 1rem;
     /* transition: all 0.1s ease-in 0s; */
     border-bottom: 1px solid var(--color-black);
+    border-radius: 0.2em;
   }
   @nest & ul li a:after {
     display: block;

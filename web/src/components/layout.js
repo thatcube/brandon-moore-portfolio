@@ -22,7 +22,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
                   <a className="link__light" target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a>
                 </li>
                 <li>
-                  <a className="link__light" target="_blank" href="https://docs.google.com/document/d/1eYQDi11GeTIo30D9yK7Mw17uhCRexPD26naHEPob2_A/edit?usp=sharing">Resume</a>
+                  <a className="link__light" target="_blank" href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a>
                 </li>
                 <li>
                   brandoncmoore4@gmail.com
