@@ -9,7 +9,6 @@
 }
 
 .footer {
-  /* border-top: 0.0625rem solid var(--color-border); */
   display: flex;
   padding: 2rem 0;
   @media (--media-min-small) {
@@ -17,68 +16,27 @@
   }
   @nest & a {
     display: inline-block;
-    color: inherit;
-    /* text-decoration: none; */
     text-align: center;
-    /* font-size: var(--font-small-size); */
-    /* font-weight: bold; */
-    /* transition: all 0.1s ease-in 0s; */
   }
   @nest & ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /* line-height: 2.4; */
   }
   @nest & li {
     margin: 1rem 0;
   }
-  /* @nest & ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0 0 1rem 0;
-    padding: 0;
-    @nest & a {
-      border-radius: 1rem;
-      padding: 0.5rem;
-      @media (hover: hover) {
-        @nest &:hover {
-          /* color: var(--color-accent); */ /*
-          background: var(--color-black-light);
-        }
-      }
-    }
-  }
-  @nest & li {
-    display: inline-block;
-    @nest & a {
-      @media (--media-min-medium) {
-        min-width: 6rem;
-      }
-    }
-  }
-  @nest & svg {
-    height: 2rem;
-    @media (--media-min-small) {
-      height: 2.5rem;
-    }
-    width: 100%;
-  }
-  @nest & span {
-    display: block;
-  } */
 }
 
 .footerWrapper {
-  /* box-sizing: border-box; */
-  /* max-width: 960px; */
-  /* padding: 4.5em 1.5em 4.5em; */
-  /* margin: 0 auto; */
-  /* @media (--media-min-small) {
-    padding: 6em 2em 6em;
-  } */
-  background: var(--color-black);
-  color: var(--color-white);
+  background: var(--color-foreground);
+  color: var(--color-text);
+  padding: 0 1em;
+  @media (--media-min-small) {
+    padding: 0 2em;
+    margin-bottom: 2em;
+    border-radius: var(--border-radius);
+  }
 }
 
 .companyAddress {
@@ -95,6 +53,7 @@
   }
   line-height: var(--font-small-line-height);
 }
+
 .center {
   font-size: 200%;
   color: yellow;

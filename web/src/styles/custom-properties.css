@@ -1,24 +1,26 @@
+@import './fonts.css';
 :root {
-  --font-family-sans: "PT Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-sans: "Inria Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --color-almost-black: #050505;
+
+  /* don't reference these */
   --color-black: #202123;
-  --color-dark-gray: #32373e;
-  --color-gray: #697a90;
-  --color-light-gray: #b4bcc7;
   --color-white: #fff;
+
+  /* reference these ones */
   --color-accent: #675ae8;
-  --color-background: #f7f6f8;
   --color-background: var(--color-white);
+  --color-background-inverted: var(--color-black);
   --color-background-rgb: 247, 246, 248;
-  --color-navigation: #f7f7f7;
+  --color-foreground: #eeeeee;
+  
   --color-text: rgba(0, 0, 0, 0.87);
-  --color-text-light: rgba(0, 0, 0, 0.55);
-  --color-text-light-white: rgba(255, 255, 255, 0.6);
-  --color-text-dark: rgb(0, 0, 0);
+  --color-text-low-contrast: rgba(0, 0, 0, 0.55);
+  --color-text-high-contrast: var(--color-black);
+  --color-text-inverted: var(--color-white);
+  
   --color-border: #d0cad6;
-  --color-card: #fff;
-  --color-black-light: rgba(0, 0, 0, 0.05);
+
   /* Typography */
   --unit: 16;
   --font-micro-size: calc(10 / var(--unit) * 1rem);
@@ -49,23 +51,22 @@
   /* 49px */
   --font-title1-line-height: calc(57 / 49);
   /* 57px */
+
+  --border-radius: calc( 16 / var(--unit) * 1rem);
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --color-background: #050505;
     --color-background-rgb: 5, 5, 5;
-    --color-navigation: #0e0e0e;
+    --color-background-inverted: var(--color-white);
+    --color-foreground: #1f1f1f;
+
     --color-border: #282430;
     --color-accent: #857bed;
-    --color-border-header: rgba(255,255,255,0.08);
     --color-text: rgba(255, 255, 255, 0.87);
-    --color-text-light: rgba(255, 255, 255, 0.6);
-    --color-text-light-white: rgba(0,0,0,0.6);
-    --color-text-dark: rgb(255, 255, 255);
-    --color-card: var(--color-navigation);
-    --color-black-light: rgba(255, 255, 255, 0.05);
-    --color-almost-black: #fff;
-    --color-white: #000;
+    --color-text-low-contrast: rgba(255, 255, 255, 0.6);
+    --color-text-high-contrast: var(--color-white);
+    --color-text-inverted: var(--color-black);
   }
-} */
+}

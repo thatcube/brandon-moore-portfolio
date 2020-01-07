@@ -160,7 +160,7 @@
   font-size: var(--font-title2-size);
   font-weight: bold;
   @nest & a {
-    color: var(--color-text-light);
-    border-color: var(--color-text-light);
+    color: var(--color-text-low-contrast);
+    border-color: var(--color-text-low-contrast);
   }
 }

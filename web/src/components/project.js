@@ -59,7 +59,7 @@ function Project(props) {
                   {relatedProjects.map(project => (
                     <React.Fragment key={`related_${project._id}`}>
                       {project.slug ? (
-                        <AniLink fade duration={0.5} className={button} to={`/project/${project.slug.current}`}>{project.title}  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M15.7 6.3l5 5c.4.4.4 1 0 1.4l-5 5a1 1 0 01-.7.3 1 1 0 01-.7-.3 1 1 0 010-1.4l3.3-3.3H2.9c-.5 0-.9-.4-.9-1s.4-1 1-1h14.6l-3.3-3.3a1 1 0 010-1.4 1 1 0 011.4 0z" fill="currentColor" fill-rule="nonzero" /></svg></AniLink>
+                        <AniLink fade duration={0.5} className={button} to={`/project/${project.slug.current}`}>{project.title}  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M15.7 6.3l5 5c.4.4.4 1 0 1.4l-5 5a1 1 0 01-.7.3 1 1 0 01-.7-.3 1 1 0 010-1.4l3.3-3.3H2.9c-.5 0-.9-.4-.9-1s.4-1 1-1h14.6l-3.3-3.3a1 1 0 010-1.4 1 1 0 011.4 0z" fill="currentColor" fillRule="nonzero" /></svg></AniLink>
                       ) : (
                           <span>{project.title}</span>
                         )}

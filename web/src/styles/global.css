@@ -1,3 +1,4 @@
+@import './custom-properties.css';
 button {
     all: unset;
 }
@@ -11,27 +12,18 @@ a {
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-black);
+    color: var(--color-text-low-contrast);
     line-height: 1.5;
+    position: relative;
+    text-decoration: underline;
     @nest &:hover {
-        color: var(--color-white);
-        background: var(--color-black);
-        border-radius: 0.2em;
-    }
-    border-bottom: 0.075em solid var(--color-black);
-}
-
-.link__light {
-    text-decoration: none;
-    color: var(--color-white);
-    line-height: 1.5;
-    @nest &:hover {
-        color: var(--color-black);
-        background: var(--color-white);
-        border-radius: 0.2em;
-    }
-    border-bottom: 0.075em solid var(--color-white);
+        color: var(--color-text-inverted);
+        background: var(--color-background-inverted);
+        box-shadow: 0 -0.1em 0 0.25em var(--color-background-inverted);
+        border-radius: 0.1em;
+        border-color: var(--color-background-inverted);
+        text-decoration: none;
+    } 
 }
 
 .center-v {
@@ -39,11 +31,21 @@ a {
     display: flex;
     align-items: center;
 }
-
-.light-boi {
-    background: var(--color-navigation);
+.padding-h {
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
+.light-boi {
+    background: var(--color-foreground);
+    @media (min-width: 676px) {
+        display: flex;
+        border-radius: var(--border-radius);
+    }
+    padding: 2em;
+    align-items: center;
+    position: relative;
+}
 ::selection {
     color: var(--color-white);
     background: var(--color-accent);
@@ -73,10 +75,12 @@ a {
         width: 100% !important;
     }
 }
+
 .col-66 {
     width: 66.6666666%;
     flex: none;
 }
+
 .col-75 {
     width: 75%;
     flex: none;
@@ -97,6 +101,11 @@ a {
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
-    white-space: nowrap; /* added line */
+    white-space: nowrap;
+    /* added line */
     border: 0;
+}
+
+img {
+    border-radius: var(--border-radius);
 }

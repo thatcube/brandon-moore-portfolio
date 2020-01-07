@@ -8,8 +8,8 @@ import styles from './header.module.css'
 import { button } from './button.module.css'
 
 const active = {
-  color: 'var(--color-white)',
-  background: 'var(--color-black)'
+  color: 'var(--color-text-inverted)',
+  background: 'var(--color-background-inverted)'
 }
 
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (

@@ -2,6 +2,7 @@
 @import '../styles/custom-properties.css';
 .root {
   margin: 2em 0 10em;
+  padding: 0 1em;
 }
 
 .headline {
@@ -38,11 +39,14 @@
     bottom: -2rem;
     left: 0;
     margin: -1rem;
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
     overflow: hidden;
     z-index: -1;
-    background: var(--color-navigation);
-    clip-path: inset(2rem 0 2rem 2rem round 1rem);
+    background: var(--color-foreground);
+    clip-path: inset(2rem 0.5rem 2rem 0.5rem round 1rem);
+    @media (--media-min-small) {
+      clip-path: inset(2rem 2rem 2rem 2rem round 1rem);
+    }
     contain: strict;
     transition: clip-path 0.3s ease 0.1s;
   }

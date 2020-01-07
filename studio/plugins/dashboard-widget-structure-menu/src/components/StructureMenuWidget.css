@@ -28,7 +28,6 @@
 .link {
   composes: item from 'part:@sanity/base/theme/layout/selectable-style';
   display: block;
-  border-radius: 2px;
   padding: var(--small-padding);
   text-decoration: none;
   text-align: center;

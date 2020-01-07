@@ -9,7 +9,7 @@
 
 .mainImage {
   position: relative;
-  background: var(--color-navigation);
+  background: var(--color-foreground);
   padding-bottom: calc(9 / 16 * 100%);
   @media (--media-min-medium) {
     padding-bottom: calc(9 / 16 * 100vh);
@@ -28,6 +28,7 @@
     height: 100%;
     vertical-align: top;
     object-fit: cover;
+    border-radius: 0;
     /* @media (--media-min-extralarge) {
       border-radius: 0 0 2rem 2rem;
     } */
@@ -41,6 +42,7 @@
   grid-column-gap: 2em;
   max-width: 680px;
   font-size: var(--font-size-medium);
+  padding: 0 1em;
   /* @media (--media-min-medium) {
     grid-template-columns: 3fr 1fr;
   } */
@@ -65,7 +67,7 @@
 .publishedAt {
   composes: small from './typography.module.css';
   margin: 1.5rem 0 3rem;
-  color: var(--color-text-light);
+  color: var(--color-text-low-contrast);
 }
 
 .categories {
