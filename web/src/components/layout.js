@@ -8,10 +8,7 @@ import styles from './layout.module.css'
 
 const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet"></link>
     <Header siteTitle={siteTitle} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet"></link>
-    <link href="https://fonts.googleapis.com/css?family=Archivo:400,500,600,700&display=swap" rel="stylesheet"></link>
     <div className={styles.content}>{children}</div>
 
     <Container>
