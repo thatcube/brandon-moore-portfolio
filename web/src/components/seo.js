@@ -26,6 +26,10 @@ function SEO ({description, lang, meta, keywords, title}) {
                 content: title
               },
               {
+                property: 'og:image',
+                content: 'https://res.cloudinary.com/thatcube/image/upload/v1578430769/brandon_moore_product_designer.svg'
+              },
+              {
                 property: 'og:description',
                 content: metaDescription
               },
@@ -60,9 +64,11 @@ function SEO ({description, lang, meta, keywords, title}) {
               )
               .concat(meta)}
           />
+          
         )
       }}
     />
+    
   )
 }
 
