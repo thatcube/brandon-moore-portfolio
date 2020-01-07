@@ -13,7 +13,7 @@ import { about } from '../components/about.module.css'
 const AboutPage = () => (
   <>
     <Layout>
-      <SEO title='About Brandon Moore' />
+      <SEO title='About' />
       <Container>
         <section className={about}>
           <div className="row center-v">

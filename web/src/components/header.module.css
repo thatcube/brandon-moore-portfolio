@@ -33,11 +33,12 @@
   @nest & a {
     display: inline-block;
     font-weight: bold;
-    padding: 0.4rem 1rem 0.2rem 1rem;
+    padding: 0.4em 1em 0.1em 1em;
     color: var(--color-text-high-contrast);
     text-decoration: none;
     border: none;
     &:hover {
+      border-radius: calc(var(--border-radius) / 4);
       box-shadow: none;
     }
   }
