@@ -27,7 +27,7 @@ function SEO ({description, lang, meta, keywords, title}) {
               },
               {
                 property: 'og:image',
-                content: 'https://res.cloudinary.com/thatcube/image/upload/v1578430769/brandon_moore_product_designer.svg'
+                content: 'https://res.cloudinary.com/thatcube/image/upload/v1578486635/brandonmoore.io.jpg'
               },
               {
                 property: 'og:description',
