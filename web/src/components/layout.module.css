@@ -10,14 +10,7 @@
 
 .footer {
   display: flex;
-  padding: 2rem 0;
-  @media (--media-min-small) {
-    padding: 4rem 0;
-  }
-  @nest & a {
-    display: inline-block;
-    text-align: center;
-  }
+  padding: 2em 0;
   @nest & ul {
     list-style-type: none;
     margin: 0;
@@ -32,6 +25,7 @@
   background: var(--color-foreground);
   color: var(--color-text);
   padding: 0 2em;
+  margin-top: 10em;
   @media (--media-min-small) {
     margin-bottom: 2em;
     border-radius: var(--border-radius);
