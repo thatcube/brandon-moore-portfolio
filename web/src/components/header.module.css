@@ -1,9 +1,13 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 .root {
-  position: relative;
+  position: sticky;
+  background: rgba(var(--color-background-rgb), 0.8);
+  @media (--media-min-small) {
+    position: relative;
+    background: none;
+  }
   z-index: 100;
-  /* position: sticky; */
   top: 0;
   backdrop-filter: blur(0.5em);
   @media (hover: hover) {
@@ -76,10 +80,7 @@
   }
   @media (--media-max-small) {
     position: absolute;
-    /* background: var(--color-background); */
     background: rgba(var(--color-background-rgb), 1);
-    /* color: var(--color-text-low-contrast); */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); */
     border-top: 0.0625rem solid var(--color-border);
     border-bottom: 0.0625rem solid var(--color-border);
     left: 0;

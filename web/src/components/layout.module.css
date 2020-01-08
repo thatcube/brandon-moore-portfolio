@@ -31,9 +31,8 @@
 .footerWrapper {
   background: var(--color-foreground);
   color: var(--color-text);
-  padding: 0 1em;
+  padding: 0 2em;
   @media (--media-min-small) {
-    padding: 0 2em;
     margin-bottom: 2em;
     border-radius: var(--border-radius);
   }

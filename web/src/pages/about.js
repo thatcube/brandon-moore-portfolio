@@ -6,7 +6,7 @@ import Container from '../components/container'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 
-import { headline, responsiveTitle3 } from '../components/typography.module.css'
+import { headline } from '../components/typography.module.css'
 import { image } from '../components/about.module.css'
 import { about } from '../components/about.module.css'
 

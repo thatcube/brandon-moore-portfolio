@@ -5,6 +5,7 @@ import Container from '../components/container'
 import '../styles/layout.css'
 import '../styles/global.css'
 import styles from './layout.module.css'
+import { headline } from '../components/typography.module.css'
 
 const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
@@ -18,18 +19,18 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
             <div className="col">
               <ul>
                 <li>
-                  <a target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a>
+                  <a className={headline} target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a>
+                  <a className={headline} target="_blank" href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a>
                 </li>
-                <li>
+                <li className={headline}>
                   brandoncmoore4@gmail.com
               </li>
               </ul>
             </div>
             <div className="col">
-              <p>
+              <p className={headline}>
                 Designed and built by me. Copyright whenever, this is <a target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">open source</a>.
             </p>
             </div>
