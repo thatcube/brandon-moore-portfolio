@@ -105,7 +105,7 @@ article {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    margin-top: 1em;
+    padding: 1em 0;
     @media(--media-min-medium) {
         justify-content: flex-end;
         width: 100%;
@@ -119,8 +119,8 @@ article {
     opacity: 0;
 }
 .input_wrapper input[type="checkbox"]+.input_toggle {
-    width: 4.5em;
-    height: 2em;
+    width: 6em;
+    height: 2.8em;
     cursor: pointer;
     background: var(--color-text-low-contrast);
     border-radius: 4em;
@@ -128,15 +128,16 @@ article {
     outline: 0;
     transition: all .2s;
     display: flex;
+    font-size: 10px;
 }
 
 .input_wrapper input[type="checkbox"]+.input_toggle:after {
     position: absolute;
     content: "";
-    top: 0.25em;
-    left: 0.25em;
-    width: 1.5em;
-    height: 1.5em;
+    top: 0.4em;
+    left: 0.4em;
+    width: 2em;
+    height: 2em;
     background: var(--color-background);
     z-index: 2;
     border-radius: 5em;
@@ -145,7 +146,7 @@ article {
 
 .input_wrapper svg {
     position: absolute;
-    top: 0.8em;
+    top: 0.9em;
     transform-origin: 50% 50%;
     fill: #fff;
     transition: all .35s;
@@ -153,15 +154,17 @@ article {
 }
 
 .input_wrapper .is_checked {
-    width: 1em;
-    left: 0.9em;
-    transform: translateX(190%) translateY(-30%) scale(0);
+    width: 2.4em;
+    left: 0.7em;
+    transform: translateX(100%) translateY(-30%) scale(0);
+    opacity: 0;
 }
 
 .input_wrapper .is_unchecked {
-    width: 1em;
-    right: 0.9em;
+    width: 2.4em;
+    right: 0.7em;
     transform: translateX(0) translateY(-30%) scale(1);
+    opacity: 1;
 }
 
 /* Checked State */
@@ -170,22 +173,24 @@ article {
 }
 
 .input_wrapper input[type="checkbox"]:checked+.input_toggle:after {
-    left: calc(100% - 1.8em);
+    left: calc(100% - 2.4em);
     background: var(--color-background-inverted);
 }
 
 .input_wrapper input[type="checkbox"]:checked+.input_toggle .is_checked {
     transform: translateX(0) translateY(-30%) scale(1);
+    opacity: 1;
 }
 
 .input_wrapper input[type="checkbox"]:checked~.input_toggle .is_unchecked {
-    transform: translateX(-190%) translateY(-30%) scale(0);
+    transform: translateX(-100%) translateY(-30%) scale(0);
+    opacity:0;
 }
 
 /* mimic browser focus state */
 .input_wrapper input[type="checkbox"]:focus+.input_toggle {
     outline: auto;
-    outline: -webkit-focus-ring-color auto 5px
+    outline: -webkit-focus-ring-color auto 5px;
 }
 
 .input_wrapper input[type="checkbox"]:hover+.input_toggle {
