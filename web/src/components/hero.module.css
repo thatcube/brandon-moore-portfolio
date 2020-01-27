@@ -18,6 +18,6 @@
     }
     @media (--media-min-extralarge) {
         font-size: 5em;
-        padding: calc(2em + 10vh) 2rem;
+        padding: calc(2em + 9vh) 2rem;
     }
 }

@@ -172,10 +172,13 @@ article {
 }
 
 .input_wrapper input[type="checkbox"]:checked+.input_toggle:after {
-    left: calc(100% - 2.4em);
+    left: calc(100% - 0.4em);
+    transform: translateX(-100%);
     background: var(--color-background-inverted);
 }
-
+.input_wrapper input[type="checkbox"]:active+.input_toggle:after {
+    width: 2.6em;
+}
 .input_wrapper input[type="checkbox"]:checked+.input_toggle .is_checked {
     transform: translateX(0) translateY(-30%) scale(1);
     opacity: 1;
@@ -194,4 +197,5 @@ article {
 
 .input_wrapper input[type="checkbox"]:hover+.input_toggle {
     opacity: 0.75;
+    outline: none;
 }

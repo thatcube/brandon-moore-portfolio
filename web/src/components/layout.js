@@ -16,12 +16,12 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
     <div className="light-boi">
       <footer className={style.social}>
         <Container>
-          <div className="col-1-start col-5-end">
+          <div className="col-1-start col-4-end">
             <p>This site was designed and built by me. </p>
             <p>Copyright whenever, this is <a target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">open source</a>.
             </p>
           </div>
-          <div className="col-6-start col-9-end">
+          <div className="col-4-start col-9-end">
             <ul>
               <li><a target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a></li>
               <li>&nbsp; · &nbsp;</li>
