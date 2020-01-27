@@ -36,14 +36,15 @@
 .branding {
   flex: 1;
   @nest & a {
-    display: inline-block;
+    display: inline-flex;
     font-weight: bold;
-    padding: 0.4em 1em;
+    padding: 0.4em;
     color: var(--color-text-high-contrast);
     text-decoration: none;
     border: none;
+    border-radius: 100%;
     &:hover {
-      border-radius: calc(var(--border-radius) / 4);
+      border-radius: 100%;
       box-shadow: none;
     }
   }

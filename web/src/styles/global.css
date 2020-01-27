@@ -1,4 +1,5 @@
 @import './custom-properties.css';
+@import './custom-media.css';
 button {
     all: unset;
 }
@@ -45,7 +46,7 @@ a {
 }
 
 footer ul {
-    @media(--media-min-small) {
+    @media(--media-min-medium) {
         text-align: right;
     }
 }
@@ -88,6 +89,12 @@ ul {
 section, footer {
     padding: 80px 16px;
     @media (--media-max-medium) {
-        padding: 40px 0;
+        padding: 40px 16px;
+    }
+}
+
+article {
+    @media (--media-max-medium) {
+        padding: 0 16px;
     }
 }
