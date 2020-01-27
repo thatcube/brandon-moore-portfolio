@@ -148,7 +148,6 @@ article {
     position: absolute;
     top: 0.9em;
     transform-origin: 50% 50%;
-    fill: #fff;
     transition: all .35s;
     z-index: 1;
 }

@@ -14,9 +14,10 @@
         font-size: 3em;
     }
     @media (--media-min-medium) {
-        font-size: 5em;
+        font-size: 4.5em;
     }
     @media (--media-min-extralarge) {
         font-size: 5em;
+        padding: calc(2em + 10vh) 2rem;
     }
 }
