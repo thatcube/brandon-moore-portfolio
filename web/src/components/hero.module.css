@@ -2,27 +2,21 @@
 @import '../styles/custom-media.css';
 
 .hero {  
-    color: var(--color-text-low-contrast);
-    line-height: 1.2;
-    font-size: 2em;
+    color: var(--color-text-high-contrast);
+    line-height: 1;
+    font-size: 2.5em;
     margin: 0 auto;
-    padding: 20vh 2rem;
+    padding: calc(1em + 10vh) 2rem;
+    letter-spacing: -0.05em;
     max-width: 1450px; 
-    /* text-align: center; */
-    @nest & span {
-        color: var(--color-text-high-contrast);
-    }
-    @media (--media-min-medium) {
-        font-size: 2.5em;
-        padding: 30vh 2rem;
-        letter-spacing: -0.05em;
-    }
-    @media (--media-min-large) {
-        /* margin: 3em -0.5em; */
+    max-height: 880px;
+    @media (--media-min-small) {
         font-size: 3em;
     }
+    @media (--media-min-medium) {
+        font-size: 5em;
+    }
     @media (--media-min-extralarge) {
-        /* margin: 4em -2em; */
-        font-size: 4em;
+        font-size: 5.5em;
     }
 }

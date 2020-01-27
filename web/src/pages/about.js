@@ -6,44 +6,48 @@ import Container from '../components/container'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 
-import { headline } from '../components/typography.module.css'
-import { image } from '../components/about.module.css'
-import { about } from '../components/about.module.css'
+import style from '../components/about.module.css'
+import styles from '../components/social.module.css'
+import Wave from '../components/wave';
 
 const AboutPage = () => (
   <>
     <Layout>
       <SEO title='About' />
-      <Container>
-        <section className={about}>
-          <div className="row center-v">
-            <div className="light-boi">
-              <div className="col col-66">
-                <h1 className="sr-only">About Brandon Moore</h1>
-                <p className={headline}><span>I'm Brandon — currently creating products built for everyone at CBORD.</span></p>
-                <p className={headline}>I'm passionate about accessibility and I'm not afraid to challenge the status quo. I'm a huge supporter of <a target="_blank" href="http://universaldesign.ie/What-is-Universal-Design/">Universal Design</a> and the <a target="_blank" href="https://a11yproject.com/">A11y Project</a>. I've spent a lot of time establishing design and development standards across the company that encourage accessibility best-practices.</p>
-                <p></p>
-              </div>
-              <div className="col">
-                <img className={image} alt="Photo of Brandon Moore" src="https://res.cloudinary.com/thatcube/image/upload/v1571149978/brandon_moore_mht0vq.jpg"></img>
-              </div>
+      <div className="light-boi">
+        <section className={styles.root}>
+          <Container>
+            <div className="col-7-end col-1-start headline">
+              <h1 data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className={styles.title}>Striving to create products built for all people</h1>
+              <ul data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className={styles.social}>
+                <li><a  target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a></li>
+                <li>&nbsp; · &nbsp;</li>
+                <li><a target="_blank" href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a></li>
+                <li>&nbsp; · &nbsp;</li>
+                <li>brandoncmoore4@gmail.com</li>
+              </ul>
             </div>
-          </div>
-        </section>
-      </Container>
-      <Container>
-        <section className={about}>
-          <div className="row center-v padding-h">
-            <div className="col">
-              <h2 className="sr-only"><span>What makes me, me?</span></h2>
-              <p className={headline}>Been listening to a lot of <a target="_blank" href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO0Tiwvu?si=jGCJSHxoQ7mOl5W3ljsH-g">BROCKHAMPTON</a></p>
-              <p className={headline}>Love small form factor PC builds, <a target="_blank" href="https://pcpartpicker.com/user/justimpressive/saved/GTFBZL">just rebuilt my PC</a></p>
-              <p className={headline}>I run a lot, play pickup volleyball every Wednesday, and enjoy soccer when it isn't snowing.</p>
+            <div className="col-7-start col-9-end">
+              <img data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className={style.image} alt="Photo of Brandon Moore" src="https://res.cloudinary.com/thatcube/image/upload/v1571149978/brandon_moore_mht0vq.jpg"></img>
             </div>
-            <div className="col"></div>
-          </div>
+          </Container>
         </section>
-      </Container>
+      </div>
+
+      <section className={style.about}>
+        <Container>
+          <div className="col-3-start col-7-end headline">
+            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="150">Hey there! 👋</p>
+          </div>
+          <div className="col-3-start col-7-end row-2-start headline">
+            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="150">I’m Brandon, a Product Designer at CBORD working on its consumer-facing products.</p>
+            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="150">I believe in a web for everyone and I constantly try to reinforce this belief in my design work. I aim to create products that go beyond simply understanding the users’ goals. I try to understand their personal circumstances; their challenges, their environment, their abilities, and their access to technology.</p>
+            
+            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="150">I have a bachelor’s degree in web development from Alfred State and started my career as a front-end developer. However, I quickly realized that my passion was in the design space. I still write code from time to time and especially enjoy some well-crafted CSS.</p>
+            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="150">Outside of design, some passions of mine are running, music, mechanical keyboards, small form factor PCs, and soccer.</p>
+          </div>
+        </Container>
+      </section>
     </Layout>
   </>
 )

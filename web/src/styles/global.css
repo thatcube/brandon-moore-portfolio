@@ -19,18 +19,17 @@ a {
     @nest &:hover {
         color: var(--color-text-inverted);
         background: var(--color-background-inverted);
-        box-shadow: 0 -0.1em 0 0.25em var(--color-background-inverted);
+        box-shadow: 0 0.05em 0 0.25em var(--color-background-inverted);
         border-radius: 0.1em;
         border-color: var(--color-background-inverted);
         text-decoration: none;
-    } 
+    }
 }
 
 .center-v {
-    height: 100%;
-    display: flex;
     align-items: center;
 }
+
 .padding-h {
     padding-left: 2em;
     padding-right: 2em;
@@ -38,60 +37,20 @@ a {
 
 .light-boi {
     background: var(--color-foreground);
-    @media (min-width: 676px) {
-        display: flex;
-        border-radius: var(--border-radius);
-    }
-    padding: 2em;
-    align-items: center;
     position: relative;
-}
-::selection {
-    color: var(--color-white);
-    background: var(--color-accent);
 }
 
 .tl-edges {
     overflow: visible;
 }
 
+footer ul {
+    @media(--media-min-small) {
+        text-align: right;
+    }
+}
+
 /* GRID system */
-
-.container {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.row {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.col {
-    flex: 1;
-    @media (max-width: 675px) {
-        width: 100% !important;
-    }
-}
-
-.col-66 {
-    width: 66.6666666%;
-    flex: none;
-}
-
-.col-75 {
-    width: 75%;
-    flex: none;
-}
-
-@media (max-width: 675px) {
-    .row {
-        display: block;
-        /* flex: none; */
-    }
-}
 
 .sr-only {
     position: absolute;
@@ -108,4 +67,27 @@ a {
 
 img {
     border-radius: var(--border-radius);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.headline {
+    font-size: var(--font-title3-size);
+    @media (--media-min-small) {
+        font-size: var(--font-title2-size);
+    }
+    /* @nest & a {
+        color: var(--color-text-low-contrast);
+        border-color: var(--color-text-low-contrast);
+    } */
+}
+
+section, footer {
+    padding: 80px 16px;
+    @media (--media-max-medium) {
+        padding: 40px 0;
+    }
 }

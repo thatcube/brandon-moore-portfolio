@@ -1,0 +1,7 @@
+.social li {
+    display: inline-block;
+    margin-top: 1em;
+}
+.title {
+    composes: responsiveTitle1 from './typography.module.css';
+}

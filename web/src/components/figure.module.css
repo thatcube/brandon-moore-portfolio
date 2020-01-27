@@ -3,9 +3,9 @@
 
 .root {
   margin: 2rem 0;
-  @media (--media-min-extralarge) {
+  /* @media (--media-min-extralarge) {
     margin: 2rem -10rem;
-  }
+  } */
 
   @nest & figcaption {
     font-size: var(--font-small-size);

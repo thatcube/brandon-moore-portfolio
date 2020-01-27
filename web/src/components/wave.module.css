@@ -1,0 +1,17 @@
+@import '../styles/custom-properties.css';
+@import '../styles/custom-media.css';
+
+.top {
+    position: absolute;
+    left:0;
+    width: 100%;
+    top:0;
+    fill: var(--color-background);
+}
+.bottom {
+    position: absolute;
+    left:0;
+    width: 100%;
+    bottom:0;
+    fill: var(--color-background);
+}

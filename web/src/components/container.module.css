@@ -1,10 +1,25 @@
 @import '../styles/custom-media.css';
 
-.root {
+/* .root {
   box-sizing: border-box;
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 1em;
   @media (--media-min-extralarge) {
     max-width: 1150px;
+  }
+} */
+
+.root {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  margin: 0 auto;
+  grid-column-gap: 32px;
+  grid-row-gap: 24px;
+  max-width: 1152px;
+  align-items: center;
+  @media (--media-max-medium) {
+    display: block;
   }
 }

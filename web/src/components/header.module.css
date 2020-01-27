@@ -22,10 +22,11 @@
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 960px;
-  padding: 0.5em;
+  padding: 0.5em 16px;
   display: flex;
-  @media (--media-min-small) {
-    padding: 1em;
+  align-items: center;
+  @media (--media-min-medium) {
+    padding: 2em 0;
   }
   @media (--media-min-extralarge) {
     max-width: 1150px;
@@ -37,7 +38,7 @@
   @nest & a {
     display: inline-block;
     font-weight: bold;
-    padding: 0.4em 1em 0.1em 1em;
+    padding: 0.4em 1em;
     color: var(--color-text-high-contrast);
     text-decoration: none;
     border: none;
@@ -105,7 +106,7 @@
       justify-content: flex-end;
     }
     @nest & ul li a {
-      padding: 0.4em 1em 0.1em 1em;
+      padding: 0.4em 1em;
       border: none;
       border-radius: calc(var(--border-radius) / 4)
     }

@@ -48,22 +48,6 @@
   } */
 }
 
-/* .mainContent {
-  @nest & a {
-    transition: all 0.2s ease-in 0s;
-    color: var(--color-accent);
-
-    @media (hover: hover) {
-      @nest &:hover {
-        color: inherit;
-      }
-    }
-  }
-} */
-
-.metaContent {
-}
-
 .publishedAt {
   composes: small from './typography.module.css';
   margin: 1.5rem 0 3rem;
@@ -117,19 +101,3 @@
   composes: base from './typography.module.css';
   margin: 0.5rem 0 0;
 }
-/* 
-p, ul {
-  font-size: var(--font-base-size);
-  line-height: var(--font-base-line-height);
-  margin: 0.5rem 0 1rem 0;
-
-  @media (--media-min-small) {
-    font-size: var(--font-base-size);
-    line-height: var(--font-base-line-height);
-  }
-
-  @media (--media-min-medium) {
-    font-size: var(--font-large-size);
-    line-height: var(--font-large-line-height);
-  }
-} */
