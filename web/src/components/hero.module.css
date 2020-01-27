@@ -17,6 +17,6 @@
         font-size: 5em;
     }
     @media (--media-min-extralarge) {
-        font-size: 5.5em;
+        font-size: 5em;
     }
 }

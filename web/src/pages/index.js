@@ -87,7 +87,7 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <h1 className={hero}>Brandon Moore is a Product Designer creating inclusive experiences at CBORD</h1>
+      <h1 className={hero}>Brandon Moore is a Product Designer creating inclusive experiences</h1>
       <Container>
         <div className="col-1-start col-9-end">
         {projectNodes && (

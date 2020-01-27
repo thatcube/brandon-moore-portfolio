@@ -1,5 +1,5 @@
 @import './fonts.css';
-:root {
+:root, body.light {
   --font-family-sans: "Inria Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
@@ -55,18 +55,16 @@
   --border-radius: calc( 16 / var(--unit) * 1rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #050505;
-    --color-background-rgb: 5, 5, 5;
-    --color-background-inverted: var(--color-white);
-    --color-foreground: #1f1f1f;
+body.dark {
+  --color-background: #050505;
+  --color-background-rgb: 5, 5, 5;
+  --color-background-inverted: var(--color-white);
+  --color-foreground: #1f1f1f;
 
-    --color-border: #282430;
-    --color-accent: #857bed;
-    --color-text: rgba(255, 255, 255, 0.80);
-    --color-text-low-contrast: rgba(255, 255, 255, 0.6);
-    --color-text-high-contrast: var(--color-white);
-    --color-text-inverted: var(--color-black);
-  }
+  --color-border: #282430;
+  --color-accent: #857bed;
+  --color-text: rgba(255, 255, 255, 0.80);
+  --color-text-low-contrast: rgba(255, 255, 255, 0.6);
+  --color-text-high-contrast: var(--color-white);
+  --color-text-inverted: var(--color-black);
 }

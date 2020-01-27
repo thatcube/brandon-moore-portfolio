@@ -13,6 +13,7 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-transition-link',
+    'gatsby-plugin-dark-mode',
     {
       resolve: 'gatsby-source-sanity',
       options: {
