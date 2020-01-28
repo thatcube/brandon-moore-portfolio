@@ -18,14 +18,14 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
         <Container>
           <div className="col-1-start col-4-end">
             <p>This site was designed and built by me. </p>
-            <p>Copyright whenever, this is <a target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">open source</a>.
+            <p>Copyright whenever, this is <a className="link" target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">open source</a>.
             </p>
           </div>
           <div className="col-4-start col-9-end">
             <ul>
-              <li><a target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a></li>
+              <li><a className="link" target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a></li>
               <li>&nbsp; · &nbsp;</li>
-              <li><a target="_blank" href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a></li>
+              <li><a className="link" target="_blank" href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a></li>
               <li>&nbsp; · &nbsp;</li>
               <li>brandoncmoore4@gmail.com</li>
             </ul>
@@ -36,7 +36,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
                   <input
                     id="darkModeToggle"
                     type="checkbox"
-                    className="switch_4"
+                    className="sr-only"
                     onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
                     checked={theme === 'dark'}
                   />

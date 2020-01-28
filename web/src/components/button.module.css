@@ -1,8 +1,7 @@
 @import '../styles/custom-properties.css';
-
 .button {
     color: var(--color-text);
-    border: 0.0625rem solid var(--color-border);
+    background: var(--color-foreground);
     padding: 0.5rem 1rem;
     border-radius: calc(var(--border-radius) / 2);
     text-decoration: none;
@@ -11,5 +10,10 @@
     &:hover {
         box-shadow: none;
         border-radius: calc(var(--border-radius) / 2);
+        background: var(--color-background-inverted);
+        color: var(--color-text-inverted);
+    }
+    &:active {
+        background: var(--color-text-low-contrast);
     }
 }

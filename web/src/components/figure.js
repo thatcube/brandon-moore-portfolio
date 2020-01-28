@@ -10,7 +10,7 @@ export default ({ node }) => {
     return null
   }
 
-  const fluidProps = getFluidGatsbyImage(node.asset._ref, { maxWidth: 1000 }, clientConfig.sanity)
+  const fluidProps = getFluidGatsbyImage(node.asset._ref, { maxWidth: 2000 }, clientConfig.sanity)
 
   return (
     <div className="col-1-start col-9-end">

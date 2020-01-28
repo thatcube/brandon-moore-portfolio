@@ -51,13 +51,14 @@
 }
 
 .toggleNavButton {
-  @media (--media-min-small) {
+  /* @media (--media-min-small) { */
     display: none;
-  }
+  /* } */
 }
 
+/* nav menu */
 .nav {
-  display: none;
+  /* display: none; */
   font-weight: bold;
   @nest & ul {
     margin: 0;
@@ -80,7 +81,7 @@
     overflow: hidden;
     visibility: hidden;
   }
-  @media (--media-max-small) {
+  /* @media (--media-max-small) {
     position: absolute;
     background: rgba(var(--color-background-rgb), 1);
     border-top: 0.0625rem solid var(--color-border);
@@ -96,8 +97,8 @@
       margin: 0;
       border: none;
     }
-  }
-  @media (--media-min-small) {
+  } */
+  /* @media (--media-min-small) { */
     display: block;
     @nest & ul {
       list-style: none;
@@ -111,7 +112,7 @@
       border: none;
       border-radius: calc(var(--border-radius) / 4)
     }
-  }
+  /* } */
 }
 
 .showNav {

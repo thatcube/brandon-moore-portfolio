@@ -1,6 +1,5 @@
 import { format, distanceInWords, differenceInDays } from 'date-fns'
 import React from 'react'
-import { Link } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { buildImageObj } from '../lib/helpers'
 import { imageUrlFor } from '../lib/image-url'
