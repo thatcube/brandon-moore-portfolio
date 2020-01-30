@@ -8,7 +8,6 @@ import Layout from '../containers/layout'
 
 import style from '../components/about.module.css'
 import styles from '../components/social.module.css'
-import Wave from '../components/wave';
 
 const AboutPage = () => (
   <>

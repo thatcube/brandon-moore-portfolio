@@ -11,6 +11,27 @@ export default {
       type: 'string'
     },
     {
+      name: 'shortdesc',
+      title: 'Short description should be same as excerpt',
+      type: 'string'
+    },
+    {
+      name: 'role',
+      title: 'My Role(s)',
+      type: 'string'
+    },
+    {
+      name: 'timeframe',
+      title: 'Timeframe/Duration for project',
+      type: 'string',
+      description: 'i.e. 6 Weeks, 8 Months, etc'
+    },
+    {
+      name: 'when',
+      title: 'When did dis happen',
+      type: 'string'
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',

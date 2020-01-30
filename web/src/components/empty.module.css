@@ -6,4 +6,5 @@
   @nest & svg {
     width: 100%;
   }
+  min-height: calc(90vh - 116px);
 }

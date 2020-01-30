@@ -10,7 +10,7 @@ import {responsiveTitle2} from './typography.module.css'
 
 function ProjectPreview (props) {
   return (
-    <AniLink fade duration={0.25} className={styles.root} to={`/project/${props.slug.current}`}>
+    <AniLink fade duration={0.25} className={styles.root} to={`/${props.slug.current}`}>
       <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
           <img

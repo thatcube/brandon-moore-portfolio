@@ -45,6 +45,10 @@ export const query = graphql`
         alt
       }
       title
+      role
+      timeframe
+      when
+      shortdesc
       slug {
         current
       }

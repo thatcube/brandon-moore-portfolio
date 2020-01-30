@@ -197,7 +197,6 @@ article {
 }
 
 /* mimic browser focus state */
-
 .input_wrapper input[type="checkbox"]:focus+.input_toggle {
     outline: auto;
     outline: -webkit-focus-ring-color auto 5px;
@@ -205,4 +204,16 @@ article {
 
 .input_wrapper input[type="checkbox"]:hover+.input_toggle {
     outline: none;
+}
+
+.project-header {
+    margin-top: 3em;
+    font-size: 1.25em;
+    @nest & div {
+        grid-row-gap: 8px;
+    }
+}
+.project-header-caption {
+    color: var(--color-text-low-contrast);
+    font-size: 0.75em;;
 }
