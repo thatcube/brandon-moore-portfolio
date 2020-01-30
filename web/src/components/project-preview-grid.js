@@ -19,7 +19,7 @@ function ProjectPreviewGrid (props) {
       </ul>
       {props.browseMoreHref && (
         <div className={styles.browseMoreNav}>
-          <AniLink fade duration={0.5} to={props.browseMoreHref}>Browse more</AniLink>
+          <AniLink fade duration={0.25} to={props.browseMoreHref}>Browse more</AniLink>
         </div>
       )}
     </div>
