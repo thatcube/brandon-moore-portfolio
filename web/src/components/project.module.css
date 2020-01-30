@@ -21,6 +21,12 @@
     @media(--media-min-medium) {
       border-radius: var(--border-radius) 0 0 var(--border-radius);
     }
+    @media (--media-max-extralarge) {
+      margin-left: 16px;
+    }
+    @media (--media-max-medium) {
+      margin-left: 0;
+    }
   }
 }
 

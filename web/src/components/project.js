@@ -20,9 +20,9 @@ function Project(props) {
             <h1 className={styles.title}>{title}</h1>
           </span>
           <span className="row-2-start col-1-start col-5-end">{shortdesc}</span>
-          <span className="col-5-start col-7-end"><span className="project-header-caption">Role:</span><br /> {role}</span>
-          <span className="col-7-start"><span className="project-header-caption">Duration:</span><br /> {timeframe}</span>
-          <span className="col-8-start"><span className="project-header-caption">When:</span><br /> {when}</span>
+          <span className="col-5-start col-7-end"><span className="project-header-caption">Role:</span>{role}</span>
+          <span className="col-7-start"><span className="project-header-caption">Duration:</span>{timeframe}</span>
+          <span className="col-8-start"><span className="project-header-caption">When:</span>{when}</span>
         </Container>
       </aside>
       {props.mainImage && mainImage.asset && (
