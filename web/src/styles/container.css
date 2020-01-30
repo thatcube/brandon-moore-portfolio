@@ -1,5 +1,4 @@
 @import './custom-media.css';
-
 .col-1-start {
     grid-column-start: 1;
 }
@@ -71,6 +70,7 @@
 .row-1-start {
     grid-row-start: 1;
 }
+
 .row-2-start {
     grid-row-start: 2;
 }
@@ -78,6 +78,7 @@
 .row-1-end {
     grid-row-end: 1;
 }
+
 .row-2-end {
     grid-row-end: 2;
 }
@@ -96,5 +97,12 @@
     @nest & p, & h1, & h2, & h3, & h4, & ul {
         grid-column-start: 3;
         grid-column-end: 7;
+    }
+    @nest & h2, & h3 {
+        margin: 1.5em 0 0 0;
+        color: var(--color-text-high-contrast)
+    }
+    @nest & h2+p {
+        margin-top: 0.5em;
     }
 }
