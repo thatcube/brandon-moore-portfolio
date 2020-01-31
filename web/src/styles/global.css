@@ -9,7 +9,7 @@ button {
     line-height: 1.5;
     position: relative;
     text-decoration: underline;
-    transition: .1s ease all;
+    transition: .15s ease all;
     padding: 0.25em;
     margin: -0.25em;
     border-radius: 0.375em;
@@ -230,6 +230,15 @@ article {
 .headroom {
     z-index: 100 !important;
     padding: 0.5em 16px;
+    @nest & a {
+        transition: .15s ease all;
+        &:hover {
+            background: rgba(var(--color-background-inverted-rgb), 0.1);
+        }
+        &:active {
+            background: rgba(var(--color-background-inverted-rgb), 0.2);
+        }
+    }
     @media (--media-min-medium) {
         padding: 1em 0;
     }
@@ -242,6 +251,6 @@ article {
     @media (--media-min-medium) {
         background: var(--color-foreground);
         padding: 1em 0;
-        box-shadow: 0 0 1.5em rgba(0,0,0, 0.25);
+        box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.25);
     }
 }

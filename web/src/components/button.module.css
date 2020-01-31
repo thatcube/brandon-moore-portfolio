@@ -11,6 +11,7 @@
     text-decoration: none;
     font-size: var(--font-small);
     font-weight: bold;
+    transition: .15s ease all;
     &:hover {
         box-shadow: none;
         border-radius: calc(var(--border-radius) * 2);

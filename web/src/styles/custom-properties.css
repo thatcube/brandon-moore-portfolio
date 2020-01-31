@@ -11,6 +11,7 @@
   --color-accent: #675ae8;
   --color-background: var(--color-white);
   --color-background-inverted: var(--color-black);
+  --color-background-inverted-rgb: 5, 5, 5;
   --color-background-rgb: 247, 246, 248;
   --color-foreground: #eeeeee;
   
@@ -59,6 +60,7 @@ body.dark {
   --color-background: #050505;
   --color-background-rgb: 5, 5, 5;
   --color-background-inverted: var(--color-white);
+  --color-background-inverted-rgb: 255, 255, 255;
   --color-foreground: #1f1f1f;
 
   --color-border: #282430;
