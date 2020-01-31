@@ -13,7 +13,7 @@ import { button } from './button.module.css'
 function Project(props) {
   const { _rawBody, title, shortdesc, role, timeframe, when, _rawExcerpt, categories, mainImage, members, publishedAt, relatedProjects } = props
   return (
-    <article data-sal="fade" data-sal-easing="ease" data-sal-duration="1000" data-sal-delay="0" className={styles.root}>
+    <article data-sal="fade" data-sal-easing="easeInOutSine" data-sal-duration="1000" data-sal-delay="0" className={styles.root}>
       <aside className="project-header">
         <Container>
           <span className="row-1-start col-1-start col-7-end">
