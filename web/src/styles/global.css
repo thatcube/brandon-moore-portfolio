@@ -230,7 +230,7 @@ article {
 .headroom {
     z-index: 100 !important;
     padding: 0.5em 16px;
-    transition: background 0.2s ease-in-out 0s;
+    transition: background 0.2s ease-in-out 0s, box-shadow 0.2s ease-in-out;
     @nest & a {
         transition: .15s ease all;
         &:hover {
