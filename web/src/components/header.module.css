@@ -2,14 +2,14 @@
 @import '../styles/custom-properties.css';
 .root {
   position: sticky;
-  background: rgba(var(--color-background-rgb), 0.8);
+  
   @media (--media-min-small) {
     position: relative;
     background: none;
   }
   z-index: 100;
   top: 0;
-  backdrop-filter: blur(0.5em);
+  
   @media (hover: hover) {
     @nest & a:hover {
       color: var(--color-text);
@@ -22,12 +22,8 @@
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 960px;
-  padding: 0.5em 16px;
   display: flex;
   align-items: center;
-  @media (--media-min-medium) {
-    padding: 2em 0;
-  }
   @media (--media-min-extralarge) {
     max-width: 1150px;
   }

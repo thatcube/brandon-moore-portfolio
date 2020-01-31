@@ -197,6 +197,7 @@ article {
 }
 
 /* mimic browser focus state */
+
 .input_wrapper input[type="checkbox"]:focus+.input_toggle {
     outline: auto;
     outline: -webkit-focus-ring-color auto 5px;
@@ -207,7 +208,6 @@ article {
 }
 
 .project-header {
-    
     font-size: 1.25em;
     @nest & div {
         grid-row-gap: 8px;
@@ -217,6 +217,7 @@ article {
     }
     margin-top: 3em;
 }
+
 .project-header-caption {
     color: var(--color-text-low-contrast);
     font-size: 0.75em;
@@ -224,4 +225,21 @@ article {
     @media (--media-max-medium) {
         margin-top: 1em;
     }
+}
+
+.headroom {
+    z-index: 100 !important;
+    padding: 0.5em 16px;
+    @media (--media-min-medium) {
+        padding: 2em 0;
+    }
+}
+
+.headroom--pinned {
+    background: rgba(var(--color-background-rgb), 0.8);
+    backdrop-filter: blur(0.5em);
+    @media (--media-min-medium) {
+        background: var(--color-foreground);
+    }
+    padding: 0.5em 16px;
 }
