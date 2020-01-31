@@ -1,5 +1,4 @@
 import {Link} from 'gatsby'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import React from 'react'
 import ProjectPreview from './project-preview'
 
@@ -12,14 +11,14 @@ function ProjectPreviewGrid (props) {
       <ul className={styles.grid}>
         {props.nodes &&
           props.nodes.map(node => (
-            <li data-sal="fade" data-sal-easing="ease" data-sal-duration="1000" data-sal-delay="0" key={node.id}>
+            <li data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0" key={node.id}>
               <ProjectPreview {...node} />
             </li>
           ))}
       </ul>
       {props.browseMoreHref && (
         <div className={styles.browseMoreNav}>
-          <AniLink fade duration={0.25} to={props.browseMoreHref}>Browse more</AniLink>
+          <Link to={props.browseMoreHref}>Browse more</Link>
         </div>
       )}
     </div>

@@ -231,15 +231,17 @@ article {
     z-index: 100 !important;
     padding: 0.5em 16px;
     @media (--media-min-medium) {
-        padding: 2em 0;
+        padding: 1em 0;
     }
 }
 
 .headroom--pinned {
     background: rgba(var(--color-background-rgb), 0.8);
     backdrop-filter: blur(0.5em);
+    padding: 0.5em 16px;
     @media (--media-min-medium) {
         background: var(--color-foreground);
+        padding: 1em 0;
+        box-shadow: 0 0 1.5em rgba(0,0,0, 0.25);
     }
-    padding: 0.5em 16px;
 }

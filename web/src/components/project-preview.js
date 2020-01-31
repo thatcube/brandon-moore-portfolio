@@ -1,5 +1,4 @@
 import {Link} from 'gatsby'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import React from 'react'
 import {cn, buildImageObj} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
@@ -10,7 +9,7 @@ import {responsiveTitle2} from './typography.module.css'
 
 function ProjectPreview (props) {
   return (
-    <AniLink fade duration={0.25} className={styles.root} to={`/${props.slug.current}`}>
+    <Link className={styles.root} to={`/${props.slug.current}`}>
       <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
           <img
@@ -30,7 +29,7 @@ function ProjectPreview (props) {
         </div>
       )}
       </div>
-    </AniLink>
+    </Link>
   )
 }
 
