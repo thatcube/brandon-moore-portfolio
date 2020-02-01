@@ -1,15 +1,6 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
-.root {
-  position: sticky;
-  
-  @media (--media-min-small) {
-    position: relative;
-    background: none;
-  }
-  z-index: 100;
-  top: 0;
-  
+.root {  
   @media (hover: hover) {
     @nest & a:hover {
       color: var(--color-text);
@@ -45,15 +36,7 @@
   }
 }
 
-.toggleNavButton {
-  /* @media (--media-min-small) { */
-    display: none;
-  /* } */
-}
-
-/* nav menu */
 .nav {
-  /* display: none; */
   font-weight: bold;
   @nest & ul {
     margin: 0;
@@ -68,32 +51,6 @@
       box-shadow: none;
     }
   }
-  @nest & ul li a:after {
-    display: block;
-    content: attr(title);
-    font-weight: bold;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-  }
-  /* @media (--media-max-small) {
-    position: absolute;
-    background: rgba(var(--color-background-rgb), 1);
-    border-top: 0.0625rem solid var(--color-border);
-    border-bottom: 0.0625rem solid var(--color-border);
-    left: 0;
-    right: 0;
-    top: 4.2rem;
-    @nest & ul {
-      padding: 1.5rem 0;
-    }
-    @nest & ul li a {
-      padding: 1rem 1.5rem;
-      margin: 0;
-      border: none;
-    }
-  } */
-  /* @media (--media-min-small) { */
     display: block;
     @nest & ul {
       list-style: none;
@@ -107,9 +64,4 @@
       border: none;
       border-radius: calc(var(--border-radius) / 4)
     }
-  /* } */
-}
-
-.showNav {
-  display: block;
 }
