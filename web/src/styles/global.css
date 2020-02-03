@@ -259,3 +259,6 @@ article {
 .z-index {
     z-index: 2;
 }
+img {
+    background: var(--color-image-background);
+}

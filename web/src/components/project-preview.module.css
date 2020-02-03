@@ -31,6 +31,7 @@
   background: var(--color-foreground);
   border-radius: var(--border-radius);
   overflow: hidden;
+  box-shadow: 0 0 0.0625em 0 rgba(0,0,0, 0.15);
   @nest & img {
     position: absolute;
     top: 0;

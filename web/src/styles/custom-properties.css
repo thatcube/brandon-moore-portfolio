@@ -17,6 +17,9 @@
 
   --color-background-rgb: 255, 255, 255;
   --color-foreground: rgb(242, 242, 242);
+  --color-foreground-rgb: 242, 242, 242;
+
+  --color-image-background: rgb(248, 248, 248);
   
   --color-text: rgba(var(--color-black-rgb), 0.87);
   --color-text-low-contrast: rgba(var(--color-black-rgb), 0.63);
@@ -67,6 +70,8 @@ body.dark {
 
   --color-foreground: rgb(44, 52, 60);
   --color-foreground-rgb: 44, 52, 60;
+
+  --color-image-background: rgb(37, 43, 49);
 
   --color-border: rgba(var(--color-white-rgb), 0.1);
   --color-accent: #857bed;
