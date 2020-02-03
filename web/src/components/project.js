@@ -29,10 +29,10 @@ function Project(props) {
         <div className={styles.mainImage}>
           <img
             src={imageUrlFor(buildImageObj(mainImage))
-              .width(3000)
-              .height(Math.floor((9 / 16) * 3000))
+              .width(2000)
+              .height(Math.floor((9 / 16) * 2000))
               .fit('crop')
-              .auto("format")
+              .auto('format')
               .url()}
             alt={mainImage.alt}
           />
