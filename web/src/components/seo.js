@@ -27,7 +27,7 @@ function SEO ({description, lang, meta, keywords, title}) {
               },
               {
                 property: 'og:image',
-                content: 'https://res.cloudinary.com/thatcube/image/upload/v1578486635/brandonmoore.io.jpg'
+                content: 'https://res.cloudinary.com/thatcube/image/upload/v1580761723/brandon-moore-portfolio-meta.jpg'
               },
               {
                 property: 'og:description',
