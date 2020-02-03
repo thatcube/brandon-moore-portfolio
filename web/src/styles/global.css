@@ -19,7 +19,6 @@ button {
     @nest &:hover {
         color: var(--color-text-inverted);
         background: var(--color-background-inverted);
-        border-color: var(--color-background-inverted);
         text-decoration: none;
     }
 }
@@ -256,4 +255,7 @@ article {
         padding: 1em 0;
         box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.25);
     }
+}
+.z-index {
+    z-index: 2;
 }

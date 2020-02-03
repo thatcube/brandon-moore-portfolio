@@ -4,23 +4,26 @@
   --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* don't reference these */
-  --color-black: #202123;
-  --color-white: #fff;
+  --color-black: rgb(29, 34, 37);
+  --color-black-rgb: 29, 34, 37;
+  --color-white: rgb(255, 255, 255);
+  --color-white-rgb: 255, 255, 255;
 
   /* reference these ones */
   --color-accent: #675ae8;
   --color-background: var(--color-white);
   --color-background-inverted: var(--color-black);
-  --color-background-inverted-rgb: 5, 5, 5;
-  --color-background-rgb: 247, 246, 248;
-  --color-foreground: #eeeeee;
+  --color-background-inverted-rgb: 29, 34, 37;
+
+  --color-background-rgb: 255, 255, 255;
+  --color-foreground: rgb(242, 242, 242);
   
-  --color-text: rgba(0, 0, 0, 0.87);
-  --color-text-low-contrast: rgba(0, 0, 0, 0.55);
+  --color-text: rgba(var(--color-black-rgb), 0.87);
+  --color-text-low-contrast: rgba(var(--color-black-rgb), 0.63);
   --color-text-high-contrast: var(--color-black);
   --color-text-inverted: var(--color-white);
   
-  --color-border: #d0cad6;
+  --color-border: rgba(var(--color-black-rgb), 0.1);
 
   /* Typography */
   --unit: 16;
@@ -57,16 +60,20 @@
 }
 
 body.dark {
-  --color-background: #050505;
-  --color-background-rgb: 5, 5, 5;
+  --color-background: var(--color-black);
+  --color-background-rgb: var(--color-black-rgb);
   --color-background-inverted: var(--color-white);
-  --color-background-inverted-rgb: 255, 255, 255;
-  --color-foreground: #1f1f1f;
+  --color-background-inverted-rgb: var(--color-white-rgb);
 
-  --color-border: #282430;
+  --color-foreground: rgb(44, 52, 60);
+  --color-foreground-rgb: 44, 52, 60;
+
+  --color-border: rgba(var(--color-white-rgb), 0.1);
   --color-accent: #857bed;
-  --color-text: rgba(255, 255, 255, 0.80);
-  --color-text-low-contrast: rgba(255, 255, 255, 0.6);
+  
+  --color-text-low-contrast: rgba(var(--color-white-rgb), 0.6);
+  --color-text: rgba(var(--color-white-rgb), 0.8);
   --color-text-high-contrast: var(--color-white);
+
   --color-text-inverted: var(--color-black);
 }

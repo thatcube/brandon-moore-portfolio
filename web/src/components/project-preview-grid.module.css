@@ -45,32 +45,4 @@
     clip-path: inset(0 0 2rem 0 round 1rem);
     transition-delay: 0s;
   }
-  /* grid-gap: 2em; */
-  /* @media (--media-min-small) {
-    /* grid-template-columns: 1fr 1fr; */
-  /* grid-gap: 5em;
-  } */
-  /*
-  @media (--media-min-medium) {
-    grid-template-columns: 1fr 1fr;
-  } */
-}
-
-.browseMoreNav {
-  composes: small from './typography.module.css';
-  margin-top: 1rem;
-  text-align: right;
-  @nest & a {
-    display: inline-block;
-    padding: 0.5rem 0;
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.1s ease-in 0s;
-    border: none;
-    @media (hover: hover) {
-      @nest &:hover {
-        color: var(--color-accent);
-      }
-    }
-  }
 }

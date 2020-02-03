@@ -14,7 +14,7 @@ const AboutPage = () => (
       <div className="light-boi">
         <section className={styles.root}>
           <Container>
-            <div className="col-7-end col-1-start headline">
+            <div className="z-index row-1-start col-7-end col-1-start headline">
               <h1 data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className={styles.title}>Striving to create products built for all people</h1>
               <ul data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className={styles.social}>
                 <li><a className="link" target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a></li>
@@ -24,7 +24,7 @@ const AboutPage = () => (
                 <li>brandoncmoore4@gmail.com</li>
               </ul>
             </div>
-            <div className="col-7-start col-9-end">
+            <div className="row-1-start col-7-start col-9-end">
               <img data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className={style.image} alt="Photo of Brandon Moore" src="https://res.cloudinary.com/thatcube/image/upload/v1571149978/brandon_moore_mht0vq.jpg"></img>
             </div>
           </Container>
