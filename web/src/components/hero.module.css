@@ -3,7 +3,7 @@
 
 .hero {  
     color: var(--color-text-high-contrast);
-    line-height: 1;
+    line-height: 1.1;
     font-size: 2.5em;
     margin: 0 auto;
     padding: calc(1em + 10vh) 2rem;

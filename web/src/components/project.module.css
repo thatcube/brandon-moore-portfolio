@@ -10,6 +10,13 @@
 .mainImage {
   position: relative;
   padding-left: calc((100vw - 1152px) / 2);
+  @media (--media-max-extralarge) {
+    padding-left: 1rem;
+  }
+  @media (--media-max-medium) {
+    padding-left: 0;
+    margin: 0 -1rem;
+  }
   max-width: 100vw;
   margin-top: 3em;
   @nest & img {
@@ -21,12 +28,7 @@
     @media(--media-min-medium) {
       border-radius: var(--border-radius) 0 0 var(--border-radius);
     }
-    @media (--media-max-extralarge) {
-      margin-left: 16px;
-    }
-    @media (--media-max-medium) {
-      margin-left: 0;
-    }
+    
   }
 }
 

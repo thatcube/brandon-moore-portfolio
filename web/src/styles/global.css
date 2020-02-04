@@ -80,15 +80,15 @@ ul {
 }
 
 section, footer {
-    padding: 80px 16px;
+    padding: 5rem 1rem;
     @media (--media-max-medium) {
-        padding: 40px 16px;
+        padding: 2.5rem 1rem;
     }
 }
 
 article {
     @media (--media-max-medium) {
-        padding: 0 16px;
+        padding: 0 1rem;
     }
 }
 

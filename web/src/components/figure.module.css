@@ -3,7 +3,7 @@
 .root {
   margin: 2rem 0;
   @media (--media-max-extralarge) {
-    padding: 0 16px;
+    padding: 0 1rem;
   }
   @media (--media-max-medium) {
     padding: 0;
