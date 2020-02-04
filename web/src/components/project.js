@@ -29,8 +29,8 @@ function Project(props) {
         <div className={styles.mainImage}>
           <img
             src={imageUrlFor(buildImageObj(mainImage))
-              .width(2000)
-              .height(Math.floor((9 / 16) * 2000))
+              .width(3000)
+              .height(Math.floor((9 / 16) * 3000))
               .fit('crop')
               .auto('format')
               .url()}
