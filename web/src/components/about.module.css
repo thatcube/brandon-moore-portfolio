@@ -11,3 +11,17 @@
         margin-top: 2em;
     }
 }
+
+.heroBlock {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    @media (--media-min-large) {
+        right: calc((100vw - 900px) / 2);
+    }
+    background: var(--color-image-background);
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    border-radius: var(--border-radius);
+}

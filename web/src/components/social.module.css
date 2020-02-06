@@ -5,3 +5,7 @@
 .title {
     composes: responsiveTitle1 from './typography.module.css';
 }
+.root {
+    position: relative;
+    margin-top: 2rem;
+}
