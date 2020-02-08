@@ -12,11 +12,11 @@ const AboutPage = () => (
     <Layout>
       <SEO title='About' />
       <section className={styles.root}>
-        <div className={style.heroBlock}></div>
+        <div data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0" className={style.heroBlock}></div>
         <Container>
-          <div className="z-index row-1-start col-7-end col-1-start headline">
-            <h1 data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className={styles.title}>Striving to create products built for all people</h1>
-            <ul data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className={styles.social}>
+          <div data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className="z-index row-1-start col-7-end col-1-start headline">
+            <h1 className={styles.title}>Striving to create products built for all people</h1>
+            <ul className={styles.social}>
               <li><a className="link" target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a></li>
               <li>&nbsp; · &nbsp;</li>
               <li><a className="link" target="_blank" href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a></li>
@@ -25,7 +25,7 @@ const AboutPage = () => (
             </ul>
           </div>
           <div className="row-1-start col-7-start col-9-end">
-            <img data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className={style.image} alt="Photo of Brandon Moore" src="https://res.cloudinary.com/thatcube/image/upload/v1571149978/brandon_moore_mht0vq.jpg"></img>
+            <img data-sal="fade" data-sal-easing="ease" data-sal-duration="1000" data-sal-delay="100" className={style.image} alt="Photo of Brandon Moore" src="https://res.cloudinary.com/thatcube/image/upload/v1571149978/brandon_moore_mht0vq.jpg"></img>
           </div>
         </Container>
       </section>
