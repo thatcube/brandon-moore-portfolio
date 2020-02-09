@@ -36,13 +36,18 @@ export default {
             category: 'apps'
           }
         ]
-      }
+      },
+      layout: { width: 'medium' }
     },
     {
       name: 'document-list',
       options: { title: 'Projects', order: '_createdAt desc', types: ['project'] },
-      layout: { width: 'large' }
+      layout: { width: 'medium' }
     },
-    { name: 'structure-menu' }
+    {
+      name: 'structure-menu',
+      layout: { width: 'medium' }
+    }
+
   ]
 }
