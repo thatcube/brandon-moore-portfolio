@@ -17,9 +17,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
       <footer className={style.social}>
         <Container>
           <div className="col-1-start col-4-end">
-            <p>This site was designed and built by me. </p>
-            <p>Copyright whenever, this is <a className="link" target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">open source</a>.
-            </p>
+            <p>This site was designed and built by me. You can check out the code <a className="link" target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">here</a>.</p>
           </div>
           <div className="col-4-start col-9-end">
             <ul>
