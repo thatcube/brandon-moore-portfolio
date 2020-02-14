@@ -5,18 +5,12 @@ import { cn } from '../lib/helpers'
 import Headroom from 'react-headroom'
 
 import styles from './header.module.css'
-import { button } from './button.module.css'
-
-const active = {
-  color: 'var(--color-text-inverted)',
-  background: 'var(--color-background-inverted)'
-}
 
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <Headroom>
     <header className={styles.root}>
       <nav className={styles.wrapper}>
-        <div className={styles.branding}>
+        <div className={styles.logo}>
           <Link to='/'>
             <svg aria-labelledby="logoTitle" width="40" height="40" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
               <title id="logoTitle">Brandon Moore's portfolio logo</title>
@@ -27,10 +21,10 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
         <div className={styles.nav}>
           <ul>
             <li>
-              <Link to='/' activeStyle={active} title="Work">Work</Link>
+              <Link to='/' activeClassName="active-page" title="Work">Work</Link>
             </li>
             <li>
-              <Link to='/about' activeStyle={active} title="About">About</Link>
+              <Link to='/about' activeClassName="active-page" title="About">About</Link>
             </li>
           </ul>
         </div>

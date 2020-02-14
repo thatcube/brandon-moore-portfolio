@@ -39,7 +39,7 @@
     overflow: hidden;
     z-index: -1;
     background: var(--color-foreground);
-    clip-path: inset(0 0 2rem 0 round 1rem);
+    clip-path: inset(0 0 2.25rem 0 round 1rem);
     @media (--media-min-small) {
       clip-path: inset(2rem 2rem 2rem 2rem round 1rem);
     }
