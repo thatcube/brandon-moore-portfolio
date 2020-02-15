@@ -9,10 +9,14 @@ const token = process.env.SANITY_READ_TOKEN
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://brandonmoore.io`,
+  },
   plugins: [
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-dark-mode',
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-source-sanity',
       options: {
@@ -25,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Brandon C. Moore - Product Designer`,
+        name: `Brandon C. Moore - Portfolio`,
         short_name: `Brandon C. Moore Portfolio`,
         start_url: `/`,
         background_color: `#000`,
@@ -48,6 +52,12 @@ module.exports = {
         rootMargin: '0% 5%', // Corresponds to root's bounding box margin
         enterEventName: 'sal:in', // Enter event name
         exitEventName: 'sal:out', // Exit event name
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        createLinkInHead: true
       }
     }
   ]
