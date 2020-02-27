@@ -2,7 +2,7 @@
 .root {
   color: inherit;
   text-decoration: none;
-  transition: 0.75s cubic-bezier(.2, .8, .2, 1) all;
+  transition: 0.25s cubic-bezier(.2, .8, .2, 1) all;
   align-items: center;
   border: none;
   @nest &:hover {
@@ -46,7 +46,7 @@
 .excerpt {
   color: var(--color-text-low-contrast);
   @nest & p {
-    margin: 0.25rem 0 1rem 0;
+    margin: 0.25rem 0 0 0;
     transition: all 0.2s ease-in 0s;
   }
   @nest & strong {
@@ -55,10 +55,11 @@
 }
 
 .cardBottom {
-  padding: 1.5rem 0 0 0;
+  padding: 1.5rem 0 1rem 0;
   margin-left: 0.5rem;
   @media (--media-min-small) {
     margin-left: 3rem;
+    padding-bottom: 0;
   }
   position: relative;
   @media (--media-min-medium) {
