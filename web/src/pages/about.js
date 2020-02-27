@@ -37,10 +37,9 @@ const AboutPage = () => (
           </div>
           <div className="col-3-start col-7-end row-2-start headline">
             <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0">I’m Brandon, a Product Designer at CBORD working on its consumer-facing products.</p>
-            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0">I believe in a web for everyone and I constantly try to reinforce this belief in my design work. I aim to create products that go beyond simply understanding the users’ goals. I try to understand their personal circumstances; their challenges, their environment, their abilities, and their access to technology.</p>
-
-            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0">I have a bachelor’s degree in web development from Alfred State and started my career as a front-end developer. However, I quickly realized that my passion was in the design space. I still write code from time to time and especially enjoy some well-crafted CSS.</p>
-            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0">Outside of design, some passions of mine are running, music, mechanical keyboards, small form factor PCs, and soccer.</p>
+            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0">I believe in a web for everyone and constantly try to reinforce this belief in my design work. Accessibility isn't something that you tack on to good design—it is good design.</p>
+            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0">I started my career as a front-end, UI Developer, but quickly realized that my passion was for design. Having been a developer, I understand the constraints and difficulty of implementing any designs. I still write code from time to time and especially enjoy some well-crafted CSS.</p>
+            <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0">Outside of design, some of my passions are: soccer, volleyball, running, mechanical keyboards, small form factor PCs, and music.</p>
           </div>
         </Container>
       </section>
