@@ -59,6 +59,12 @@ module.exports = {
       options: {
         createLinkInHead: true
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-159312744-1",
+      }
     }
   ]
 }
