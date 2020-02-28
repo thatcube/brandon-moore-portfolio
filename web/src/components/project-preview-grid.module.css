@@ -2,27 +2,101 @@
 @import '../styles/custom-properties.css';
 
 .root {
-  margin: 2em 0 10em;
+  margin: 2em 0 2em;
+  @media (--media-min-medium) {
+    margin: 2em 0 10em;
+  }
   padding: 0 1em;
 }
 
 .grid {
   margin: 0;
-  padding: 1rem;
+  padding: 3rem 0;
 
   @media (--media-min-small) {
     padding: 1rem;
   }
   list-style: none;
-  display: grid;
-  grid-gap: 5em;
+  /* display: grid; */
+  @nest & a {
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    position: relative;
+
+    &:hover {
+      background: var(--color-foreground);
+      transform: scale(1.03);
+      /* box-shadow: 0 0 2rem 0 rgba(0,0,0,0.05); */
+    }
+
+    &:active {
+      background: rgba(var(--color-foreground-rgb), 0.5);
+      transform: scale(1);
+    }
+  }
+  /* grid-gap: 5em;
 
   @media (--media-min-small) {
     grid-gap: 10em;
-  }
+  } */
   position: relative;
 
-  @nest & li {
+  @nest & li:not(:last-of-type) a {
+    &:after {
+      content: '';
+      background-color: var(--color-foreground);
+      height: 1px;
+      width: 80%;
+      display: block;
+      bottom: 0;
+      position: absolute;
+      z-index: 3;
+    }
+  }
+
+  @nest & li:first-of-type {
+    @nest & a {
+      display: block;
+    }
+
+    @nest & div:first-child {
+      @media (--media-min-medium) {
+        padding-bottom: 25%;
+        min-width: 100%;
+      }
+    }
+
+    @nest & div:nth-child(2) {
+      margin-left: 0;
+    }
+
+    @nest & h2 {
+      @media (--media-min-medium) {
+        margin-top: 2rem;
+      }
+    }
+
+    @nest & img {
+      /* transform: scale(0.5); */
+    }
+  }
+
+  @media (--media-max-medium) {
+    @nest & li a {
+      display: block;
+      padding: 1em 1em 3em 1em;
+
+      & h2 {
+        margin-top: 1rem;
+      }
+
+      &:after {
+        display: none !important;
+      }
+    }
+  }
+}
+/* @nest & li {
     z-index: 1;
 
     @media (--media-max-small) {
@@ -54,7 +128,7 @@
     left: 0;
     margin: -1rem;
     border-radius: var(--border-radius);
-    /* overflow: hidden; */
+    /* overflow: hidden; */ /*
     z-index: -1;
     background: var(--color-foreground);
     clip-path: inset(0 0 0 0 round 1rem);
@@ -62,7 +136,7 @@
     @media (--media-min-small) {
       clip-path: inset(3rem 3rem 0 3rem round 1rem);
     }
-    /* contain: strict; */
+    /* contain: strict; */ /*
     transition: clip-path 0.2s ease, transform 0.1s ease;
   }
 
@@ -76,5 +150,5 @@
 
   @nest & li a:active:after {
     clip-path: inset(0 0 0 0 round 1rem);
-  }
-}
+  } 
+} */
