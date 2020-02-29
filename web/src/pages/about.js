@@ -17,9 +17,9 @@ const AboutPage = () => (
           <div data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className="z-index row-1-start col-7-end col-1-start headline">
             <h1 className={styles.title}>Striving to create products built for all people</h1>
             <ul className={styles.social}>
-              <li><a className="link" target="_blank" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a></li>
+              <li><a className="link"  href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a></li>
               <li>&nbsp; · &nbsp;</li>
-              <li><a className="link" target="_blank" href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a></li>
+              <li><a className="link"  href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a></li>
               <li>&nbsp; · &nbsp;</li>
               <li>brandoncmoore4@gmail.com</li>
             </ul>

@@ -17,7 +17,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
       <footer className={style.social}>
         <Container>
           <div className="col-1-start col-4-end">
-            <p>This site was designed and built by me. Feel free to check out <a className="link" target="_blank" href="https://github.com/thatcube/brandon-moore-portfolio">the code on GitHub</a>.</p>
+            <p>This site was designed and built by me. Feel free to check out <a className="link"  href="https://github.com/thatcube/brandon-moore-portfolio">the code on GitHub</a>.</p>
           </div>
           <div className="col-4-start col-9-end">
             <ThemeToggler>
@@ -42,11 +42,11 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
           </div>
           <div className="col-4-start col-9-end">
             <ul>
-              <li><a className="link" target="_blank" href="https://www.linkedin.com/in/bmoore46/">
+              <li><a className="link"  href="https://www.linkedin.com/in/bmoore46/">
 
                 LinkedIn</a></li>
               <li>&nbsp; · &nbsp;</li>
-              <li><a className="link" target="_blank" href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a></li>
+              <li><a className="link"  href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a></li>
               <li>&nbsp; · &nbsp;</li>
               <li>brandoncmoore4@gmail.com</li>
             </ul>
