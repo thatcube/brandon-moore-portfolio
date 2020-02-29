@@ -136,7 +136,7 @@ article {
 
 /* Dark Mode Toggle Styles */
 
-.input_wrapper {
+.toggleSwitch {
   position: relative;
   cursor: pointer;
   display: inline-flex;
@@ -144,7 +144,7 @@ article {
   padding: 0.5em 0.5em 0.5em 1em;
   border-radius: 2em;
   margin-top: 0.5em;
-  transition: .2s ease-in-out background;
+  transition: .2s ease-in-out background, 0.25s ease transform;
 
   @media (--media-min-medium) {
     /* justify-content: flex-end;
@@ -160,13 +160,17 @@ article {
   &:hover {
     background: var(--color-background);
   }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
-.input_wrapper .input_label {
+.toggleSwitch .input_label {
   padding-right: 1em;
 }
 
-.input_wrapper input[type="checkbox"]+.input_toggle {
+.toggleSwitch input[type="checkbox"]+.input_toggle {
   width: 6em;
   height: 2.8em;
   cursor: pointer;
@@ -179,7 +183,7 @@ article {
   font-size: 10px;
 }
 
-.input_wrapper input[type="checkbox"]+.input_toggle:after {
+.toggleSwitch input[type="checkbox"]+.input_toggle:after {
   position: absolute;
   content: "";
   top: 0.4em;
@@ -192,7 +196,7 @@ article {
   transition: all .35s;
 }
 
-.input_wrapper svg {
+.toggleSwitch svg {
   position: absolute;
   top: 0.9em;
   transform-origin: 50% 50%;
@@ -200,14 +204,14 @@ article {
   z-index: 1;
 }
 
-.input_wrapper .is_checked {
+.toggleSwitch .is_checked {
   width: 2.4em;
   left: 0.7em;
   transform: translateX(100%) translateY(-30%) scale(0);
   opacity: 0;
 }
 
-.input_wrapper .is_unchecked {
+.toggleSwitch .is_unchecked {
   width: 2.4em;
   right: 0.7em;
   transform: translateX(0) translateY(-30%) scale(1);
@@ -216,38 +220,38 @@ article {
 
 /* Checked State */
 
-.input_wrapper input[type="checkbox"]:checked+.input_toggle {
+.toggleSwitch input[type="checkbox"]:checked+.input_toggle {
   background: var(--color-accent);
 }
 
-.input_wrapper input[type="checkbox"]:checked+.input_toggle:after {
+.toggleSwitch input[type="checkbox"]:checked+.input_toggle:after {
   left: calc(100% - 0.4em);
-  transform: translateX(-100%);
+  transform: translateX(-100%) scale(1);
   background: var(--color-background-inverted);
 }
 
-.input_wrapper input[type="checkbox"]:active+.input_toggle:after {
+.toggleSwitch input[type="checkbox"]:active+.input_toggle:after {
   width: 2.6em;
 }
 
-.input_wrapper input[type="checkbox"]:checked+.input_toggle .is_checked {
+.toggleSwitch input[type="checkbox"]:checked+.input_toggle .is_checked {
   transform: translateX(0) translateY(-30%) scale(1);
   opacity: 1;
 }
 
-.input_wrapper input[type="checkbox"]:checked~.input_toggle .is_unchecked {
+.toggleSwitch input[type="checkbox"]:checked~.input_toggle .is_unchecked {
   transform: translateX(-100%) translateY(-30%) scale(0);
   opacity: 0;
 }
 
 /* mimic browser focus state */
 
-.input_wrapper input[type="checkbox"]:focus+.input_toggle {
+.toggleSwitch input[type="checkbox"]:focus+.input_toggle {
   outline: auto;
   outline: -webkit-focus-ring-color auto 5px;
 }
 
-.input_wrapper input[type="checkbox"]:hover+.input_toggle {
+.toggleSwitch input[type="checkbox"]:hover+.input_toggle {
   outline: none;
 }
 
@@ -278,7 +282,7 @@ article {
   z-index: 100 !important;
   padding: 0;
   transition: background 0.2s ease-in-out 0s, box-shadow 0.15s ease-in-out;
-  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2em 1em -2em rgba(0, 0, 0, 0.05);
 
   @nest & a {
     transition: .15s ease background, .15s ease color;
@@ -289,6 +293,9 @@ article {
 
       &:after {
         background: rgba(var(--color-background-inverted-rgb), 0.1);
+        left: 31.5%;
+        right: 31.5%;
+        height: 0.1875em;
       }
     }
 
@@ -297,6 +304,9 @@ article {
 
       &:after {
         background: rgba(var(--color-background-inverted-rgb), 0.07);
+        left: 27.5% !important;
+        right: 27.5% !important;
+        height: 0.1875em !important;
       }
     }
   }
@@ -350,7 +360,7 @@ body.light .headroom--pinned {
     background: var(--color-background-inverted) !important;
     left: 27.5% !important;
     right: 27.5% !important;
-    height: 0.25em !important;
+    height: 0.1875em !important;
   }
 }
 

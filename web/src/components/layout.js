@@ -22,7 +22,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
           <div className="col-4-start col-9-end">
             <ThemeToggler>
               {({ theme, toggleTheme }) => (
-                <label htmlFor="darkModeToggle" className="input_wrapper">
+                <label htmlFor="darkModeToggle" className="toggleSwitch">
                   <span className="input_label">Dark Mode</span>
                   <input
                     id="darkModeToggle"
