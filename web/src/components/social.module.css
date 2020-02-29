@@ -1,11 +1,19 @@
+@import '../styles/custom-media.css';
+
 .social li {
-    display: inline-block;
-    margin-top: 1em;
+  display: inline-block;
+  margin-top: 1em;
 }
+
 .title {
-    composes: responsiveTitle1 from './typography.module.css';
+  composes: responsiveTitle1 from './typography.module.css';
 }
+
 .root {
-    position: relative;
-    margin-top: 5rem;
+  position: relative;
+  margin-top: 5rem;
+
+  @media (--media-min-medium) {
+    margin-top: calc(8vh + 5rem);
+  }
 }

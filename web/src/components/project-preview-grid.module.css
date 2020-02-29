@@ -3,6 +3,7 @@
 
 .root {
   margin: 2em 0 2em;
+
   @media (--media-min-medium) {
     margin: 2em 0 10em;
   }
@@ -17,7 +18,7 @@
     padding: 1rem;
   }
   list-style: none;
-  /* display: grid; */
+
   @nest & a {
     padding: 3rem;
     border-radius: var(--border-radius);
@@ -26,7 +27,6 @@
     &:hover {
       background: var(--color-foreground);
       transform: scale(1.03);
-      /* box-shadow: 0 0 2rem 0 rgba(0,0,0,0.05); */
     }
 
     &:active {
@@ -34,11 +34,6 @@
       transform: scale(1);
     }
   }
-  /* grid-gap: 5em;
-
-  @media (--media-min-small) {
-    grid-gap: 10em;
-  } */
   position: relative;
 
   @nest & li:not(:last-of-type) a {
@@ -51,6 +46,11 @@
       bottom: 0;
       position: absolute;
       z-index: 3;
+      transition: .15s ease all;
+    }
+
+    &:hover:after {
+      background-color: transparent;
     }
   }
 
@@ -96,59 +96,3 @@
     }
   }
 }
-/* @nest & li {
-    z-index: 1;
-
-    @media (--media-max-small) {
-      &:active {
-        opacity: 0.75;
-      }
-    }
-
-    & a {
-      position: relative;
-      display: block;
-      padding: 1rem;
-
-      @media (--media-max-small) {
-        padding: 0;
-        &:hover {
-          transform: scale(0.9);
-        }
-      }
-    }
-  }
-
-  @nest & li a:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: -1rem;
-    border-radius: var(--border-radius);
-    /* overflow: hidden; */ /*
-    z-index: -1;
-    background: var(--color-foreground);
-    clip-path: inset(0 0 0 0 round 1rem);
-
-    @media (--media-min-small) {
-      clip-path: inset(3rem 3rem 0 3rem round 1rem);
-    }
-    /* contain: strict; */ /*
-    transition: clip-path 0.2s ease, transform 0.1s ease;
-  }
-
-  @nest & li a:hover:after {
-    clip-path: inset(1rem 1rem 0 1rem round 1rem);
-    transition-delay: 0s;
-    @media (--media-max-small) {
-      clip-path: inset(0 0 0 0 round 1rem);
-    }
-  }
-
-  @nest & li a:active:after {
-    clip-path: inset(0 0 0 0 round 1rem);
-  } 
-} */
