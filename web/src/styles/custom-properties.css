@@ -1,6 +1,7 @@
 @import './fonts.css';
 :root, body.light {
   --font-family-sans: "Inria Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-serif: "Recoleta", Calisto MT,Bookman Old Style,Bookman,Goudy Old Style,Garamond,Hoefler Text,Bitstream Charter,Georgia,serif;
   --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* don't reference these */

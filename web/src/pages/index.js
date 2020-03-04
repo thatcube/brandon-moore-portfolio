@@ -5,6 +5,7 @@ import {
   filterOutDocsWithoutSlugs,
   filterOutDocsPublishedInTheFuture
 } from '../lib/helpers'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import ProjectPreviewGrid from '../components/project-preview-grid'
@@ -88,8 +89,9 @@ const IndexPage = props => {
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <h1 data-sal="fade" data-sal-easing="ease" data-sal-duration="1000" data-sal-delay="0" className={hero}>Brandon Moore is a Product Designer creating inclusive experiences</h1>
+      {/* <button className="button" onClick={() => scrollTo('#projects')}>My link</button> */}
       <Container>
-        <div className="col-1-start col-9-end">
+        <div id="projects" className="col-1-start col-9-end">
         {projectNodes && (
           <ProjectPreviewGrid
             nodes={projectNodes}

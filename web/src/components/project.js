@@ -6,6 +6,7 @@ import BlockContent from './block-content'
 import Container from './container'
 import RoleList from './role-list'
 import { Link } from 'gatsby'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import styles from './project.module.css'
 
@@ -42,8 +43,8 @@ function Project(props) {
         {_rawBody && <BlockContent blocks={_rawBody || []} />}
       </div>
       <Container>
-        <aside className="col-3-start col-7-end">
-          {publishedAt && (
+        <aside className="col-1-start col-9-end">
+          {/* {publishedAt && (
             <div className={styles.publishedAt}>Last Updated: &nbsp;
               {differenceInDays(new Date(publishedAt), new Date()) > 3
                 ? distanceInWords(new Date(publishedAt), new Date())
@@ -60,15 +61,14 @@ function Project(props) {
                 ))}
               </ul>
             </div>
-          )}
+          )} */}
           {relatedProjects && relatedProjects.length > 0 && (
             <div className={styles.relatedProjects}>
-              <h3 className={styles.relatedProjectsHeadline}>Next Project</h3>
               <ul>
                 {relatedProjects.map(project => (
                   <React.Fragment key={`related_${project._id}`}>
                     {project.slug ? (
-                      <Link className="button" to={`/${project.slug.current}`}>{project.title}  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M15.7 6.3l5 5c.4.4.4 1 0 1.4l-5 5a1 1 0 01-.7.3 1 1 0 01-.7-.3 1 1 0 010-1.4l3.3-3.3H2.9c-.5 0-.9-.4-.9-1s.4-1 1-1h14.6l-3.3-3.3a1 1 0 010-1.4 1 1 0 011.4 0z" fill="currentColor" fillRule="nonzero" /></svg></Link>
+                      <Link to={`/${project.slug.current}`}>{project.title}</Link>
                     ) : (
                         <span>{project.title}</span>
                       )}
@@ -79,6 +79,7 @@ function Project(props) {
           )}
         </aside>
       </Container>
+      {/* <button className="button to-top" onClick={() => scrollTo('#top-of-page')}>Back to Top <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7 8.306l5 5.107c.2.204.3.408.3.715 0 .306-.1.51-.3.715-.4.408-1 .408-1.4 0l-3.3-3.37v7.676a1 1 0 01-1.993.117L11 19.149v-7.676l-3.3 3.37c-.4.408-1 .408-1.4 0-.4-.409-.4-1.022 0-1.43l5-5.107c.4-.408 1-.408 1.4 0zM17 4a1 1 0 01.117 1.993L17 6H7a1 1 0 01-.117-1.993L7 4h10z" fill="currentColor" fill-rule="nonzero"/></svg></button> */}
     </article>
   )
 }

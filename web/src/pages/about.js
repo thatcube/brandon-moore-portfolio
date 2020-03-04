@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Container from '../components/container'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import style from '../components/about.module.css'
 import styles from '../components/social.module.css'
@@ -16,10 +17,11 @@ const AboutPage = () => (
         <Container>
           <div data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="100" className="z-index row-1-start col-7-end col-1-start headline">
             <h1 className={styles.title}>Striving to create products built for all people</h1>
+            
             <ul className={styles.social}>
-              <li><a className="link"  href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a></li>
+              <li><a className="link" href="https://www.linkedin.com/in/bmoore46/">LinkedIn</a></li>
               <li>&nbsp; · &nbsp;</li>
-              <li><a className="link"  href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a></li>
+              <li><a className="link" href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc">Resume</a></li>
               <li>&nbsp; · &nbsp;</li>
               <li>brandoncmoore4@gmail.com</li>
             </ul>
@@ -40,6 +42,7 @@ const AboutPage = () => (
             <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0">I believe in a web for everyone and constantly try to reinforce this belief in my design work. Accessibility isn't something that you tack on to good design—it is good design.</p>
             <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0">I started my career as a front-end, UI Developer, but quickly realized that my passion was for design. Having been a developer, I understand the constraints and difficulty of implementing any designs. I still write code from time to time and especially enjoy some well-crafted CSS.</p>
             <p data-sal="fade" data-sal-easing="ease" data-sal-duration="750" data-sal-delay="0">Outside of design, some of my passions are: soccer, volleyball, running, mechanical keyboards, small form factor PCs, and music.</p>
+            <Link className="button about" to="/#projects">View Projects</Link>
           </div>
         </Container>
       </section>

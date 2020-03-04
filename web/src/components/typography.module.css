@@ -88,7 +88,6 @@
 
 .responsiveTitle1 {
   margin: 1rem 0 0 0;
-  letter-spacing: -0.1rem;
   font-size: var(--font-title1-size);
   line-height: var(--font-title1-line-height);
   @media (--media-max-small) {

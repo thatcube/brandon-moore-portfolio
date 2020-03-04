@@ -1,6 +1,14 @@
 @import './custom-properties.css';
 @import './custom-media.css';
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-serif);
+  letter-spacing: -0.01em;
+}
+
 button {
   all: unset;
 }
@@ -30,6 +38,27 @@ button {
     background: var(--color-text-low-contrast);
     transform: scale(0.95);
   }
+
+  &.inverted {
+    background: var(--color-background-inverted);
+    color: var(--color-text-inverted);
+
+    &:hover {
+      background: var(--color-foreground);
+      color: var(--color-text);
+    }
+  }
+
+  &.about {
+    /* max-width: 12rem; */
+    margin: 6rem 0 1rem 0;
+  }
+}
+
+.to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: calc((100vw - 1152px - 336px) / 2);
 }
 
 .button-alt {
@@ -126,6 +155,10 @@ footer {
 
 footer > div {
   grid-row-gap: 0 !important;
+}
+
+footer {
+  padding: 10rem 1rem;
 }
 
 article {
@@ -317,6 +350,7 @@ article {
   padding: 0;
   background: var(--color-foreground);
   box-shadow: 0 0 3.5em rgba(0, 0, 0, 0.24);
+
   & ul:after {
     display: none;
   }
@@ -348,5 +382,4 @@ img {
 
 h2 {
   font-size: 2em;
-  letter-spacing: -0.03em;
 }
