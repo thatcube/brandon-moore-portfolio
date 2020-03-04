@@ -1,7 +1,9 @@
 @import './fonts.css';
-:root, body.light {
+
+:root,
+body.light {
   --font-family-sans: "Inria Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-family-serif: "Recoleta", Calisto MT,Bookman Old Style,Bookman,Goudy Old Style,Garamond,Hoefler Text,Bitstream Charter,Georgia,serif;
+  --font-family-serif: "Recoleta", Calisto MT, Bookman Old Style, Bookman, Goudy Old Style, Garamond, Hoefler Text, Bitstream Charter, Georgia, serif;
   --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* don't reference these */
@@ -15,18 +17,14 @@
   --color-background: var(--color-white);
   --color-background-inverted: var(--color-black);
   --color-background-inverted-rgb: 29, 34, 37;
-
   --color-background-rgb: 255, 255, 255;
   --color-foreground: rgb(242, 242, 242);
   --color-foreground-rgb: 242, 242, 242;
-
   --color-image-background: rgb(248, 248, 248);
-  
-  --color-text: rgba(var(--color-black-rgb), 0.87);
+  --color-text: rgba(var(--color-black-rgb), 0.82);
   --color-text-low-contrast: rgba(var(--color-black-rgb), 0.63);
-  --color-text-high-contrast: var(--color-black);
+  --color-text-high-contrast: rgba(var(--color-black-rgb), 0.92);
   --color-text-inverted: var(--color-white);
-  
   --color-border: rgba(var(--color-black-rgb), 0.1);
 
   /* Typography */
@@ -60,7 +58,7 @@
   --font-title1-line-height: calc(57 / 49);
   /* 57px */
 
-  --border-radius: calc( 16 / var(--unit) * 1rem);
+  --border-radius: calc(16 / var(--unit) * 1rem);
 }
 
 body.dark {
@@ -68,18 +66,13 @@ body.dark {
   --color-background-rgb: var(--color-black-rgb);
   --color-background-inverted: var(--color-white);
   --color-background-inverted-rgb: var(--color-white-rgb);
-
   --color-foreground: rgb(44, 52, 60);
   --color-foreground-rgb: 44, 52, 60;
-
   --color-image-background: rgb(37, 43, 49);
-
   --color-border: rgba(var(--color-white-rgb), 0.1);
   --color-accent: #857bed;
-  
   --color-text-low-contrast: rgba(var(--color-white-rgb), 0.6);
   --color-text: rgba(var(--color-white-rgb), 0.8);
-  --color-text-high-contrast: var(--color-white);
-
+  --color-text-high-contrast: rgba(var(--color-white-rgb), 0.95);
   --color-text-inverted: var(--color-black);
 }

@@ -158,7 +158,11 @@ footer > div {
 }
 
 footer {
-  padding: 10rem 1rem;
+  padding: 3rem 1rem;
+
+  @media (--media-min-medium) {
+    padding: calc(2rem + 8vh) 1rem;
+  }
 }
 
 article {

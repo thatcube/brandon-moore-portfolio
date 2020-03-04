@@ -1,27 +1,36 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
+
 .image {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    border-radius: var(--border-radius);
-    @media (--media-max-medium) {
-        max-height: 360px;
-        width: auto;
-        margin-top: 2em;
-    }
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: var(--border-radius);
+
+  @media (--media-max-medium) {
+    max-height: 360px;
+    width: auto;
+    margin-top: 2em;
+  }
 }
 
 .heroBlock {
-    position: absolute;
-    top: 0;
-    right: 16px;
-    @media (--media-min-large) {
-        right: calc((100vw - 900px) / 2);
-    }
-    background: var(--color-image-background);
-    width: 100vw;
-    height: 100%;
-    z-index: -1;
-    border-radius: var(--border-radius);
+  position: absolute;
+  top: 0;
+  right: 16px;
+
+  @media (--media-min-large) {
+    right: calc((100vw - 900px) / 2);
+  }
+  background: var(--color-image-background);
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  border-radius: var(--border-radius);
 }
+
+/* .about {
+  background: no-repeat url(../images/banana.svg);
+  background-size: 3rem;
+  background-position: 95% 98%;
+} */
