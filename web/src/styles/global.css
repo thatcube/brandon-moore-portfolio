@@ -105,12 +105,6 @@ button {
   overflow: visible;
 }
 
-footer ul {
-  @media (--media-min-medium) {
-    text-align: right;
-  }
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -192,6 +186,7 @@ article {
 
   @media (--media-max-medium) {
     margin-left: -1em;
+    margin-top: 2em;
   }
 
   &:hover {

@@ -1,2 +1,18 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
+
+.list {
+  @media (--media-max-medium) {
+    display: flex;
+    flex-wrap: wrap;
+
+    @nest & li {
+      width: 100%;
+
+      &:nth-of-type(2),
+      &:nth-of-type(4) {
+        display: none;
+      }
+    }
+  }
+}
