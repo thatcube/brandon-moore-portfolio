@@ -5,8 +5,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-family-serif);
-  letter-spacing: -0.01em;
+  font-family: var(--font-family-sans);
+  letter-spacing: -0.05em;
 }
 
 button {

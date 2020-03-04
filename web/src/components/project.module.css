@@ -83,6 +83,7 @@
     margin: 0.75rem 0;
     display: flex;
     justify-content: space-between;
+
     @media (--media-max-medium) {
       justify-content: flex-end;
     }
@@ -96,8 +97,10 @@
     position: relative;
     margin: 2em 0;
     padding: 1.25em 1em 0.75em;
-    font-family: var(--font-family-serif);
+    /* font-family: var(--font-family-serif); */
+    font-weight: bold;
     font-size: 2em;
+
     @media (--media-max-medium) {
       font-size: 1.5em;
     }
@@ -116,6 +119,7 @@
 
     &:before {
       font-family: var(--font-family-sans);
+      font-weight: normal;
       position: absolute;
       top: 1.25em;
       width: 100%;
@@ -133,9 +137,6 @@
     }
 
     &:last-of-type {
-      @media (--media-max-medium) {
-        align-self: right;
-      }
       &:before {
         content: 'Next';
         text-align: right;
