@@ -11,6 +11,7 @@
 }
 
 .mainImage {
+  display: block;
   position: relative;
   padding-left: calc((100vw - 1152px) / 2);
 

@@ -5,22 +5,42 @@
   color: var(--color-text-high-contrast);
   font-weight: bold;
   line-height: 1.1;
-  font-size: 2.125em;
-  margin: 0 auto;
-  padding: calc(1em + 10vh) 2rem;
-  max-width: 1450px;
-  max-height: 880px;
+  font-size: 2.5rem;
+  /* margin: 0 auto; */
+  /* padding: calc(1em + 10vh) 2rem; */
+  /* max-width: 1450px; */
+  /* max-height: 880px; */
+  padding: calc(2rem + 10vh) 1rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  & span {
+    display: flex;
+    font-size: 1.25rem;
+    color: var(--color-text-low-contrast);
+  }
 
   @media (--media-min-small) {
-    font-size: 3em;
+    font-size: 3.25rem;
+
+    & span {
+      font-size: 1.5rem;
+    }
   }
 
   @media (--media-min-medium) {
-    font-size: 3.5em;
+    font-size: 4rem;
+
+    & span {
+      font-size: 2rem;
+    }
   }
 
   @media (--media-min-extralarge) {
-    font-size: 5em;
-    padding: calc(2em + 9vh) 2rem;
+    font-size: 5.5rem;
+    /* padding: calc(2em + 9vh) 2rem; */
+    & span {
+      font-size: 2.8rem;
+    }
   }
 }

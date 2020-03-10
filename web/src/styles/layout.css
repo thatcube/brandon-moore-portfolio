@@ -4,6 +4,7 @@ html {
   font-family: var(--font-family-sans);
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
+  font-weight: 500;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
 }
 
 html,
-/* body, */
 body > div,
 body > div > div {
   height: 100%;
