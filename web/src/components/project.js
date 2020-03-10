@@ -21,6 +21,7 @@ function Project(props) {
     shortdesc,
     role,
     timeframe,
+    heroImage,
     when,
     _rawExcerpt,
     categories,
@@ -58,27 +59,13 @@ function Project(props) {
         </Container>
       </aside>
       {props.mainImage && mainImage.asset && (
-        <picture className={styles.mainImage}>
-          <source
-            type="image/webp"
-            srcSet={imageUrlFor(buildImageObj(mainImage))
-              .width(3000)
-              .height(Math.floor((9 / 16) * 3000))
-              .fit("crop")
-              .auto("format")
-              .url()}
-          ></source>
-          <img
-            src={imageUrlFor(buildImageObj(mainImage))
-              .width(3000)
-              .height(Math.floor((9 / 16) * 3000))
-              .fit("crop")
-              .auto("format")
-              .url()}
-            alt={mainImage.alt}
-            loading="lazy"
-          />
-        </picture>
+        <Img
+          className={styles.mainImage}
+          alt={mainImage.alt}
+          objectFit="cover"
+          objectPosition="50% 50%"
+          fluid={mainImage.asset.fluid}
+        />
       )}
       {/* {props.mainImage && mainImage.asset && (
         <Img
@@ -91,7 +78,23 @@ function Project(props) {
             .url()}
         />
       )} */}
-
+      {/* <aside className="project-header">
+        <Container>
+          {heroImage}
+          <span className="col-5-start col-7-end">
+            <span className="project-header-caption">Role:</span>
+            {role}
+          </span>
+          <span className="col-7-start">
+            <span className="project-header-caption">Duration:</span>
+            {timeframe}
+          </span>
+          <span className="col-8-start">
+            <span className="project-header-caption">When:</span>
+            {when}
+          </span>
+        </Container>
+      </aside> */}
       <div className="special">{_rawBody && <BlockContent blocks={_rawBody || []} />}</div>
       <Container>
         <aside className="col-1-start col-9-end">

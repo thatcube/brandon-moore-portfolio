@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import Img from "gatsby-image";
 import { cn, buildImageObj } from "../lib/helpers";
 import { imageUrlFor } from "../lib/image-url";
 import BlockText from "./block-text";
@@ -12,14 +13,7 @@ function ProjectPreview(props) {
     <Link className={styles.root} to={`/${props.slug.current}`}>
       <div className={styles.projectThumbnail}>
         {props.mainImage && props.mainImage.asset && (
-          <img
-            src={imageUrlFor(buildImageObj(props.mainImage))
-              .width(3000)
-              .height(Math.floor((9 / 19.5) * 3000))
-              .auto("format")
-              .url()}
-            alt={props.mainImage.alt}
-          />
+          <Img alt={props.mainImage.alt} objectFit="cover" fluid={props.mainImage.asset.fluid} />
         )}
       </div>
       <div className={styles.projectDesc}>

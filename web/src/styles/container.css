@@ -1,114 +1,121 @@
 @import './custom-media.css';
+
 .col-1-start {
-    grid-column-start: 1;
+  grid-column-start: 1;
 }
 
 .col-2-start {
-    grid-column-start: 2;
+  grid-column-start: 2;
 }
 
 .col-3-start {
-    grid-column-start: 3;
+  grid-column-start: 3;
 }
 
 .col-4-start {
-    grid-column-start: 4;
+  grid-column-start: 4;
 }
 
 .col-5-start {
-    grid-column-start: 5;
+  grid-column-start: 5;
 }
 
 .col-6-start {
-    grid-column-start: 6;
+  grid-column-start: 6;
 }
 
 .col-7-start {
-    grid-column-start: 7;
+  grid-column-start: 7;
 }
 
 .col-8-start {
-    grid-column-start: 8;
+  grid-column-start: 8;
 }
 
 .col-1-end {
-    grid-column-end: 1;
+  grid-column-end: 1;
 }
 
 .col-2-end {
-    grid-column-end: 2;
+  grid-column-end: 2;
 }
 
 .col-3-end {
-    grid-column-end: 3;
+  grid-column-end: 3;
 }
 
 .col-4-end {
-    grid-column-end: 4;
+  grid-column-end: 4;
 }
 
 .col-5-end {
-    grid-column-end: 5;
+  grid-column-end: 5;
 }
 
 .col-6-end {
-    grid-column-end: 6;
+  grid-column-end: 6;
 }
 
 .col-7-end {
-    grid-column-end: 7;
+  grid-column-end: 7;
 }
 
 .col-8-end {
-    grid-column-end: 8;
+  grid-column-end: 8;
 }
 
 .col-9-end {
-    grid-column-end: 9;
+  grid-column-end: 9;
 }
 
 .row-1-start {
-    grid-row-start: 1;
+  grid-row-start: 1;
 }
 
 .row-2-start {
-    grid-row-start: 2;
+  grid-row-start: 2;
 }
 
 .row-1-end {
-    grid-row-end: 1;
+  grid-row-end: 1;
 }
 
 .row-2-end {
-    grid-row-end: 2;
+  grid-row-end: 2;
 }
 
-.special>div {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    margin: 0 auto;
-    grid-column-gap: 32px;
-    grid-row-gap: 0;
-    max-width: 1152px;
-    align-items: center;
-    @media (--media-max-medium) {
-        display: block;
-    }
-    @nest & p, & h1, & h2, & h3, & h4, & ul {
-        grid-column-start: 3;
-        grid-column-end: 7;
-    }
-    @nest & h2, & h3 {
-        margin: 1.5em 0 0 0;
-        color: var(--color-text-high-contrast)
-    }
-    @nest & h2+p {
-        margin-top: 0.5em;
-    }
-    @nest & ul {
-        padding-left: 1.5em;
-    }
-    @nest & p+p {
-        margin-top:0;
-    }
+.special > div {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  margin: 0 auto;
+  grid-column-gap: 32px;
+  grid-row-gap: 0;
+  max-width: 1152px;
+  align-items: center;
+
+  @media (--media-max-medium) {
+    display: block;
+  }
+
+  @nest & p, & h1, & h2, & h3, & h4, & ul {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  @nest & h2, & h3 {
+    margin: 1.5em 0 0 0;
+    color: var(--color-text-high-contrast);
+  }
+
+  @nest & h2+p {
+    margin-top: 0.5em;
+  }
+
+  @nest & ul {
+    padding-left: 1.5em;
+  }
+
+  @nest & p+p {
+    margin-top: 0;
+  }
 }
