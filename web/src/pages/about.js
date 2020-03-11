@@ -83,7 +83,13 @@ const AboutPage = props => {
               <li>brandoncmoore4@gmail.com</li>
             </ul>
           </div>
-          <div className="row-1-start col-7-start col-9-end">
+          <div
+            data-sal="fade"
+            data-sal-easing="ease"
+            data-sal-duration="750"
+            data-sal-delay="100"
+            className="row-1-start col-7-start col-9-end"
+          >
             {about.image && about.image.asset && (
               <Img alt={about.image.alt} fluid={about.image.asset.fluid} />
             )}
@@ -93,7 +99,13 @@ const AboutPage = props => {
 
       <section className={style.about}>
         <Container>
-          <div className="col-3-start col-7-end row-2-start headline">
+          <div
+            data-sal="fade"
+            data-sal-easing="ease"
+            data-sal-duration="750"
+            data-sal-delay="200"
+            className="col-3-start col-7-end row-2-start headline"
+          >
             {about._rawBio && <BlockContent blocks={about._rawBio || []} />}
             <Link className="button about" to="/#projects">
               View Projects
