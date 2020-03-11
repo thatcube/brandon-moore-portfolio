@@ -2,7 +2,7 @@
   /* Brand colors */
   --brand-darkest: #000;
   --brand-lightest: #fff;
-  --gray-base: #323232;
+  --gray-base: #000;
   --brand-primary: #675ae8;
   --brand-primary--inverted: #fff;
   --brand-secondary: #166dff;
@@ -16,14 +16,19 @@
   --preview-placeholder-color: color(var(--component-bg) contrast(80%) alpha(10%));
   --component-border-color: color(var(--component-bg) contrast(80%) a(20%));
   --backdrop-color: color(var(--brand-darkest) a(12%));
-  --main-navigation-color: var(--brand-lightest);
+  --main-navigation-color: #fff;
   --main-navigation-color--inverted: color(var(--main-navigation-color) contrast(80%));
   --dialog-header-color: var(--component-bg);
   --dialog-header-color--inverted: var(--body-text);
-  --header-height: 3rem;
+  --header-height: 10rem;
   --checkerboard-color: color(var(--component-text-color) a(5%));
   --selectable-item-base: var(--brand-primary);
   --brand-darkest--inverted: color(var(--brand-darkest) contrast(80%));
+
+  /* Typography */
+  --font-family-sans-serif: 'Gilroy', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-size-base: 18px;
+  --headings-font-weight: 900;
 
   /* Hairline */
   --hairline-color: color(var(--component-bg) contrast(80%) a(5%));
@@ -51,16 +56,16 @@
   --border-radius-small: calc(var(--border-radius-base) / 2);
 
   /* Padding */
-  --extra-small-padding: 0.25rem;
-  --small-padding: 0.5rem;
-  --medium-padding: 1rem;
-  --large-padding: 1.5rem;
-  --extra-large-padding: 3rem;
-  --extra-small-padding--em: 0.25em;
-  --small-padding--em: 0.5em;
-  --medium-padding--em: 1em;
-  --large-padding--em: 1.5em;
-  --extra-large-padding--em: 3em;
+  --extra-small-padding: 0.5rem;
+  --small-padding: 0.75rem;
+  --medium-padding: 1.25rem;
+  --large-padding: 1.75rem;
+  --extra-large-padding: 4rem;
+  --extra-small-padding--em: 0.5em;
+  --small-padding--em: 0.75em;
+  --medium-padding--em: 1.25em;
+  --large-padding--em: 1.75em;
+  --extra-large-padding--em: 4em;
   --text-selection-color: color(var(--brand-primary) alpha(20%));
 
   /* Block editor */

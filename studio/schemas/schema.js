@@ -14,6 +14,7 @@ import about from "./documents/about";
 // Object types
 import bioPortableText from "./objects/bioPortableText";
 import figure from "./objects/figure";
+import largeImage from "./objects/largeImage";
 import projectMember from "./objects/projectMember";
 import projectPortableText from "./objects/projectPortableText";
 import simplePortableText from "./objects/simplePortableText";
@@ -29,6 +30,7 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     bioPortableText,
     figure,
+    largeImage,
     projectMember,
     projectPortableText,
     simplePortableText,

@@ -84,13 +84,7 @@
   grid-row-end: 2;
 }
 
-.special {
-  @media (--media-min-medium) {
-    margin: 0 16px;
-  }
-}
-
-.special > div {
+.mainContent {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   margin: 0 auto;
@@ -123,5 +117,11 @@
 
   @nest & p+p {
     margin-top: 0;
+  }
+}
+
+.mainContent {
+  @media (--media-min-medium) {
+    padding: 0 16px;
   }
 }

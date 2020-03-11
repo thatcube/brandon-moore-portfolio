@@ -1,9 +1,10 @@
-import Figure from './figure'
+import Figure from "./figure";
 
 const serializers = {
   types: {
-    figure: Figure
+    figure: Figure,
+    largeImage: Figure
   }
-}
+};
 
-export default serializers
+export default serializers;

@@ -95,7 +95,8 @@ function Project(props) {
           </span>
         </Container>
       </aside> */}
-      <div className="special">{_rawBody && <BlockContent blocks={_rawBody || []} />}</div>
+
+      {_rawBody && <BlockContent blocks={_rawBody || []} />}
       <Container>
         <aside className="col-1-start col-9-end">
           {/* {publishedAt && (
