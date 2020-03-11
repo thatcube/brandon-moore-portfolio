@@ -84,6 +84,12 @@
   grid-row-end: 2;
 }
 
+.special {
+  @media (--media-min-medium) {
+    margin: 0 16px;
+  }
+}
+
 .special > div {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
