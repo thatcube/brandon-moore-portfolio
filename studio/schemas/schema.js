@@ -30,7 +30,7 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     bioPortableText,
     figure,
-    largeImage,
+    // largeImage,
     projectMember,
     projectPortableText,
     simplePortableText,
