@@ -7,16 +7,11 @@
   @media (--media-min-medium) {
     margin: 2em 0 10em;
   }
-  padding: 0 1em;
+  padding: 0;
 }
 
 .grid {
   margin: 0;
-  padding: 3rem 0;
-
-  @media (--media-min-small) {
-    padding: 1rem;
-  }
   list-style: none;
 
   @nest & a {
@@ -84,7 +79,7 @@
   @media (--media-max-medium) {
     @nest & li a {
       display: block;
-      padding: 1em 1em 3em 1em;
+      padding: 1em var(--gutter-padding) 3em var(--gutter-padding);
 
       & h2 {
         margin-top: 1rem;

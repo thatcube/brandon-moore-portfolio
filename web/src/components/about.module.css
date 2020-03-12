@@ -17,7 +17,7 @@
 .heroBlock {
   position: absolute;
   top: 0;
-  right: 16px;
+  right: var(--gutter-padding);
 
   @media (--media-min-large) {
     right: calc((100vw - 900px) / 2);

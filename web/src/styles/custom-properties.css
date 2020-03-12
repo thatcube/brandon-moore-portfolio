@@ -59,6 +59,7 @@ body.light {
   /* 57px */
 
   --border-radius: calc(16 / var(--unit) * 1rem);
+  --gutter-padding: 1.5rem;
 }
 
 body.dark {

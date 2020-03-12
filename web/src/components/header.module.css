@@ -21,7 +21,7 @@
   }
 
   @media (--media-max-medium) {
-    padding: 0 1em;
+    padding: 0 var(--gutter-padding);
   }
 }
 

@@ -15,7 +15,7 @@
   grid-template-columns: repeat(8, 1fr);
   margin: 0 auto;
   grid-column-gap: 32px;
-  grid-row-gap: 24px;
+  grid-row-gap: var(--gutter-padding);
   max-width: 1152px;
   align-items: center;
 

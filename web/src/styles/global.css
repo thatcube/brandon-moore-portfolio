@@ -54,7 +54,6 @@ button {
   }
 
   &.about {
-    /* max-width: 12rem; */
     margin: 6rem 0 1rem 0;
   }
 }
@@ -93,11 +92,6 @@ button {
 
 .center-v {
   align-items: center;
-}
-
-.padding-h {
-  padding-left: 2em;
-  padding-right: 2em;
 }
 
 .light-boi {
@@ -144,10 +138,10 @@ ul {
 
 section,
 footer {
-  padding: 5rem 1rem;
+  padding: 5rem var(--gutter-padding);
 
   @media (--media-max-medium) {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem var(--gutter-padding);
   }
 }
 
@@ -156,16 +150,16 @@ footer > div {
 }
 
 footer {
-  padding: 3rem 1rem;
+  padding: 3rem var(--gutter-padding);
 
   @media (--media-min-medium) {
-    padding: calc(2rem + 8vh) 1rem;
+    padding: calc(2rem + 8vh) var(--gutter-padding);
   }
 }
 
 article {
   @media (--media-max-medium) {
-    padding: 0 1.5rem;
+    padding: 0 var(--gutter-padding);
   }
 }
 
@@ -299,7 +293,7 @@ article {
   }
 
   @media (--media-min-medium) {
-    margin: 0 16px;
+    margin: 0 var(--gutter-padding);
   }
   margin-top: 3em;
 }
