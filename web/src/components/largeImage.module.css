@@ -2,8 +2,16 @@
 @import '../styles/custom-media.css';
 
 .root {
-  width: 100vw;
-  transform: translateX(calc((1152px - 100vw)/2));
+  width: calc(100vw - 32px);
   padding: 0;
   margin: 0;
+
+  @media (--media-min-extralarge) {
+    width: 100vw;
+    transform: translateX(calc((1152px - 100vw)/2));
+
+    @nest & img {
+      border-radius: 0;
+    }
+  }
 }

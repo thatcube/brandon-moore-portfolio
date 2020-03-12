@@ -118,12 +118,14 @@
 
   @nest & p {
     max-width: 680px;
-    font-size: 1.25rem;
   }
 }
 
 .mainContent {
+  font-size: 1.125rem;
+
   @media (--media-min-medium) {
     padding: 0 16px;
+    font-size: 1.25rem;
   }
 }

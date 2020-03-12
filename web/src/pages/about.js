@@ -91,7 +91,7 @@ const AboutPage = props => {
             className="row-1-start col-7-start col-9-end"
           >
             {about.image && about.image.asset && (
-              <Img alt={about.image.alt} fluid={about.image.asset.fluid} />
+              <Img className={style.image} alt={about.image.alt} fluid={about.image.asset.fluid} />
             )}
           </div>
         </Container>
