@@ -104,7 +104,7 @@ const AboutPage = props => {
             data-sal-easing="ease"
             data-sal-duration="750"
             data-sal-delay="200"
-            className="col-3-start col-7-end row-2-start headline"
+            className="col-3-start col-7-end row-2-start about-section headline"
           >
             {about._rawBio && <BlockContent blocks={about._rawBio || []} />}
             <Link className="button about" to="/#projects">

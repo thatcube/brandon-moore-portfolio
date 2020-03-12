@@ -27,12 +27,17 @@
   max-height: 60vh;
   margin-top: 3em;
 
-  /* @nest & img {
+  @nest & img {
+    @media (--media-min-medium) {
+      border-radius: 0;
+    }
+  }
+  /*
     width: 100%;
     max-height: 60vh;
     display: block;
     object-fit: cover;
-    border-radius: 0;
+    
 
     @media (--media-min-medium) {
       border-radius: var(--border-radius) 0 0 var(--border-radius);

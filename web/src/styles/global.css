@@ -9,6 +9,10 @@ h4 {
   letter-spacing: -0.01em;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 button {
   all: unset;
 }
@@ -379,6 +383,6 @@ img {
   background: var(--color-image-background);
 }
 
-h2 {
-  font-size: 2em;
+.about-section .mainContent {
+  display: block;
 }
