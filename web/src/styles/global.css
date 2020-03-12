@@ -360,6 +360,7 @@ body.light .headroom--pinned {
 
 .active-page {
   color: var(--text-high-contrast) !important;
+  font-weight: bold;
 
   &:after {
     background: var(--color-background-inverted) !important;

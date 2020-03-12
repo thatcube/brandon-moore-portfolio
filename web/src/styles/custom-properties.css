@@ -60,6 +60,7 @@ body.light {
 
   --border-radius: calc(16 / var(--unit) * 1rem);
   --gutter-padding: 1.5rem;
+  --large-image-gutter: calc(var(--gutter-padding * 2));
 }
 
 body.dark {

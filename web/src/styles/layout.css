@@ -12,6 +12,7 @@ body {
   background: var(--color-background);
   color: var(--color-text);
   margin: 0;
+  overflow-x: hidden;
 }
 
 html,

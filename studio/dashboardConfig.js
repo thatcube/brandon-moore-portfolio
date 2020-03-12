@@ -1,8 +1,13 @@
 export default {
   widgets: [
     {
+      name: "document-list",
+      options: { title: "Projects", order: "_createdAt desc", types: ["project"] },
+      layout: { width: "auto", height: "large" }
+    },
+    {
       name: "structure-menu",
-      layout: { width: "medium" }
+      layout: { width: "auto", height: "large" }
     },
     {
       name: "project-info",
@@ -36,16 +41,11 @@ export default {
           },
           {
             title: "Frontend",
-            value: "https://brandon-moore-portfolio.netlify.com",
+            value: "https://brandonmoore.io",
             category: "apps"
           }
         ]
       },
-      layout: { width: "medium" }
-    },
-    {
-      name: "document-list",
-      options: { title: "Projects", order: "_createdAt desc", types: ["project"] },
       layout: { width: "medium" }
     }
   ]

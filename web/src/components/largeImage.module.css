@@ -2,7 +2,6 @@
 @import '../styles/custom-media.css';
 
 .root {
-  --large-image-gutter: calc(var(--gutter-padding * 2));
   width: calc(100vw - var(--large-image-gutter));
   padding: 0;
   margin: 0;

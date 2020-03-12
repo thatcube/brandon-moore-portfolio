@@ -16,24 +16,27 @@
   display: grid;
   padding: var(--small-padding);
   grid-gap: var(--small-padding);
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   overflow-x: auto;
   border-top: 0.0625rem solid var(--hairline-color);
 
-  @media (--screen-medium) {
+  /* @media (--screen-medium) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+  } */
 }
 
 .link {
   composes: item from 'part:@sanity/base/theme/layout/selectable-style';
-  display: block;
+  display: flex;
   padding: var(--small-padding);
   text-decoration: none;
-  text-align: center;
+  text-align: left;
+  align-items: center;
   box-sizing: border-box;
 }
 
 .iconWrapper {
   font-size: 2em;
+  margin-right: 0.5em;
+  margin-top: -0.25em;
 }

@@ -99,7 +99,7 @@
     grid-column-end: 5;
   }
 
-  @nest & h2, h3 {
+  @nest & h2, & h3 {
     color: var(--color-text-high-contrast);
   }
 
