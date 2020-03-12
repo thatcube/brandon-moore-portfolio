@@ -100,8 +100,15 @@
   }
 
   @nest & h2, & h3 {
-    margin: 1.5em 0 0 0;
+    @media (--media-max-medium) {
+      margin: 1.5em 0 0 0;
+    }
+    margin: calc(2em + 10vh) 0 0 0;
     color: var(--color-text-high-contrast);
+  }
+
+  @nest & h2+h3 {
+    margin: 1em 0 0 0;
   }
 
   @nest & h2+p {
