@@ -10,6 +10,10 @@
 }
 
 .root {
-  position: relative;
-  margin-top: 5rem;
+  & > div {
+    @media (--media-max-large) {
+      display: block;
+      padding: 0;
+    }
+  }
 }

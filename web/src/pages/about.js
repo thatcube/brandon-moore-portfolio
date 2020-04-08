@@ -47,48 +47,23 @@ const AboutPage = props => {
     <Layout>
       <SEO title="About" />
       <section className={styles.root}>
-        <div
-          data-sal="fade"
-          data-sal-easing="ease"
-          data-sal-duration="750"
-          data-sal-delay="0"
-          className={style.heroBlock}
-        ></div>
         <Container>
           <div
             data-sal="fade"
             data-sal-easing="ease"
             data-sal-duration="750"
-            data-sal-delay="100"
-            className="z-index row-1-start col-7-end col-1-start headline"
+            data-sal-delay="0"
+            className="col-1-start col-8-end row-1-start about-section headline"
           >
             <h1 className={styles.title}>{about.tagline}</h1>
-
-            <ul className={styles.social}>
-              <li>
-                <a className="link" href="https://www.linkedin.com/in/bmoore46/">
-                  LinkedIn
-                </a>
-              </li>
-              <li>&nbsp; · &nbsp;</li>
-              <li>
-                <a
-                  className="link"
-                  href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc"
-                >
-                  Resume
-                </a>
-              </li>
-              <li>&nbsp; · &nbsp;</li>
-              <li>brandoncmoore4@gmail.com</li>
-            </ul>
+            {about._rawBio && <BlockContent blocks={about._rawBio || []} />}
           </div>
           <div
             data-sal="fade"
             data-sal-easing="ease"
             data-sal-duration="750"
             data-sal-delay="100"
-            className="row-1-start col-7-start col-9-end"
+            className="row-1-start col-6-start col-9-end"
           >
             {about.image && about.image.asset && (
               <Img className={style.image} alt={about.image.alt} fluid={about.image.asset.fluid} />
@@ -98,20 +73,9 @@ const AboutPage = props => {
       </section>
 
       <section className={style.about}>
-        <Container>
-          <div
-            data-sal="fade"
-            data-sal-easing="ease"
-            data-sal-duration="750"
-            data-sal-delay="200"
-            className="col-3-start col-7-end row-2-start about-section headline"
-          >
-            {about._rawBio && <BlockContent blocks={about._rawBio || []} />}
-            <Link className="button about" to="/#projects">
-              View Projects
-            </Link>
-          </div>
-        </Container>
+        <Link className="button about" to="/#projects">
+          View Projects
+        </Link>
       </section>
     </Layout>
   );

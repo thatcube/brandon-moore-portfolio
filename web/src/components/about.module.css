@@ -3,14 +3,22 @@
 
 .image {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto -28rem auto;
   width: 100%;
   border-radius: var(--border-radius);
+  border: 2rem solid var(--color-background);
+  box-sizing: border-box;
+
+  @media (--media-max-large) {
+    max-width: 50%;
+    width: auto;
+    margin-top: -12rem;
+    margin-bottom: 0;
+  }
 
   @media (--media-max-medium) {
     max-width: 66.6666%;
-    width: auto;
-    margin-top: 2em;
+    border-width: 0.5rem;
   }
 }
 

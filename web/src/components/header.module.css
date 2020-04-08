@@ -95,7 +95,7 @@
     }
 
     &:after {
-      transition: 0.25s ease all;
+      transition: 0.35s ease all;
       background: transparent;
       height: 0;
       border-radius: var(--border-radius) var(--border-radius) 0 0;
