@@ -35,7 +35,7 @@
     &:after {
       content: '';
       background-color: var(--color-foreground);
-      height: 1px;
+      height: 0.0625rem;
       width: 80%;
       display: block;
       bottom: 0;

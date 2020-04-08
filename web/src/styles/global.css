@@ -62,7 +62,7 @@ button {
 .to-top {
   position: fixed;
   bottom: 2rem;
-  right: calc((100vw - 1152px - 336px) / 2);
+  right: calc((100vw - 75em - 336px) / 2);
 }
 
 .button-alt {
@@ -384,7 +384,7 @@ img {
 
 .about-section {
   padding: calc(var(--gutter-padding) * 3) 18rem calc(var(--gutter-padding) * 3) calc(var(--gutter-padding) * 3);
-  border: 0.25rem solid var(--color-image-background);
+  border: 0.0625rem solid var(--color-border);
   border-radius: calc(var(--border-radius) * 2);
 
   & h1 {
