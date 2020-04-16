@@ -14,7 +14,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
     <div id="top-of-page"></div>
     <Header siteTitle={siteTitle} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
-    <div>{children}</div>
+    {children}
     <footer className={style.social}>
       <Container>
         <div className="col-1-start col-6-end">

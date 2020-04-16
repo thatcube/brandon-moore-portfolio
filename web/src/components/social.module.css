@@ -10,6 +10,13 @@
 }
 
 .root {
+  position: relative;
+  background: var(--color-image-background);
+  top: -6.5rem;
+  margin-bottom: calc(20vh + 5rem);
+  @media (--media-max-large) {
+    margin-bottom: 0;
+  }
   & > div {
     @media (--media-max-large) {
       display: block;

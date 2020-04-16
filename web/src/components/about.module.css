@@ -3,10 +3,9 @@
 
 .image {
   display: block;
-  margin: 0 auto -28rem auto;
-  width: 100%;
+  margin: 0 auto -30rem auto;
+  width: calc(100% - var(--gutter-padding));
   border-radius: var(--border-radius);
-  border: 2rem solid var(--color-background);
   box-sizing: border-box;
 
   @media (--media-max-large) {
@@ -36,9 +35,3 @@
   z-index: -1;
   border-radius: var(--border-radius);
 }
-
-/* .about {
-  background: no-repeat url(../images/banana.svg);
-  background-size: 3rem;
-  background-position: 95% 98%;
-} */

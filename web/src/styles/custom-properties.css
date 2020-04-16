@@ -7,8 +7,8 @@ body.light {
   --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* don't reference these */
-  --color-black: rgb(29, 34, 37);
-  --color-black-rgb: 29, 34, 37;
+  --color-black: rgb(15, 17, 19);
+  --color-black-rgb: 15, 17, 19;
   --color-white: rgb(255, 255, 255);
   --color-white-rgb: 255, 255, 255;
 
@@ -68,9 +68,9 @@ body.dark {
   --color-background-rgb: var(--color-black-rgb);
   --color-background-inverted: var(--color-white);
   --color-background-inverted-rgb: var(--color-white-rgb);
-  --color-foreground: rgb(44, 52, 60);
-  --color-foreground-rgb: 44, 52, 60;
-  --color-image-background: rgb(37, 43, 49);
+  --color-foreground: rgb(29, 32, 36);
+  --color-foreground-rgb: 29, 32, 36;
+  --color-image-background: rgb(24, 28, 31);
   --color-border: rgba(var(--color-white-rgb), 0.1);
   --color-accent: #857bed;
   --color-text-low-contrast: rgba(var(--color-white-rgb), 0.6);

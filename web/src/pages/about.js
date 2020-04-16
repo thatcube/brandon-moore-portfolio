@@ -62,7 +62,7 @@ const AboutPage = props => {
             data-sal="fade"
             data-sal-easing="ease"
             data-sal-duration="750"
-            data-sal-delay="100"
+            data-sal-delay="150"
             className="row-1-start col-6-start col-9-end"
           >
             {about.image && about.image.asset && (
@@ -72,11 +72,11 @@ const AboutPage = props => {
         </Container>
       </section>
 
-      <section className={style.about}>
+      {/* <section className={style.about}>
         <Link className="button about" to="/#projects">
           View Projects
         </Link>
-      </section>
+      </section> */}
     </Layout>
   );
 };

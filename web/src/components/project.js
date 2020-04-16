@@ -1,16 +1,9 @@
 import { format, distanceInWords, differenceInDays } from "date-fns";
 import React from "react";
 import Img from "gatsby-image";
-import { getFluidGatsbyImage } from "gatsby-source-sanity";
-import clientConfig from "../../client-config";
-
-import { buildImageObj } from "../lib/helpers";
-import { imageUrlFor } from "../lib/image-url";
 import BlockContent from "./block-content";
 import Container from "./container";
-import RoleList from "./role-list";
 import { Link } from "gatsby";
-import scrollTo from "gatsby-plugin-smoothscroll";
 
 import styles from "./project.module.css";
 
@@ -33,40 +26,33 @@ function Project(props) {
   return (
     <article
       data-sal="fade"
-      data-sal-easing="easeInOutSine"
-      data-sal-duration="1000"
+      data-sal-easing="ease-in-cubic"
+      data-sal-duration="150"
       data-sal-delay="0"
       className={styles.root}
     >
       <aside className="project-header">
         <Container>
-          <span className="row-1-start col-1-start col-7-end">
+          <div className="row-1-start col-1-start col-9-end">
             <h1 className={styles.title}>{title}</h1>
-          </span>
-          <span className="row-2-start col-1-start col-5-end">{shortdesc}</span>
-          <span className="col-5-start col-7-end">
-            <span className="project-header-caption">Role:</span>
-            {role}
-          </span>
-          <span className="col-7-start">
-            <span className="project-header-caption">Duration:</span>
-            {timeframe}
-          </span>
-          <span className="col-8-start">
-            <span className="project-header-caption">When:</span>
-            {when}
-          </span>
+          </div>
+          <div className="row-2-start col-1-start col-9-end"><span className={styles.shortdesc}>{shortdesc}</span></div>
         </Container>
+        <div data-sal="fade"
+        data-sal-easing="ease-in-cubic"
+          data-sal-duration="900"
+          data-sal-delay="150">{
+            props.mainImage && mainImage.asset && (
+              <Img
+                className={styles.mainImage}
+                alt={mainImage.alt}
+                objectFit="cover"
+                objectPosition="50% 50%"
+                fluid={mainImage.asset.fluid}
+              />
+            )}</div>
       </aside>
-      {props.mainImage && mainImage.asset && (
-        <Img
-          className={styles.mainImage}
-          alt={mainImage.alt}
-          objectFit="cover"
-          objectPosition="50% 50%"
-          fluid={mainImage.asset.fluid}
-        />
-      )}
+
       {/* {props.mainImage && mainImage.asset && (
         <Img
           className={styles.mainImage}
@@ -95,7 +81,20 @@ function Project(props) {
           </span>
         </Container>
       </aside> */}
-
+      {/* <Container>
+        <span className="col-5-start col-7-end">
+          <span className="project-header-caption">Role:</span>
+          {role}
+        </span>
+        <span className="col-7-start">
+          <span className="project-header-caption">Duration:</span>
+          {timeframe}
+        </span>
+        <span className="col-8-start">
+          <span className="project-header-caption">When:</span>
+          {when}
+        </span>
+      </Container> */}
       {_rawBody && <BlockContent blocks={_rawBody || []} />}
       <Container>
         <aside className="col-1-start col-9-end">
@@ -125,8 +124,8 @@ function Project(props) {
                     {project.slug ? (
                       <Link to={`/${project.slug.current}`}>{project.title}</Link>
                     ) : (
-                      <span>{project.title}</span>
-                    )}
+                        <span>{project.title}</span>
+                      )}
                   </React.Fragment>
                 ))}
               </ul>

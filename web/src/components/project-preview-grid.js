@@ -1,7 +1,6 @@
 import {Link} from 'gatsby'
 import React from 'react'
 import ProjectPreview from './project-preview'
-
 import styles from './project-preview-grid.module.css'
 
 function ProjectPreviewGrid (props) {
@@ -11,7 +10,7 @@ function ProjectPreviewGrid (props) {
       <ul className={styles.grid}>
         {props.nodes &&
           props.nodes.map(node => (
-            <li data-sal="fade" data-sal-easing="easeInOutSine" data-sal-duration="800" data-sal-delay="0" key={node.id}>
+            <li data-sal="fade" data-sal-easing="ease-in-cubic" data-sal-duration="400" data-sal-delay="0" key={node.id}>
               <ProjectPreview {...node} />
             </li>
           ))}
