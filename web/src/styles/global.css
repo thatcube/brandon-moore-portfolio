@@ -389,11 +389,11 @@ body.light header nav nav {
   } */
 }
 
-.active-home {
+/* .active-home {
   &:after {
     display: none;
   }
-}
+} */
 
 .z-index {
   z-index: 2;
