@@ -11,6 +11,7 @@ import GraphQLErrorList from "../components/graphql-error-list";
 import ProjectPreviewGrid from "../components/project-preview-grid";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
+import LayoutContainer from "../containers/layout"
 import { hero } from "../components/hero.module.css";
 
 export const query = graphql`
@@ -89,7 +90,7 @@ const IndexPage = props => {
   }
 
   return (
-    <Layout>
+    <LayoutContainer>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
         <h1
@@ -111,7 +112,7 @@ const IndexPage = props => {
           {projectNodes && <ProjectPreviewGrid nodes={projectNodes} />}
         </div>
       </Container>
-    </Layout>
+    </LayoutContainer>
   );
 };
 

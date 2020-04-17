@@ -40,7 +40,7 @@ function Project(props) {
         </Container>
         <div data-sal="fade"
         data-sal-easing="ease-in-cubic"
-          data-sal-duration="900"
+          data-sal-duration="600"
           data-sal-delay="150">{
             props.mainImage && mainImage.asset && (
               <Img

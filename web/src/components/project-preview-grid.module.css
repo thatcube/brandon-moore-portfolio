@@ -29,6 +29,18 @@
       transform: scale(1);
     }
   }
+  @media (--media-max-medium) {
+    @nest & a {
+  
+      &:hover {
+        transform: scale(0.97);
+      }
+  
+      &:active {
+        transform: scale(0.94);
+      }
+    }
+  }
   position: relative;
 
   @nest & li:not(:last-of-type) a {

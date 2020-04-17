@@ -1,9 +1,8 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
-
 .root {
   @media (hover: hover) {
-    @nest & a:hover {
+    @nest & a:hover, button:hover {
       color: var(--color-text);
     }
   }
@@ -15,11 +14,9 @@
   max-width: 960px;
   display: flex;
   align-items: center;
-
   @media (--media-min-extralarge) {
     max-width: 1150px;
   }
-
   @media (--media-max-medium) {
     padding: 0 var(--gutter-padding);
   }
@@ -27,7 +24,6 @@
 
 .logo {
   flex: 1;
-
   @nest & a {
     display: inline-flex;
     color: var(--color-text-high-contrast) !important;
@@ -36,11 +32,9 @@
     padding: 1em;
     position: relative;
     transition: 0.15s ease all;
-
     &:hover {
       box-shadow: none;
     }
-
     &:after {
       content: '';
       position: absolute;
@@ -56,12 +50,10 @@
       transition: 0.15s ease all;
       transform: scale(0.5);
     }
-
     &:hover:after {
       transform: scale(0.85);
       background: rgba(var(--color-background-inverted-rgb), 0.05);
     }
-
     &:active:after {
       transform: scale(0.75);
     }
@@ -71,7 +63,7 @@
 .nav {
   height: 100%;
   display: block;
-
+  position: relative;
   @nest & ul {
     margin: 0;
     padding: 0;
@@ -82,18 +74,18 @@
     justify-content: flex-end;
     position: relative;
   }
-
+  @nest & li {
+    position: relative;
+  }
   @nest & ul li a {
     display: block;
     text-decoration: none;
     padding: 1.5em 2em;
     height: 100%;
     position: relative;
-
     &:hover {
       box-shadow: none;
     }
-
     &:after {
       transition: 0.35s ease all;
       background: transparent;
@@ -106,10 +98,64 @@
       content: '';
       position: absolute;
     }
-
     &:after {
       left: 51%;
       right: 51%;
     }
+  }
+}
+
+.projectNav {
+  display: none;
+  position: absolute;
+  left: calc(-1 * var(--gutter-padding));
+  left: 50%;
+  top: 80%;
+  z-index: 10;
+  background: var(--color-foreground);
+  padding: var(--gutter-padding) 0;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 1.5em rgba(var(--color-background-rgb), 0.58);
+  transition: .2s ease all;
+  @nest & ul {
+    flex-wrap: wrap;
+    @nest & li {
+      min-width: 13rem;
+      display: block;
+      @nest & a {
+        padding: calc(var(--gutter-padding) / 2) var(--gutter-padding);
+      }
+      @nest & a:hover {
+        background: var(--color-image-background);
+      }
+    }
+  }
+}
+.projectToggle {
+  padding: 1.5em 2em;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.showNav {
+  display: flex;
+  animation-duration: 0.25s;
+  animation-name: var(--projects-menu);
+  animation-timing-function: ease;
+  transform: translateY(0) translateX(-50%) rotateX(0deg) scale(1);
+  transform-origin: 50% -50px;
+}
+:root {
+  --projects-menu: apple;
+}
+@keyframes apple {
+  0% {
+    transform: translateY(-5%) translateX(-50%) rotateX(-45deg) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%) rotateX(0deg) scale(1);
   }
 }

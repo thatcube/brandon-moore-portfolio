@@ -372,6 +372,10 @@ body.light .headroom--pinned {
   background: rgba(var(--color-background-rgb), 0.98);
   box-shadow: 0 0 3.5em rgba(0, 0, 0, 0.08);
 }
+body.light header nav nav {
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.16);
+  background: var(--color-background);
+}
 
 .active-page {
   color: var(--text-high-contrast) !important;
@@ -383,6 +387,12 @@ body.light .headroom--pinned {
     right: 27.5% !important;
     height: 0.1875em !important;
   } */
+}
+
+.active-home {
+  &:after {
+    display: none;
+  }
 }
 
 .z-index {

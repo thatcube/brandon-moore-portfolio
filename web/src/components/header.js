@@ -11,7 +11,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
     <header className={styles.root}>
       <nav className={styles.wrapper}>
         <div className={styles.logo}>
-          <Link to="/">
+          <Link activeClassName="active-home" to="/">
             <span className="sr-only">Home</span>
             <svg
               aria-labelledby="logoTitle"
@@ -31,10 +31,29 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
         </div>
         <div className={styles.nav}>
           <ul>
-            <li>
-              <Link to="/" activeClassName="active-page" title="Work">
+            <li onClick={showNav ? onHideNav : onShowNav}>
+              <button className={styles.projectToggle} title="Work">
                 Work
-              </Link>
+              </button>
+              <nav className={cn(styles.projectNav, showNav && styles.showNav)}>
+                <ul>
+                  <li>
+                    <Link to="/get" activeClassName="active-page" title="GET">
+                      GET App Redesign
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/aqua" activeClassName="active-page" title="GET">
+                      Aqua Design System
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/patient" activeClassName="active-page" title="GET">
+                      Patient App
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
             </li>
             <li>
               <Link to="/about" activeClassName="active-page" title="About">
