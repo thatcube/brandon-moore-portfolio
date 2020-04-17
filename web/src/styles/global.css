@@ -329,7 +329,7 @@ article {
   /* box-shadow: 0 2em 1em -2em rgba(0, 0, 0, 0.05); */
   box-shadow: 0 0 0 0 rgba(0,0,0,0.00);
 
-  @nest & ul a {
+  @nest & ul a, & button {
     transition: .15s ease background, .15s ease color;
     color: var(--color-text-low-contrast);
 
