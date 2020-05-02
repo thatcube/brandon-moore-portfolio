@@ -12,8 +12,10 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
       <nav className={styles.wrapper}>
         <div className={styles.logo}>
           <Link activeClassName="active-home" to="/">
+            {/* <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 17" className="long-arrow-left"><path fill="currentColor" d="M60.5 8H2.6l7.7-6.5-.6-.7L.5 8.5l9.2 7.7.6-.7L2.6 9h57.9z"></path></svg> */}
             <span className="sr-only">Home</span>
             <svg
+              className="logo"
               aria-labelledby="logoTitle"
               width="40"
               height="40"

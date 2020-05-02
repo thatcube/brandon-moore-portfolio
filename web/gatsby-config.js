@@ -65,6 +65,14 @@ module.exports = {
       options: {
         trackingId: "UA-159312744-1",
       }
+    },
+    {
+      resolve: '@mkitio/gatsby-theme-password-protect',
+      options: {
+        partialMatching: true,
+        password: 'brando', // delete or `undefined` to disable password protection
+        pagePaths: ['/get', '/patient', '/aqua']
+      }
     }
   ]
 }

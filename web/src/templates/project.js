@@ -21,6 +21,31 @@ export const query = graphql`
         slug {
           current
         }
+        mainImage {
+          crop {
+            _key
+            _type
+            top
+            bottom
+            left
+            right
+          }
+          hotspot {
+            _key
+            _type
+            x
+            y
+            height
+            width
+          }
+          asset {
+            _id
+            fluid(maxWidth: 500) {
+              ...GatsbySanityImageFluid_noBase64
+            }
+          }
+          alt
+        }
       }
       mainImage {
         crop {
