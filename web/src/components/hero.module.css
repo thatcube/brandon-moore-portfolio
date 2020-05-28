@@ -3,6 +3,7 @@
 
 .hero {
   color: var(--color-text-high-contrast);
+  font-family: var(--font-family-display);
   font-weight: bold;
   line-height: 1.1;
   font-size: 2.5rem;
@@ -16,6 +17,7 @@
     color: var(--color-text-low-contrast);
     margin-top: 1rem;
     font-weight: 500;
+    font-family: var(--font-family-sans);
   }
 
   @media (--media-min-small) {

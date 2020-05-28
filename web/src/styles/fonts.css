@@ -15,7 +15,14 @@
   font-style: normal;
   font-display: fallback;
 }
-
+@font-face {
+  font-family: 'Tommy Soft';
+  src: url('../font/made-tommy-soft-bold-webfont.woff2') format('woff2'),
+       url('../font/made-tommy-soft-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
 /* @font-face {
   font-family: 'Gilroy';
   src: url('../font/gilroy-extrabold-webfont.eot');

@@ -1,7 +1,7 @@
 @import './custom-properties.css';
 @import './custom-media.css';
 h1, h2, h3, h4 {
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-display);
   letter-spacing: -0.01em;
 }
 
@@ -439,6 +439,8 @@ img {
   letter-spacing: 0.1rem;
   font-weight: bold;
   transition: .15s ease background, 0.25s ease box-shadow;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   &:hover {
     background: rgba(var(--color-background-inverted-rgb), 0.025);
   }
@@ -467,8 +469,6 @@ img {
   width: 100%;
 }
 
-
-
 /* 
 .textBoxLabel {
   position: relative;
@@ -485,23 +485,23 @@ img {
 } */
 
 .passwordWrapper {
-    min-height: calc(100vh - 282px);
-    background: var(--color-background);
-    @media (--media-min-small) {
-      display: flex;
-    }
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 var(--gutter-padding);
+  min-height: calc(100vh - 282px);
+  background: var(--color-background);
+  @media (--media-min-small) {
+    display: flex;
+  }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--gutter-padding);
+  text-align: left;
+  @nest & form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 20rem;
+  }
+  @nest & h1 {
     text-align: left;
-    @nest & form {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 20rem;
-    }
-    @nest & h1 {
-      text-align: left;
-      width: 100%;
-    }
+    width: 100%;
+  }
 }

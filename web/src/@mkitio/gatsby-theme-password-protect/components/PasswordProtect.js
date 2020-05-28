@@ -36,13 +36,13 @@ const PasswordProtect = () => {
                             <input
                                 name="password"
                                 type="password"
-                                id="cats"
+                                id="passwordinput"
                                 value={password}
                                 className="textbox"
                                 onChange={event => setPassword(event.target.value)}
                                 style={styles.input}
                             />
-                            <label className="textBoxLabel" for="cats">Password</label>
+                            <label className="textBoxLabel" for="passwordinput">Password</label>
 
                         </div>
 

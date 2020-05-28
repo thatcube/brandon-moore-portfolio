@@ -82,6 +82,7 @@
   @nest & a {
     display: flex;
     color: inherit;
+    font-family: var(--font-family-display);
     text-decoration: none;
     position: relative;
     margin: 2em 0;

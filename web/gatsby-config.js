@@ -70,7 +70,7 @@ module.exports = {
       resolve: '@mkitio/gatsby-theme-password-protect',
       options: {
         partialMatching: true,
-        password: 'brando', // delete or `undefined` to disable password protection
+        password: 'brandon', // delete or `undefined` to disable password protection
         pagePaths: ['/get', '/patient', '/aqua']
       }
     }
