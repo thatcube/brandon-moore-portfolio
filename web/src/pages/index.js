@@ -94,11 +94,7 @@ const IndexPage = props => {
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
         <h1
-          data-sal="fade"
-          data-sal-easing="ease"
-          data-sal-duration="1000"
-          data-sal-delay="0"
-          className="col-1-start col-9-end"
+          className="col-1-start col-9-end fade-zoom"
         >
           <span className={hero}>
             Hi. I'm Brandon.

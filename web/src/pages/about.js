@@ -53,7 +53,7 @@ const AboutPage = props => {
             data-sal-easing="ease"
             data-sal-duration="750"
             data-sal-delay="0"
-            className="col-1-start col-8-end row-1-start about-section headline"
+            className="col-1-start col-8-end row-1-start about-section headline fade-zoom"
           >
             <h1 className={styles.title}>{about.tagline}</h1>
             {about._rawBio && <BlockContent blocks={about._rawBio || []} />}
@@ -63,7 +63,7 @@ const AboutPage = props => {
             data-sal-easing="ease"
             data-sal-duration="750"
             data-sal-delay="150"
-            className="row-1-start col-6-start col-9-end"
+            className="row-1-start col-6-start col-9-end fade-zoom"
           >
             {about.image && about.image.asset && (
               <Img className={style.image} alt={about.image.alt} fluid={about.image.asset.fluid} />

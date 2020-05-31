@@ -36,6 +36,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
             <li onClick={showNav ? onHideNav : onShowNav}>
               <button className={styles.projectToggle} title="Work">
                 Work
+                <svg width="24" height="24" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" d="M16 10l-4 4-4-4" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
               </button>
               <nav className={cn(styles.projectNav, showNav && styles.showNav)}>
                 <ul>

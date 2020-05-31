@@ -28,7 +28,7 @@ const PasswordProtect = () => {
     return (
         <Layout>
             <Container>
-                <div className="col-1-start col-9-end passwordWrapper">
+                <div className="col-1-start col-9-end passwordWrapper fade-zoom">
                     <form onSubmit={onSubmit}>
                         <h1 style={{ color: 'var(--color-text-high-contrast)' }}>Password please</h1>
                         <div className="textBoxContainer">

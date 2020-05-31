@@ -310,8 +310,11 @@ article {
   @nest & ul a, & button {
     transition: .15s ease background, .15s ease color;
     color: var(--color-text-low-contrast);
+    border-radius: calc(var(--border-radius) / 2);
+    padding: 0.75em 1em;
     &:hover {
       color: rgba(var(--color-background-inverted-rgb), 0.5);
+      background: rgba(var(--color-background-inverted-rgb), 0.01);
       /* &:after {
         background: rgba(var(--color-background-inverted-rgb), 0.1);
         left: 37.5%;
@@ -328,6 +331,16 @@ article {
         height: 0.1875em !important;
       } */
     }
+    &:after {
+      content: attr(title);
+      display: block;
+      font-weight: bold;
+      height: 0;
+      visibility: hidden;
+    }
+  }
+  @nest & nav nav a {
+    border-radius: 0;
   }
   position: relative;
 }
@@ -344,6 +357,14 @@ article {
 body.light .headroom--pinned {
   background: rgba(var(--color-background-rgb), 0.98);
   box-shadow: 0 0 3.5em rgba(0, 0, 0, 0.08);
+}
+
+body.light .headroom {
+  @nest & ul a, & button {
+    &:hover {
+      background: rgba(var(--color-background-inverted-rgb), 0.05);
+    }
+  }
 }
 
 body.light header nav nav {
@@ -397,6 +418,24 @@ body.light header nav nav {
   }
 } */
 
+.fade-zoom {
+  animation: fade-zoom 1s;
+}
+
+@keyframes fade-zoom {
+  0% {
+    transform: scale(0.97);
+    opacity: 0;
+  }
+  /* 66% {
+    opacity: 1;
+  } */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .z-index {
   z-index: 2;
 }
@@ -420,7 +459,7 @@ img {
     padding: 0;
   }
   @media (--media-max-large) {
-    padding: 8rem var(--gutter-padding) calc(var(--gutter-padding) * 8) var(--gutter-padding);
+    padding: 1rem 0 calc(var(--gutter-padding) * 8) 0;
     /* width: 100%; */
   }
 }
@@ -487,9 +526,6 @@ img {
 .passwordWrapper {
   min-height: calc(100vh - 282px);
   background: var(--color-background);
-  @media (--media-min-small) {
-    display: flex;
-  }
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -499,9 +535,31 @@ img {
     display: flex;
     flex-wrap: wrap;
     max-width: 20rem;
+    background: rgba(var(--color-background-inverted-rgb), 0.02);
+    padding: var(--gutter-padding);
+    border-radius: var(--border-radius);
+    justify-content: center;
   }
   @nest & h1 {
     text-align: left;
     width: 100%;
+    margin-top: 0;
   }
+  @nest & button {
+    background: rgba(var(--color-background-inverted-rgb), 0.08);
+    border-radius: var(--border-radius);
+    &:hover {
+      border-radius: var(--border-radius);
+    }
+  }
+  @media (--media-min-small) {
+    display: flex;
+    @nest & form {
+      padding: calc(var(--gutter-padding) * 2);
+    }
+  }
+}
+
+body.light .passwordWrapper form {
+  background: rgba(var(--color-background-inverted-rgb), 0.03);
 }

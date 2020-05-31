@@ -31,17 +31,17 @@ function Project(props) {
       data-sal-delay="0"
       className={styles.root}
     >
-      <aside className="project-header">
+      <aside className="project-header fade-zoom">
         <Container>
           <div className="row-1-start col-1-start col-9-end">
             <h1 className={styles.title}>{title}</h1>
           </div>
           <div className="row-2-start col-1-start col-9-end"><span className={styles.shortdesc}>{shortdesc}</span></div>
         </Container>
-        <div data-sal="fade"
-        data-sal-easing="ease-in-cubic"
-          data-sal-duration="600"
-          data-sal-delay="150">{
+        <div data-sal="slide-up"
+        data-sal-easing="ease"
+          data-sal-duration="800"
+          data-sal-delay="0">{
             props.mainImage && mainImage.asset && (
               <Img
                 className={styles.mainImage}
