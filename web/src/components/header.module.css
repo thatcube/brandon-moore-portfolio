@@ -99,7 +99,7 @@
   top: 80%;
   z-index: 10;
   background: var(--color-foreground);
-  padding: calc(var(--gutter-padding) / 2) 0;
+  padding: calc(var(--gutter-padding) / 4);
   border-radius: calc(var(--border-radius) / 2);
   box-shadow: 0 0 1.5em rgba(var(--color-background-rgb), 0.58);
   transition: .2s ease all;
@@ -109,7 +109,8 @@
       min-width: 13rem;
       display: block;
       @nest & a {
-        padding: calc(var(--gutter-padding) / 2) var(--gutter-padding);
+        padding: calc(var(--gutter-padding) / 2);
+        border-radius: calc(var(--border-radius) / 2) !important;
       }
       @nest & a:hover {
         background: var(--color-image-background);
