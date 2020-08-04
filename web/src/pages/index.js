@@ -79,8 +79,8 @@ const IndexPage = props => {
   const site = (data || {}).site;
   const projectNodes = (data || {}).projects
     ? mapEdgesToNodes(data.projects)
-        .filter(filterOutDocsWithoutSlugs)
-        .filter(filterOutDocsPublishedInTheFuture)
+      .filter(filterOutDocsWithoutSlugs)
+      .filter(filterOutDocsPublishedInTheFuture)
     : [];
 
   if (!site) {
@@ -90,17 +90,22 @@ const IndexPage = props => {
   }
 
   return (
+    <div className="hc-bg">
     <LayoutContainer>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
-        <h1
-          className="col-1-start col-9-end fade-zoom"
-        >
-          <span className={hero}>
-            Hi. I'm Brandon.
-            <span>A Product Designer creating experiences for everyone.</span>
-          </span>
-        </h1>
+        <div className="col-1-start col-9-end fade-zoom">
+          <div className={hero}>
+            <h1>
+              Brandon Moore.
+            <br />
+              Product Designer at CBORD.
+            </h1>
+            <h2>
+              Crafting digital experiences built for all people.
+            </h2>
+          </div>
+        </div>
       </Container>
       {/* <button className="button" onClick={() => scrollTo('#projects')}>My link</button> */}
       <Container>
@@ -109,6 +114,7 @@ const IndexPage = props => {
         </div>
       </Container>
     </LayoutContainer>
+    </div>
   );
 };
 

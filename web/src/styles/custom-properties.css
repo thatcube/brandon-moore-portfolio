@@ -2,18 +2,22 @@
 
 :root,
 body.light {
-  --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-family-display: "Tommy Soft", Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; */
+  --font-family-sans: -apple-system, BlinkMacSystemFont, system, sans-serif;
+  /* --font-family-display: "Tommy Soft", Calibri, -apple-system, BlinkMacSystemFont, sans-serif; */
+  --font-family-display: var(--font-family-sans);
   --font-family-serif: "Recoleta", Calisto MT, Bookman Old Style, Bookman, Goudy Old Style, Garamond, Hoefler Text, Bitstream Charter, Georgia, serif;
   --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* don't reference these */
+  --color-true-black: rgb(0,0,0);
   --color-black: rgb(15, 17, 19);
   --color-black-rgb: 15, 17, 19;
   --color-white: rgb(255, 255, 255);
   --color-white-rgb: 255, 255, 255;
 
   /* reference these ones */
+  --color-background-high-contrast: var(--color-white);
   --color-accent: #675ae8;
   --color-background: var(--color-white);
   --color-background-inverted: var(--color-black);
@@ -61,10 +65,11 @@ body.light {
 
   --border-radius: calc(16 / var(--unit) * 1rem);
   --gutter-padding: 1.5rem;
-  --large-image-gutter: calc(var(--gutter-padding * 2));
+  --large-image-gutter: calc(var(--gutter-padding) * 2);
 }
 
 body.dark {
+  --color-background-high-contrast: var(--color-true-black);
   --color-background: var(--color-black);
   --color-background-rgb: var(--color-black-rgb);
   --color-background-inverted: var(--color-white);
