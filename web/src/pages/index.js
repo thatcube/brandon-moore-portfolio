@@ -102,7 +102,9 @@ const IndexPage = props => {
               Product Designer at CBORD.
             </h1>
             <h2>
-              Crafting digital experiences built for all people.
+              <span>Crafting digital</span>
+              <span>experiences built</span>
+              <span>for all people.</span>
             </h2>
           </div>
         </div>

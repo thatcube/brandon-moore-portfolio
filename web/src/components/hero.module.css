@@ -1,5 +1,50 @@
 @import '../styles/custom-properties.css';
 @import '../styles/custom-media.css';
+:root {
+  --heroAnimTransformStart: rotateX(75deg) rotateY(10deg) rotateZ(-9deg) translateZ(4rem) translateY(-2rem);
+  --heroAnimTransformEnd: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(0rem) translateY(0);
+}
+@keyframes heroAnim1 {
+  0% {
+    opacity: 0;
+    transform: var(--heroAnimTransformStart);
+    transform-origin: top;
+  }
+  100% {
+    opacity: 1;
+    transform: var(--heroAnimTransformEnd);
+  }
+}
+
+@keyframes heroAnim2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    transform: var(--heroAnimTransformStart);
+    transform-origin: top;
+  }
+  100% {
+    opacity: 1;
+    transform: var(--heroAnimTransformEnd);
+  }
+}
+
+@keyframes heroAnim3 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    transform: var(--heroAnimTransformStart);
+    transform-origin: top;
+  }
+  100% {
+    opacity: 1;
+    transform: var(--heroAnimTransformEnd);
+  }
+}
 
 .hero {
   color: var(--color-text-high-contrast);
@@ -8,6 +53,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 var(--gutter-padding);
+  
 
   & h1 {
     display: flex;
@@ -21,6 +67,18 @@
     font-size: 9.8vw;
     line-height: 10.4vw;
     margin: 0 0 3rem;
+    & span {
+      display: inline-block;
+      &:nth-of-type(1) {
+        animation: heroAnim1 1s cubic-bezier(.165,.84,.44,1);
+      }
+      &:nth-of-type(2) {
+        animation: heroAnim2 1s cubic-bezier(.165,.84,.44,1);
+      }
+      &:nth-of-type(3) {
+        animation: heroAnim3 1s cubic-bezier(.165,.84,.44,1);
+      }
+    }
   }
 
   @media (--media-min-small) {
