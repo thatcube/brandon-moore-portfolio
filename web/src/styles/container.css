@@ -114,19 +114,19 @@
     margin: 2em 0 0 0;
   }
 
-  @nest & h2+p, & h3+p, & h2+h3 {
+  @nest & h2+p, & h3+p, & h2+h3, & li {
     margin-top: 0.5em;
   }
 
   @nest & ul {
-    padding-left: var(--gutter-padding);
+    padding: calc(var(--gutter-padding) * 0.5) 0 calc(var(--gutter-padding) * 1) calc(var(--gutter-padding) * 2);
   }
 
   @nest & p+p {
     margin-top: 0;
   }
 
-  @nest & p {
+  @nest & p, & ul {
     max-width: 680px;
   }
 }
