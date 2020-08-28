@@ -147,6 +147,7 @@ footer>div {
 }
 
 footer {
+  content-visibility: auto;
   @nest &>div {
     padding: 3rem var(--gutter-padding);
     /* border-top: 1px solid var(--color-border); */
