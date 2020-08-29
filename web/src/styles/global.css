@@ -5,7 +5,6 @@ h1, h2, h3, h4 {
   /* letter-spacing: -0.01em; */
 }
 
-
 h2 {
   font-size: 2em;
 }
@@ -581,14 +580,12 @@ img {
       padding: calc(var(--gutter-padding) * 2);
     }
   }
-  
   @media (--media-max-extralarge) {
     margin: calc(var(--gutter-padding) * 2) var(--gutter-padding);
   }
   @media (--media-max-medium) {
     margin: var(--gutter-padding) 0 0 0;
     border-radius: 0;
-
     @nest & form {
       background: transparent;
       position: absolute;
@@ -600,19 +597,17 @@ img {
       left: var(--gutter-padding);
       right: var(--gutter-padding);
     }
-
     min-height: 100vh;
     width: 100%;
   }
-  
 }
 
 body.light .passwordWrapper {
   @media (--media-min-medium) {
     box-shadow: 0 0 0 0.2rem var(--color-foreground);
-  }
-  & form {
-  background: rgba(var(--color-background-inverted-rgb), 0.03);
+    & form {
+      background: rgba(var(--color-background-inverted-rgb), 0.03);
+    }
   }
 }
 
@@ -641,6 +636,7 @@ body.light .passwordWrapper {
   margin-top: calc(var(--gutter-padding) * -1);
   /* transform: translateY(var(--gutter-padding)); */
 }
+
 .modalClose {
   position: absolute;
   top: var(--gutter-padding);
@@ -660,13 +656,13 @@ body.light .passwordWrapper {
     transition: 0.2s ease all;
   }
   &:hover {
-    &:after{
+    &:after {
       background: var(--color-foreground);
     }
     transform: scale(1.2);
   }
   &:active {
-    &:after{
+    &:after {
       background: var(--color-foreground);
     }
     transform: scale(0.95);
