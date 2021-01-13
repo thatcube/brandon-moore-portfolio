@@ -133,7 +133,7 @@
 
 .mainContent {
   font-size: 1.125rem;
-  content-visibility: auto;
+  /* content-visibility: auto; */
 
   @media (--media-min-medium) {
     padding: 0 var(--gutter-padding);

@@ -613,6 +613,7 @@ body.light .passwordWrapper {
 
 .hc-bg {
   background: var(--color-background-high-contrast);
+  /* background-image: url(../images/texture2.png); */
   & .headroom {
     & ul a, & button {
       &:hover {
