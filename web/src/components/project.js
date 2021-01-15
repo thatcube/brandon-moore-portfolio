@@ -96,45 +96,48 @@ function Project(props) {
         </span>
       </Container> */}
       {_rawBody && <BlockContent blocks={_rawBody || []} />}
-      <Container>
-        <aside className="col-1-start col-9-end">
-          {/* {publishedAt && (
-            <div className={styles.publishedAt}>Last Updated: &nbsp;
-              {differenceInDays(new Date(publishedAt), new Date()) > 3
-                ? distanceInWords(new Date(publishedAt), new Date())
-                : format(new Date(publishedAt), 'MMMM Do YYYY')}
-            </div>
-          )}
-          {members && members.length > 0 && <RoleList items={members} title='Project members' />}
-          {categories && categories.length > 0 && (
-            <div className={styles.categories}>
-              <h3 className={styles.categoriesHeadline}>Categories</h3>
-              <ul>
-                {categories.map(category => (
-                  <li key={category._id}>{category.title}</li>
-                ))}
-              </ul>
-            </div>
-          )} */}
-          {relatedProjects && relatedProjects.length > 0 && (
-            <div className={styles.relatedProjects}>
-              <ul>
-                {relatedProjects.map(project => (
-                  <React.Fragment key={`related_${project._id}`}>
-                    {project.slug ? (
-                      <Link to={`/${project.slug.current}`}>{project.title}</Link>
-                    ) : (
-                        <span>{project.title}</span>
-                      )}
-                  </React.Fragment>
-                ))}
-              </ul>
-            </div>
-          )}
-        </aside>
-      </Container>
+      
       {/* <button className="button to-top" onClick={() => scrollTo('#top-of-page')}>Back to Top <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7 8.306l5 5.107c.2.204.3.408.3.715 0 .306-.1.51-.3.715-.4.408-1 .408-1.4 0l-3.3-3.37v7.676a1 1 0 01-1.993.117L11 19.149v-7.676l-3.3 3.37c-.4.408-1 .408-1.4 0-.4-.409-.4-1.022 0-1.43l5-5.107c.4-.408 1-.408 1.4 0zM17 4a1 1 0 01.117 1.993L17 6H7a1 1 0 01-.117-1.993L7 4h10z" fill="currentColor" fill-rule="nonzero"/></svg></button> */}
-    </article>
+      <div className={styles.relatedProjects}>
+    <Container>
+    <aside className="col-1-start col-9-end">
+      {/* {publishedAt && (
+        <div className={styles.publishedAt}>Last Updated: &nbsp;
+          {differenceInDays(new Date(publishedAt), new Date()) > 3
+            ? distanceInWords(new Date(publishedAt), new Date())
+            : format(new Date(publishedAt), 'MMMM Do YYYY')}
+        </div>
+      )}
+      {members && members.length > 0 && <RoleList items={members} title='Project members' />}
+      {categories && categories.length > 0 && (
+        <div className={styles.categories}>
+          <h3 className={styles.categoriesHeadline}>Categories</h3>
+          <ul>
+            {categories.map(category => (
+              <li key={category._id}>{category.title}</li>
+            ))}
+          </ul>
+        </div>
+      )} */}
+      {relatedProjects && relatedProjects.length > 0 && (
+        
+          <ul>
+            {relatedProjects.map(project => (
+              <React.Fragment key={`related_${project._id}`}>
+                {project.slug ? (
+                  <Link to={`/${project.slug.current}`}>{project.title}</Link>
+                ) : (
+                    <span>{project.title}</span>
+                  )}
+              </React.Fragment>
+            ))}
+          </ul>
+        
+      )}
+    </aside>
+  </Container>
+  </div>
+  </article>
   );
 }
 

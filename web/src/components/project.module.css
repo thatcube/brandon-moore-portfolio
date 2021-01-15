@@ -69,7 +69,11 @@
 }
 
 .relatedProjects {
-  margin: 2rem 0 3rem;
+  margin: 8rem 0 0;
+  @media (--media-max-medium) {
+    margin: 8rem -1.5rem 0;
+  }
+  background: var(--color-image-background);
   @nest & ul {
     margin: 0.75rem 0;
     display: flex;
