@@ -462,6 +462,7 @@ img {
   border-radius: calc(var(--border-radius) * 2);
   & h1 {
     margin: 0;
+    margin-bottom: 1rem;
   }
   & p {
     font-size: 1.5rem;

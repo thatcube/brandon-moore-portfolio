@@ -31,12 +31,18 @@ function Project(props) {
       data-sal-delay="0"
       className={styles.root}
     >
-      <aside className="project-header fade-zoom">
+      <aside className="project-header">
         <Container>
-          <div className="row-1-start col-1-start col-9-end">
+          <div data-sal="slide-up"
+        data-sal-easing="ease"
+          data-sal-duration="800"
+          data-sal-delay="0" className="row-1-start col-1-start col-9-end">
             <h1 className={styles.title}>{title}</h1>
           </div>
-          <div className="row-2-start col-1-start col-9-end"><span className={styles.shortdesc}>{shortdesc}</span></div>
+          <div data-sal="slide-up"
+        data-sal-easing="ease"
+          data-sal-duration="1200"
+          data-sal-delay="0" className="row-2-start col-1-start col-9-end"><span  className={styles.shortdesc}>{shortdesc}</span></div>
         </Container>
         <div data-sal="slide-up"
         data-sal-easing="ease"

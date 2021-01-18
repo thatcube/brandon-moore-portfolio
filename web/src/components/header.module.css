@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   @media (--media-min-extralarge) {
-    max-width: 1150px;
+    max-width: 63.999rem;
   }
   @media (--media-max-medium) {
     padding: 0 var(--gutter-padding);

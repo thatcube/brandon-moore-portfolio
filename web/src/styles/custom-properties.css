@@ -26,7 +26,7 @@ body.light {
   --color-foreground: rgb(242, 242, 242);
   --color-foreground-rgb: 242, 242, 242;
   --color-image-background: rgb(248, 248, 248);
-  --color-text: rgba(var(--color-black-rgb), 0.82);
+  --color-text: rgba(var(--color-black-rgb), 0.75);
   --color-text-low-contrast: rgba(var(--color-black-rgb), 0.63);
   --color-text-high-contrast: rgba(var(--color-black-rgb), 0.92);
   --color-text-inverted: var(--color-white);

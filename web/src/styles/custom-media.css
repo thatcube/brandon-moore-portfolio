@@ -1,19 +1,19 @@
 /* 450px */
 @custom-media --media-min-small (min-width: 28.125em);
 
-@custom-media --media-max-small (max-width: 28.124em);
+@custom-media --media-max-small (max-width: 28.1249em);
 
 /* 675px */
 @custom-media --media-min-medium (min-width: 42.1875em);
 
-@custom-media --media-max-medium (max-width: 42.1874em);
+@custom-media --media-max-medium (max-width: 42.18749em);
 
 /* 900px */
 @custom-media --media-min-large (min-width: 56.25em);
 
-@custom-media --media-max-large (max-width: 56.24em);
+@custom-media --media-max-large (max-width: 56.249em);
 
-/* 1200px */
-@custom-media --media-min-extralarge (min-width: 75em);
+/* 1024px */
+@custom-media --media-min-extralarge (min-width: 64em);
 
-@custom-media --media-max-extralarge (max-width: 74.99em);
+@custom-media --media-max-extralarge (max-width: 63.999em);

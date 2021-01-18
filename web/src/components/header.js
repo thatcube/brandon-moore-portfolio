@@ -8,7 +8,7 @@ import styles from "./header.module.css";
 
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <Headroom>
-    <header className={styles.root}>
+    <header  className={styles.root}>
       <nav className={styles.wrapper}>
         <div className={styles.logo}>
           <Link activeClassName="active-home" to="/">

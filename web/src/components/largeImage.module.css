@@ -4,11 +4,11 @@
 .root {
   width: calc(100vw - var(--large-image-gutter));
   padding: 0;
-  margin: 0;
+  margin: 2rem 0;
 
   @media (--media-min-extralarge) {
     width: 100vw;
-    transform: translateX(calc((75rem - 100vw)/2));
+    transform: translateX(calc((65rem - 100vw)/2));
 
     @nest & img {
       border-radius: 0;

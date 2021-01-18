@@ -16,7 +16,7 @@
   margin: 0 auto;
   grid-column-gap: 32px;
   grid-row-gap: var(--gutter-padding);
-  max-width: 74.99em;
+  max-width: 63.999em;
   align-items: center;
 
   @media (--media-max-medium) {
