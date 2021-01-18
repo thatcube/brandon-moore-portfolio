@@ -14,11 +14,12 @@
   max-width: 960px;
   display: flex;
   align-items: center;
+  padding: 0 var(--gutter-padding);
   @media (--media-min-extralarge) {
     max-width: 63.999rem;
   }
   @media (--media-max-medium) {
-    padding: 0 var(--gutter-padding);
+    padding: 0;
   }
 }
 

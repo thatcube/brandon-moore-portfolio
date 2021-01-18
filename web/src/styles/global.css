@@ -457,7 +457,7 @@ img {
 }
 
 .about-section {
-  padding: calc(var(--gutter-padding) * 3) 22rem 0 var(--gutter-padding);
+  padding: calc(var(--gutter-padding) * 3) 22rem 0 calc(var(--gutter-padding)* 2);
   /* border: 0.0625rem solid var(--color-border); */
   border-radius: calc(var(--border-radius) * 2);
   & h1 {
@@ -466,6 +466,10 @@ img {
   }
   & p {
     font-size: 1.5rem;
+    margin-bottom: 1em;
+    @media (--media-max-large) {
+      font-size: 1.25rem;
+    }
   }
   & .mainContent {
     display: block;
@@ -473,7 +477,6 @@ img {
   }
   @media (--media-max-large) {
     padding: 1rem 0 calc(var(--gutter-padding) * 8) 0;
-    /* width: 100%; */
   }
 }
 
