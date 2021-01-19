@@ -303,10 +303,40 @@ article {
   }
 }
 
+.project-info {
+  max-width: 64em;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+  border: 0.125rem solid var(--color-border);
+  border-radius: var(--border-radius);
+  @nest & .col {
+    display: block;
+    padding: var(--gutter-padding);
+    width: 100%;
+  }
+  @nest & .col:not(:last-of-type) {
+    border-right: 0.125rem solid var(--color-border);
+  }
+  @media (--media-max-medium) {
+    display: block;
+    @nest & .col {
+      width: auto;
+    }
+    @nest & .col:not(:last-of-type) {
+      border-right: none;
+      border-bottom: 0.125rem solid var(--color-border);
+    }
+  }
+}
+
 .project-header-caption {
-  color: var(--color-text-low-contrast);
+  color: var(--color-text-high-contrast);
   font-size: 0.75em;
+  font-weight: 700;
   display: block;
+  text-transform: uppercase;
+  margin: 1em 0;
   @media (--media-max-medium) {
     margin-top: 1em;
   }

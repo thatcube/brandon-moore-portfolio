@@ -71,6 +71,16 @@ const AboutPage = props => {
           </div>
         </Container>
       </section>
+      {/* <section>
+        <Container>
+        <ul>
+          <li>Product Designer</li>
+          <li>UI Developer</li>
+          <li>Product Designer</li>
+
+        </ul>
+        </Container>
+      </section> */}
 
       {/* <section className={style.about}>
         <Link className="button about" to="/#projects">
