@@ -49,21 +49,20 @@ const AboutPage = props => {
       <section className={styles.root}>
         <Container>
           <div
-            data-sal="fade"
-            data-sal-easing="ease"
-            data-sal-duration="750"
-            data-sal-delay="0"
-            className="col-1-start col-8-end row-1-start about-section headline fade-zoom"
+            
+            className="col-1-start col-8-end row-1-start about-section headline"
           >
-            <h1 className={styles.title}>{about.tagline}</h1>
-            {about._rawBio && <BlockContent blocks={about._rawBio || []} />}
+            <h1 data-sal="slide-up"
+            data-sal-easing="ease"
+            data-sal-duration="500"
+            data-sal-delay="0" className={styles.title}>{about.tagline}</h1>
+            <div data-sal="slide-up"
+            data-sal-easing="ease"
+            data-sal-duration="500"
+            data-sal-delay="100">{about._rawBio && <BlockContent blocks={about._rawBio || []} />}</div>
           </div>
           <div
-            data-sal="fade"
-            data-sal-easing="ease"
-            data-sal-duration="750"
-            data-sal-delay="150"
-            className="row-1-start col-6-start col-9-end fade-zoom"
+            className="row-1-start col-6-start col-9-end"
           >
             {about.image && about.image.asset && (
               <Img className={style.image} alt={about.image.alt} fluid={about.image.asset.fluid} />
