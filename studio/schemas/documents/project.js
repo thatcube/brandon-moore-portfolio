@@ -21,14 +21,13 @@ export default {
       type: "string"
     },
     {
-      name: "timeframe",
-      title: "Timeframe/Duration for project",
-      type: "string",
-      description: "i.e. 6 Weeks, 8 Months, etc"
+      name: "problem",
+      title: "Problem",
+      type: "string"
     },
     {
-      name: "when",
-      title: "When did dis happen",
+      name: "solution",
+      title: "Solution",
       type: "string"
     },
     {

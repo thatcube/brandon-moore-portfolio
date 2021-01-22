@@ -54,11 +54,11 @@ const AboutPage = props => {
           >
             <h1 data-sal="slide-up"
             data-sal-easing="ease"
-            data-sal-duration="500"
+            data-sal-duration="800"
             data-sal-delay="0" className={styles.title}>{about.tagline}</h1>
             <div data-sal="slide-up"
             data-sal-easing="ease"
-            data-sal-duration="500"
+            data-sal-duration="300"
             data-sal-delay="100">{about._rawBio && <BlockContent blocks={about._rawBio || []} />}</div>
           </div>
           <div

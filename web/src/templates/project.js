@@ -74,8 +74,8 @@ export const query = graphql`
       }
       title
       role
-      timeframe
-      when
+      problem
+      solution
       shortdesc
       slug {
         current
