@@ -39,7 +39,10 @@
     & svg {
       position: relative;
     }
-    &:after {
+    &:before {
+      border-radius: 100% !important;
+    }
+    /* &:after {
       content: '';
       position: absolute;
       background: transparent;
@@ -60,7 +63,7 @@
     }
     &:active:after {
       transform: scale(0.75);
-    }
+    } */
   }
 }
 
@@ -113,8 +116,13 @@
         padding: calc(var(--gutter-padding) / 2);
         border-radius: calc(var(--border-radius) / 2) !important;
       }
-      @nest & a:hover {
-        background: var(--color-image-background);
+      @nest & a:before {
+        transition: 0s ease transform, 0.2s ease background;
+        transform: translate(-50%, -50%) scale(1) perspective(0.125rem);
+      }
+      @nest & a:active:before {
+        /* transition: 0s ease transform, 0.2s ease background; */
+        transform: translate(-50%, -50%) scale(1) perspective(0.125rem);
       }
     }
   }

@@ -70,16 +70,35 @@ const AboutPage = props => {
           </div>
         </Container>
       </section>
-      {/* <section>
+      <section>
         <Container>
+        <div 
+        data-sal="slide-up"
+        data-sal-easing="ease"
+        data-sal-duration="500"
+        data-sal-delay="0"
+        className="experience col-1-start col-8-end">
+        <h2>Experience</h2>
         <ul>
-          <li>Product Designer</li>
-          <li>UI Developer</li>
-          <li>Product Designer</li>
+          <li>Product Designer
+            <span>CBORD & Horizon Software</span>
+            <span>Dec 2018 - Present</span>
+          </li>
+          <li>UI Developer
+          <span>CBORD</span>
+            <span>May 2018 - Dec 2018</span>
+            <span></span>
+          </li>
+          <li>Software Development Intern
+          <span>CBORD</span>
+            <span>Feb 2018 - May 2018</span>
+            <span></span>
+          </li>
 
         </ul>
+        </div>
         </Container>
-      </section> */}
+      </section>
 
       {/* <section className={style.about}>
         <Link className="button about" to="/#projects">

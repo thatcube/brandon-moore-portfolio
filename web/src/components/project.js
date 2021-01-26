@@ -57,22 +57,31 @@ function Project(props) {
               />
             )}</div>
 
-<div data-sal="slide-up"
-        data-sal-easing="ease"
-          data-sal-duration="800"
-          data-sal-delay="0" className="project-info">
+<div className="project-info">
           
-          <span className="col">
+          <span className="col"
+                data-sal="slide-up"
+                data-sal-easing="ease"
+                data-sal-duration="800"
+                data-sal-delay="0">
             <span><svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z" fill="rgba(var(--color-background-inverted-rgb), 0.2)"></path><circle cx="12" cy="12" r="8" fill="var(--color-text-high-contrast)"></circle><circle cx="12" cy="12" r="5" fill="var(--color-background)"></circle><circle cx="12" cy="12" r="2" fill="var(--color-text-high-contrast)"></circle></svg></span>
             <span className="project-header-caption">Problem</span>
             {problem}
           </span>
-          <span className="col">
+          <span className="col"
+                data-sal="slide-up"
+                data-sal-easing="ease"
+                data-sal-duration="800"
+                data-sal-delay="0">
             <span><svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z" fill="rgba(var(--color-background-inverted-rgb), 0.2)"></path><circle cx="12" cy="12" r="8" fill="var(--color-text-high-contrast)"></circle><path d="M8.5 12L11 14.5L15.5 10" stroke="var(--color-background)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
             <span className="project-header-caption">Solution</span>
             {solution}
           </span>
-          <span className="col">
+          <span className="col"
+                data-sal="slide-up"
+                data-sal-easing="ease"
+                data-sal-duration="800"
+                data-sal-delay="0">
             <span>
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <circle cx="12" cy="12" r="12" fill="rgba(var(--color-background-inverted-rgb), 0.2)"/>
@@ -148,9 +157,21 @@ function Project(props) {
             {relatedProjects.map(project => (
               <React.Fragment key={`related_${project._id}`}>
                 {project.slug ? (
-                  <Link to={`/${project.slug.current}`}>{project.title}</Link>
+                  <Link to={`/${project.slug.current}`}>
+
+                     {project.title}
+                     
+                     <Img alt={project.mainImage.alt}
+                          className={styles.relatedImage}
+                          objectFit="cover"
+                          objectPosition="50% 50%" 
+                          fluid={project.mainImage.asset.fluid}
+                      />
+
+                     </Link>
                 ) : (
                     <span>{project.title}</span>
+                    
                   )}
               </React.Fragment>
             ))}

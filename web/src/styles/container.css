@@ -117,6 +117,11 @@
   @nest & h2+p, & h3+p, & h2+h3, & li {
     margin-top: 0.5em;
   }
+  @media (--media-min-medium) {
+  @nest & li {
+    margin-left: 1.5em;
+  }
+}
 
   @nest & ul {
     padding: calc(var(--gutter-padding) * 0.5) 0 calc(var(--gutter-padding) * 1) calc(var(--gutter-padding) * 2);

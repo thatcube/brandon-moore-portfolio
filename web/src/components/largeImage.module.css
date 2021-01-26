@@ -8,7 +8,7 @@
 
   @media (--media-min-extralarge) {
     width: 100vw;
-    transform: translateX(calc((65rem - 100vw)/2));
+    transform: translateX(calc((64rem - 100vw)/2));
 
     @nest & img {
       border-radius: 0;
