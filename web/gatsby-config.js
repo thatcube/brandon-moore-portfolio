@@ -17,6 +17,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-dark-mode',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-source-sanity',
       options: {
