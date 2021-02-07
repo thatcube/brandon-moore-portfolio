@@ -25,15 +25,6 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
               </a>
             </li>
             <li>&nbsp; · &nbsp;</li>
-            <li>
-              <a
-                className="link"
-                href="https://www.canva.com/design/DADt7gwJnKc/BVEhOXDTfZsZ78jSei0CJQ/view?utm_content=DADt7gwJnKc"
-              >
-                Resume
-              </a>
-            </li>
-            <li>&nbsp; · &nbsp;</li>
             <li>brandoncmoore4@gmail.com</li>
           </ul>
         </div>

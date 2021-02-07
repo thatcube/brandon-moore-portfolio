@@ -70,7 +70,7 @@ button {
   background: var(--color-background);
 }
 
-.link, .mainContent a {
+.link, .mainContent a{
   color: var(--color-text-low-contrast);
   line-height: 1.5;
   position: relative;
@@ -89,7 +89,7 @@ button {
   }
 }
 
-.link, .mainContent a, .toggleSwitch, .headroom a, .headroom button {
+.link, .mainContent a, .toggleSwitch, .headroom a, .headroom button, .modalClose {
   @nest &:before {
     position: absolute;
     content: '';
@@ -113,7 +113,7 @@ button {
   }
 }
 
-.light .link, .light .mainContent a, .light .toggleSwitch, .light .headroom a, .light .headroom button {
+.light .link, .light .mainContent a, .light .toggleSwitch, .light .headroom a, .light .headroom button, .modalClose {
   @nest &:hover:before {
     background: rgba(var(--color-background-inverted-rgb), 0.075);
   }
@@ -465,48 +465,7 @@ body.light header nav nav {
 .active-page {
   color: var(--text-high-contrast) !important;
   font-weight: bold;
-  /* &:after {
-    background: var(--color-background-inverted) !important;
-    left: 27.5% !important;
-    right: 27.5% !important;
-    height: 0.1875em !important;
-  } */
 }
-
-/* .active-home {
-  @nest & svg:nth-of-type(1) {
-    transform: translateX(0%);
-    opacity: 0;
-    display: flex;
-    animation-duration: 0.5s;
-    animation-name: var(--back-transition);
-    animation-timing-function: ease;
-    transform: translateY(0) translateX(-50%) rotateX(0deg) scale(1);
-    transform-origin: 50% -50px;
-  }
-  @nest & svg:nth-of-type(2) {
-    transform: translateX(-100%);
-  }
-  &:before {
-    display: none;
-  }
-} */
-
-/* 
-:root {
-  --back-transition: back-transition;
-}
-
-@keyframes back-transition {
-  0% {
-    transform: translateX(100%);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(0%);
-  }
-} */
 
 .fade-zoom {
   animation: fade-zoom 1s;
@@ -568,7 +527,7 @@ img {
   z-index: 2;
   color: var(--color-text-high-contrast);
   font-size: 1.25rem;
-  padding: 1rem 1rem 0.25rem 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   border-radius: calc(var(--border-radius) / 2);
   letter-spacing: 0.1rem;
   font-weight: bold;
@@ -576,7 +535,7 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   &:hover {
-    background: rgba(var(--color-background-inverted-rgb), 0.025);
+    background: rgba(var(--color-background-inverted-rgb), 0.035);
   }
   &:focus {
     box-shadow: 0 0 0 0.125rem var(--color-background-inverted);
@@ -603,35 +562,20 @@ img {
   width: 100%;
 }
 
-/* 
-.textBoxLabel {
-  position: relative;
-  width: 100%;
-  font-size: 0.75rem;
-  font-weight: bold;
-  min-height: 3rem;
-  @nest & input {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-} */
-
 .passwordWrapper {
   --gutter-padding-double: calc(var(--gutter-padding) * 4);
+  display: flex;
   @media (--media-max-medium) {
     --footer-padding: 29.2rem;
   }
   @media (--media-min-medium) {
     --footer-padding: 19.6rem;
   }
-  min-height: calc(100vh - var(--footer-padding));
+  min-height: calc(100vh - calc(var(--gutter-padding)*4));
   background: var(--color-background);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: calc(var(--gutter-padding) * 2);
   padding: 0 var(--gutter-padding);
   text-align: left;
   position: relative;
@@ -640,10 +584,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     max-width: 20rem;
-    background: rgba(var(--color-background-inverted-rgb), 0.02);
+    background: rgba(var(--color-background-inverted-rgb), 0.03);
     padding: var(--gutter-padding);
     border-radius: var(--border-radius);
     justify-content: center;
+    margin: var(--gutter-padding);
   }
   @nest & h1 {
     text-align: left;
@@ -658,24 +603,25 @@ img {
     }
   }
   @media (--media-min-small) {
-    display: flex;
+    
     @nest & form {
       padding: calc(var(--gutter-padding) * 2);
     }
   }
-    margin: calc(var(--gutter-padding) * 2) var(--gutter-padding);
+  margin: calc(var(--gutter-padding) * 2);
   
   @media (--media-max-medium) {
-    margin: var(--gutter-padding) 0 0 0;
+    margin: 0;
+    padding: 0;
     border-radius: 0;
     @nest & form {
-      background: transparent;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 0;
-      width: calc(100% - var(--gutter-padding-double));
-      max-width: calc(100% - var(--gutter-padding-double));
+      /* background: transparent; */
+      /* position: absolute; */
+      /* top: 50%; */
+      /* transform: translateY(-50%); */
+      /* padding: 0; */
+      flex: 0 0 100%;
+      /* max-width: calc(100% - var(--gutter-padding-double)); */
       left: var(--gutter-padding);
       right: var(--gutter-padding);
     }
@@ -687,9 +633,6 @@ img {
 body.light .passwordWrapper {
   @media (--media-min-medium) {
     box-shadow: 0 0 0 0.2rem var(--color-foreground);
-    & form {
-      background: rgba(var(--color-background-inverted-rgb), 0.03);
-    }
   }
 }
 
@@ -715,41 +658,19 @@ body.light .passwordWrapper {
   background: var(--color-background-high-contrast);
   position: relative;
   overflow: hidden;
-  /* top: var(--gutter-padding); */
-  margin-top: calc(var(--gutter-padding) * -1);
-  /* transform: translateY(var(--gutter-padding)); */
 }
 
 .modalClose {
   position: absolute;
-  top: var(--gutter-padding);
-  right: var(--gutter-padding);
-  transition: .15s ease all;
-  display: flex;
+  top: calc(var(--gutter-padding)/2);
+  right: calc(var(--gutter-padding)/2);
   color: var(--color-text-high-contrast);
-  &:after {
-    position: absolute;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    content: '';
-    z-index: -1;
-    border-radius: 100%;
-    background: transparent;
-    transition: 0.2s ease all;
-  }
-  &:hover {
-    &:after {
-      background: var(--color-foreground);
-    }
-    transform: scale(1.2);
-  }
-  &:active {
-    &:after {
-      background: var(--color-foreground);
-    }
-    transform: scale(0.95);
-  }
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
   @media (--media-max-medium) {
     left: calc(var(--gutter-padding) / 2);
     top: calc(var(--gutter-padding) / 2);
@@ -802,4 +723,26 @@ body.light .passwordWrapper {
   @media (--media-max-small) {
     padding: 0;
   }
+}
+
+.inline-message {
+  position: relative;
+  display: flex;
+  flex: 0 0 100%;
+  flex-wrap: wrap;
+  background: rgba(var(--color-background-inverted-rgb), 0.03);
+  border-radius: var(--border-radius);
+  max-width: 20rem;
+  margin: 0 var(--gutter-padding) var(--gutter-padding) var(--gutter-padding);
+  padding: var(--gutter-padding) var(--gutter-padding) var(--gutter-padding) calc(var(--gutter-padding) * 3);
+  @nest & svg {
+    position: absolute;
+    left: var(--gutter-padding);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+input {
+  box-sizing: border-box;
 }
