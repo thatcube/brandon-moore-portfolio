@@ -148,7 +148,7 @@ button {
 }
 
 img {
-  border-radius: var(--border-radius);
+  border-radius: calc(var(--border-radius) * 1.0625);
 }
 
 ul {
