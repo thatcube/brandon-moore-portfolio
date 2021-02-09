@@ -54,6 +54,9 @@ export default {
     },
     {
       type: "largeImage"
-    }
+    },
+    {
+      type: "youtube"
+    },
   ]
 };

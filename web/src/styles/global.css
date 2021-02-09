@@ -746,3 +746,8 @@ body.light .passwordWrapper {
 input {
   box-sizing: border-box;
 }
+
+.youtubeVideo {
+  border-radius: var(--border-radius);
+  min-height: 50vh;
+}
