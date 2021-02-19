@@ -1,14 +1,14 @@
-:root {
-  /* Brand colors */
+/* :root { */
+  /* Brand colors
   --brand-darkest: #000;
   --brand-lightest: #fff;
   --gray-base: #000;
   --brand-primary: #675ae8;
   --brand-primary--inverted: #fff;
   --brand-secondary: #166dff;
-  --brand-secondary--inverted: #fff;
+  --brand-secondary--inverted: #fff; */
 
-  /* Colors */
+  /* Colors
   --body-bg: #f5f5f5;
   --body-text: color(var(--body-bg) contrast(57%));
   --component-bg: #fff;
@@ -23,17 +23,17 @@
   --header-height: 10rem;
   --checkerboard-color: color(var(--component-text-color) a(5%));
   --selectable-item-base: var(--brand-primary);
-  --brand-darkest--inverted: color(var(--brand-darkest) contrast(80%));
+  --brand-darkest--inverted: color(var(--brand-darkest) contrast(80%)); */
 
-  /* Typography */
+  /* Typography
   --font-family-sans-serif: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   --font-size-base: 18px;
-  --headings-font-weight: 900;
+  --headings-font-weight: 900; */
 
-  /* Hairline */
-  --hairline-color: color(var(--component-bg) contrast(80%) a(5%));
+  /* Hairline
+  --hairline-color: color(var(--component-bg) contrast(80%) a(5%)); */
 
-  /* Buttons */
+  /* Buttons
   --default-button-primary-color: var(--brand-primary);
   --default-button-primary-color--inverted: #fff;
   --default-button-danger-color: var(--state-danger-color);
@@ -41,21 +41,21 @@
   --default-button-success-color: var(--state-success-color);
   --default-button-success-color--inverted: #fff;
   --default-button-warning-color: var(--state-warning-color);
-  --default-button-warning-color--inverted: var(--state-warning-color--inverted);
+  --default-button-warning-color--inverted: var(--state-warning-color--inverted); */
 
-  /* Shadows */
+  /* Shadows
   --shadow-base: var(--brand-darkest);
   --shadow-color-umbra: color(var(--shadow-base) a(10%));
   --shadow-color-penumbra: color(var(--shadow-base) a(8%));
-  --shadow-color-ambient: color(var(--shadow-base) a(2%));
+  --shadow-color-ambient: color(var(--shadow-base) a(2%)); */
 
-  /* Border radius */
+  /* Border radius
   --border-radius-base: 1rem;
   --border-radius-large: calc(var(--border-radius-base) * 1.5);
   --border-radius-medium: var(--border-radius-base);
-  --border-radius-small: calc(var(--border-radius-base) / 2);
+  --border-radius-small: calc(var(--border-radius-base) / 2); */
 
-  /* Padding */
+  /* Padding
   --extra-small-padding: 0.5rem;
   --small-padding: 0.75rem;
   --medium-padding: 1.25rem;
@@ -66,21 +66,21 @@
   --medium-padding--em: 1.25em;
   --large-padding--em: 1.75em;
   --extra-large-padding--em: 4em;
-  --text-selection-color: color(var(--brand-primary) alpha(20%));
+  --text-selection-color: color(var(--brand-primary) alpha(20%)); */
 
-  /* Block editor */
+  /* Block editor
   --block-editor-base-font-family: inherit;
   --block-editor-header-font-family: inherit;
   --block-extras-width: 10rem;
   --block-extras-border-color: #ccc;
-  --block-extras-background-color: #eee;
+  --block-extras-background-color: #eee; */
 
   /* Others */
-  --pane-header-height: 3.4375rem; /* 55px */
+  /* --pane-header-height: 3.4375rem; 55px */
 
 
   /* forms */
-  --default-button-color: var(--text-color);
+  /* --default-button-color: var(--text-color);
   --default-button-color--inverted: var(--white);
   --default-button-color--hover: var(--text-color);
   --default-button-color--active: var(--text-color);
@@ -114,10 +114,10 @@
   --input-box-shadow--hover: none;
   --input-box-shadow--focus: 0 0 0 3px color(var(--input-border-color-focus) a(42%));
   --input-box-shadow--invalid: none;
-  --input-box-shadow--invalid-focus: 0 0 0 3px color(var(--input-border-color-invalid) a(42%));
+  --input-box-shadow--invalid-focus: 0 0 0 3px color(var(--input-border-color-invalid) a(42%)); */
 
   /* fieldset */
-  --fieldset-border: var(--input-border-size) solid var(--hairline-color);
+  /* --fieldset-border: var(--input-border-size) solid var(--hairline-color);
   --fieldset-box-shadow: none;
   --fieldset-box-shadow--hover: none;
   --fieldset-box-shadow--invalid: none;
@@ -136,4 +136,3 @@
   --form-builder-block-shadow--invalid: var(--input-box-shadow--invalid);
   --form-builder-block-shadow--invalid-focus: var(--input-box-shadow--invalid-focus);
   --form-builder-block-border-radius: var(--border-radius-small);
-}
