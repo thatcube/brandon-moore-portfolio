@@ -95,6 +95,12 @@
     display: block;
   }
 
+  @nest & p {
+    line-height: 1.777777777;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
   @nest & p, & h1, & h2, & h3, & h4, & ul {
     margin: 0 auto;
   }

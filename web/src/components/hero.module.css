@@ -65,10 +65,11 @@
   }
   & h2 {
     font-size: 9.8vw;
-    line-height: 10.4vw;
+    line-height: 12.4vw;
     margin: 0 0 3rem;
     display: flex;
     flex-wrap: wrap;
+    font-weight: 800;
     & span {
       width: 100%;
       display: inline-block;
@@ -95,13 +96,13 @@
   @media (--media-min-extralarge) {
     & h2 {
       margin: 0 0 6rem;
-    font-size: calc(2.5rem + 4vw);
+    font-size: calc(2.25rem + 4vw);
     line-height: calc(3.5rem + 4vw);
     }
   }
   @media (min-width: 1920px) {
     & h2 {
-      font-size: 7.24rem;
+      font-size: 7rem;
       line-height: 8rem;
     }
   }

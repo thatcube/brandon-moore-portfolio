@@ -3,7 +3,7 @@
 :root,
 body.light {
   /* --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; */
-  --font-family-sans: -apple-system, BlinkMacSystemFont, system, sans-serif;
+  --font-family-sans: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   /* --font-family-display: "Tommy Soft", Calibri, -apple-system, BlinkMacSystemFont, sans-serif; */
   --font-family-display: var(--font-family-sans);
   --font-family-serif: "Recoleta", Calisto MT, Bookman Old Style, Bookman, Goudy Old Style, Garamond, Hoefler Text, Bitstream Charter, Georgia, serif;
@@ -26,9 +26,9 @@ body.light {
   --color-foreground: rgb(242, 242, 242);
   --color-foreground-rgb: 242, 242, 242;
   --color-image-background: rgb(248, 248, 248);
-  --color-text: rgba(var(--color-black-rgb), 0.75);
+  --color-text: rgba(var(--color-black-rgb), 0.87);
   --color-text-low-contrast: rgba(var(--color-black-rgb), 0.63);
-  --color-text-high-contrast: rgba(var(--color-black-rgb), 0.92);
+  --color-text-high-contrast: rgba(var(--color-black-rgb), 1);
   --color-text-inverted: var(--color-white);
   --color-border: rgba(var(--color-black-rgb), 0.1);
 

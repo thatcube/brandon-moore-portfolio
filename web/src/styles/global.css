@@ -5,6 +5,10 @@ h1, h2, h3, h4 {
   /* letter-spacing: -0.01em; */
 }
 
+/* h1 {
+  font-weight: 800;
+} */
+
 h2 {
   font-size: 2em;
 }
@@ -326,6 +330,7 @@ article {
   @nest & h1 {
     line-height: 1.3;
     margin-bottom: 1rem;
+    font-weight: 800;
   }
   @media (--media-min-medium) {
     padding: 8em var(--gutter-padding) 2em var(--gutter-padding);
