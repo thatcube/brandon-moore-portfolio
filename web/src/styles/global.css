@@ -506,6 +506,7 @@ img {
     margin: 0;
     margin-bottom: 1rem;
     color: var(--color-text-high-contrast);
+    font-weight: 800;
   }
   & p {
     /* font-size: 1.5rem; */
