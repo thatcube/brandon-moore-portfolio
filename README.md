@@ -1,6 +1,6 @@
 # Brandon Moore's portfolio
 
-Link to portfolio: [brandonmoore.io](https://brandonmoore.io)
+Link to portfolio: [brandonmoore.design](https://brandonmoore.design)
 
 ## Powered by Gatsby, Sanity, and Netlify
 

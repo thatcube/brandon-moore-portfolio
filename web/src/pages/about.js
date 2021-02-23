@@ -9,6 +9,7 @@ import Img from "gatsby-image";
 import style from "../components/about.module.css";
 import styles from "../components/social.module.css";
 import BlockContent from "../components/block-content";
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 export const query = graphql`
   query AboutPageQuery {
@@ -44,6 +45,7 @@ const AboutPage = props => {
     throw new Error("you done darn goofed, ur about page has no data");
   }
   return (
+    
     <Layout>
       <SEO title="About" />
       <section className={styles.root}>
@@ -52,14 +54,8 @@ const AboutPage = props => {
             
             className="col-1-start col-8-end row-1-start about-section headline"
           >
-            <h1 data-sal="slide-up"
-            data-sal-easing="ease"
-            data-sal-duration="800"
-            data-sal-delay="0" className={styles.title}>{about.tagline}</h1>
-            <div data-sal="slide-up"
-            data-sal-easing="ease"
-            data-sal-duration="300"
-            data-sal-delay="100">{about._rawBio && <BlockContent blocks={about._rawBio || []} />}</div>
+            <h1 className={styles.title}>{about.tagline}</h1>
+            <div>{about._rawBio && <BlockContent blocks={about._rawBio || []} />}</div>
           </div>
           <div
             className="row-1-start col-6-start col-9-end"
@@ -73,10 +69,6 @@ const AboutPage = props => {
       <section>
         <Container>
         <div 
-        data-sal="slide-up"
-        data-sal-easing="ease"
-        data-sal-duration="500"
-        data-sal-delay="0"
         className="experience col-1-start col-8-end">
         <h2>Experience</h2>
         <ul>

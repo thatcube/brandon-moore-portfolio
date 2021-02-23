@@ -10,7 +10,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://brandonmoore.io`,
+    siteUrl: `https://brandonmoore.design`,
   },
   plugins: [
     'gatsby-plugin-postcss',
@@ -18,6 +18,7 @@ module.exports = {
     'gatsby-plugin-dark-mode',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-netlify',
+    'gatsby-plugin-page-transitions',
     {
       resolve: 'gatsby-source-sanity',
       options: {

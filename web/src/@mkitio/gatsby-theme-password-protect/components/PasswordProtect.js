@@ -61,7 +61,7 @@ const PasswordProtect = () => {
                         </button>
                         </form>
                         <div class="inline-message">
-                        <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.8 14a11.2 11.2 0 1122.4 0 11.2 11.2 0 01-22.4 0zM14 23.75a9.75 9.75 0 100-19.5 9.75 9.75 0 000 19.5zm-1.63-5.41h.55v-5.42h-.55a.54.54 0 01-.54-.55v-.36c0-.3.24-.54.54-.54h2.17c.3 0 .54.24.54.54v6.33h.55c.3 0 .54.24.54.54v.36c0 .3-.25.54-.54.54h-3.26a.54.54 0 01-.54-.54v-.36c0-.3.24-.54.54-.54zm.18-9.4a1.45 1.45 0 112.9 0 1.45 1.45 0 01-2.9 0z" fill="currentColor"/></svg>
+                        <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M2.8 14a11.2 11.2 0 1122.4 0 11.2 11.2 0 01-22.4 0zM14 23.75a9.75 9.75 0 100-19.5 9.75 9.75 0 000 19.5zm-1.63-5.41h.55v-5.42h-.55a.54.54 0 01-.54-.55v-.36c0-.3.24-.54.54-.54h2.17c.3 0 .54.24.54.54v6.33h.55c.3 0 .54.24.54.54v.36c0 .3-.25.54-.54.54h-3.26a.54.54 0 01-.54-.54v-.36c0-.3.24-.54.54-.54zm.18-9.4a1.45 1.45 0 112.9 0 1.45 1.45 0 01-2.9 0z" fill="currentColor"/></svg>
                             <span>The password can be found on my resume. <a class="link" href="mailto:brandoncmoore4@gmail.com">Send me an email</a> if you need help.</span>
                         </div>
 

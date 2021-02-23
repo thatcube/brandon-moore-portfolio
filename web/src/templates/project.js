@@ -130,7 +130,7 @@ const ProjectTemplate = props => {
         </Container>
       )}
       {project && <Project {...project} />}
-    </Layout>
+      </Layout>
   );
 };
 

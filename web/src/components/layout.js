@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./header";
 import Container from "../components/container";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
+import PageTransition from "gatsby-plugin-page-transitions";
+
 
 import "../styles/normalize.css";
 import "../styles/layout.css";
@@ -10,11 +12,25 @@ import "../styles/global.css";
 import style from "../components/social.module.css";
 import styles from "../components/layout.module.css";
 
+
 const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
     <div id="top-of-page"></div>
     <Header siteTitle={siteTitle} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
-    {children}
+    <PageTransition
+      defaultStyle={{
+        transition: 'all 250ms cubic-bezier(0.47, 0, 0.75, 0.72)'
+      }}
+      transitionStyles={{
+        entering: { transform: 'translateY(0) scale(0.99)', opacity: 0 },
+        entered: { transform: 'translateY(0) scale(1)', opacity: 1 },
+        exiting: { transform: 'translateY(0) scale(2)', opacity: 0 },
+        exited: { transform: 'translateY(0) scale(2)', opacity: 0 },
+      }}
+      transitionTime={250}
+    >
+      {children}
+    </PageTransition>
     <footer className={style.social}>
       <Container>
         <div className="col-1-start col-6-end">

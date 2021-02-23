@@ -5,6 +5,7 @@ import Container from "./container";
 import { Link } from "gatsby";
 
 import styles from "./project.module.css";
+import PageTransition from "gatsby-plugin-page-transitions";
 
 function Project(props) {
   const {
@@ -24,28 +25,15 @@ function Project(props) {
   } = props;
   return (
     <article
-      data-sal="fade"
-      data-sal-easing="ease-in-cubic"
-      data-sal-duration="150"
-      data-sal-delay="0"
       className={styles.root}
     >
       <aside className="project-header">
         <div className="project-header-padding">
-          <div data-sal="slide-up"
-            data-sal-easing="ease"
-            data-sal-duration="800"
-            data-sal-delay="0">
+          <div >
             <h1 className={styles.title}>{title}</h1>
           </div>
-          <div data-sal="slide-up"
-            data-sal-easing="ease"
-            data-sal-duration="1200"
-            data-sal-delay="0"><span className={styles.shortdesc}>{shortdesc}</span></div>
-          <div data-sal="slide-up"
-            data-sal-easing="ease"
-            data-sal-duration="800"
-            data-sal-delay="0">{
+          <div><span className={styles.shortdesc}>{shortdesc}</span></div>
+          <div>{
               props.mainImage && mainImage.asset && (
                 <Img
                   className={styles.mainImage}
@@ -59,28 +47,19 @@ function Project(props) {
           <div className="project-info">
 
             <span className="col"
-              data-sal="slide-up"
-              data-sal-easing="ease"
-              data-sal-duration="800"
-              data-sal-delay="0">
-              <span><svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z" fill="rgba(var(--color-background-inverted-rgb), 0.2)"></path><circle cx="12" cy="12" r="8" fill="var(--color-text-high-contrast)"></circle><circle cx="12" cy="12" r="5" fill="var(--color-background)"></circle><circle cx="12" cy="12" r="2" fill="var(--color-text-high-contrast)"></circle></svg></span>
+              >
+              <span><svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z" fill="rgba(var(--color-background-inverted-rgb), 0.2)"></path><circle cx="12" cy="12" r="8" fill="var(--color-text-high-contrast)"></circle><circle cx="12" cy="12" r="5" fill="var(--color-background)"></circle><circle cx="12" cy="12" r="2" fill="var(--color-text-high-contrast)"></circle></svg></span>
               <span className="project-header-caption">Problem</span>
               {problem}
             </span>
             <span className="col"
-              data-sal="slide-up"
-              data-sal-easing="ease"
-              data-sal-duration="800"
-              data-sal-delay="0">
-              <span><svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z" fill="rgba(var(--color-background-inverted-rgb), 0.2)"></path><circle cx="12" cy="12" r="8" fill="var(--color-text-high-contrast)"></circle><path d="M8.5 12L11 14.5L15.5 10" stroke="var(--color-background)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+              >
+              <span><svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z" fill="rgba(var(--color-background-inverted-rgb), 0.2)"></path><circle cx="12" cy="12" r="8" fill="var(--color-text-high-contrast)"></circle><path d="M8.5 12L11 14.5L15.5 10" stroke="var(--color-background)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg></span>
               <span className="project-header-caption">Solution</span>
               {solution}
             </span>
             <span className="col"
-              data-sal="slide-up"
-              data-sal-easing="ease"
-              data-sal-duration="800"
-              data-sal-delay="0">
+              >
               <span>
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="12" fill="rgba(var(--color-background-inverted-rgb), 0.2)" />
@@ -128,7 +107,7 @@ function Project(props) {
 
       {_rawBody && <BlockContent blocks={_rawBody || []} />}
 
-      {/* <button className="button to-top" onClick={() => scrollTo('#top-of-page')}>Back to Top <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7 8.306l5 5.107c.2.204.3.408.3.715 0 .306-.1.51-.3.715-.4.408-1 .408-1.4 0l-3.3-3.37v7.676a1 1 0 01-1.993.117L11 19.149v-7.676l-3.3 3.37c-.4.408-1 .408-1.4 0-.4-.409-.4-1.022 0-1.43l5-5.107c.4-.408 1-.408 1.4 0zM17 4a1 1 0 01.117 1.993L17 6H7a1 1 0 01-.117-1.993L7 4h10z" fill="currentColor" fill-rule="nonzero"/></svg></button> */}
+      {/* <button className="button to-top" onClick={() => scrollTo('#top-of-page')}>Back to Top <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M12.7 8.306l5 5.107c.2.204.3.408.3.715 0 .306-.1.51-.3.715-.4.408-1 .408-1.4 0l-3.3-3.37v7.676a1 1 0 01-1.993.117L11 19.149v-7.676l-3.3 3.37c-.4.408-1 .408-1.4 0-.4-.409-.4-1.022 0-1.43l5-5.107c.4-.408 1-.408 1.4 0zM17 4a1 1 0 01.117 1.993L17 6H7a1 1 0 01-.117-1.993L7 4h10z" fill="currentColor" fillRule="nonzero"/></svg></button> */}
       <div className={styles.relatedProjects}>
         <Container>
           <aside className="col-1-start col-9-end">

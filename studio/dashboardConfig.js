@@ -19,7 +19,7 @@ export default {
               sites: [
                 {
                   buildHookId: "5da342069b1214cf940deb6a",
-                  title: "brandonmoore.io",
+                  title: "brandonmoore.design",
                   name: "brandon-moore-portfolio",
                   apiId: "2ed0f198-ebbc-4543-ba06-bea2f202e166"
                 },
@@ -41,7 +41,7 @@ export default {
           },
           {
             title: "Frontend",
-            value: "https://brandonmoore.io",
+            value: "https://brandonmoore.design",
             category: "apps"
           }
         ]

@@ -323,6 +323,7 @@ article {
   font-size: 1.5em;
   /* text-align: center; */
   background: var(--color-image-background);
+  background: transparent;
   padding-top: 6em;
   @nest & div {
     grid-row-gap: 8px;
