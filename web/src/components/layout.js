@@ -22,10 +22,10 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
         transition: 'all 250ms cubic-bezier(0.47, 0, 0.75, 0.72)'
       }}
       transitionStyles={{
-        entering: { transform: 'translateY(0) scale(0.99)', opacity: 0 },
-        entered: { transform: 'translateY(0) scale(1)', opacity: 1 },
-        exiting: { transform: 'translateY(0) scale(2)', opacity: 0 },
-        exited: { transform: 'translateY(0) scale(2)', opacity: 0 },
+        entering: { transform: 'translateY(1rem)', opacity: 0 },
+        entered: { transform: 'translateY(0)', opacity: 1 },
+        exiting: { transform: 'translateY(1rem)', opacity: 0 },
+        exited: { transform: 'translateY(1rem)', opacity: 0 },
       }}
       transitionTime={250}
     >

@@ -143,11 +143,11 @@
 }
 
 .mainContent {
-  font-size: 1rem;
+  font-size: 1.125rem;
   /* content-visibility: auto; */
 
   @media (--media-min-medium) {
     padding: 0 var(--gutter-padding);
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
