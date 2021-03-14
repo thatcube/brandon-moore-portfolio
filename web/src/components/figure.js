@@ -5,12 +5,13 @@ import clientConfig from "../../client-config";
 
 import styles from "./figure.module.css";
 
+
 export default ({ node }) => {
   if (!node.asset) {
     return null;
   }
 
-  const fluidProps = getFluidGatsbyImage(node.asset._ref, { maxWidth: 2000 }, clientConfig.sanity);
+  const fluidProps = getFluidGatsbyImage(node.asset._ref, { maxWidth: 3000 }, clientConfig.sanity);
 
   return (
     <div className="col-1-start col-9-end">

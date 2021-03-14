@@ -1,10 +1,14 @@
 import { Link } from "gatsby";
-import React from "react";
+import React, { useState } from "react";
 import Img from "gatsby-image";
 import BlockText from "./block-text";
 import styles from "./project-preview.module.css";
 
+import { Spring, animated as a, config } from 'react-spring/renderprops';
+
+
 function ProjectPreview(props) {
+
   return (
     <Link className={styles.root} to={`/${props.slug.current}`}>
       <div className={styles.projectThumbnail}>

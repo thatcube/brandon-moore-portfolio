@@ -30,7 +30,9 @@ export const query = graphql`
     }
   }
 `;
-
+const waveStyle = {
+  width: '100vw',
+}
 const AboutPage = props => {
   const { data, errors } = props;
   if (errors) {
@@ -45,13 +47,13 @@ const AboutPage = props => {
     throw new Error("you done darn goofed, ur about page has no data");
   }
   return (
-    
+
     <Layout>
       <SEO title="About" />
       <section className={styles.root}>
         <Container>
           <div
-            
+
             className="col-1-start col-8-end row-1-start about-section headline"
           >
             <h1 className={styles.title}>{about.tagline}</h1>
@@ -65,30 +67,35 @@ const AboutPage = props => {
             )}
           </div>
         </Container>
+
       </section>
+      <svg preserveAspectRatio="none" viewBox="0 0 1440 98" width="1440" height="98" fill="none" xmlns="http://www.w3.org/2000/svg" style={waveStyle}>
+        <path d="M586.2 82.1c188.07-26.54 276.6-60.73 621.22-77.6 112.98-5.53 185.96.27 233.58 12.35V0H0v76.47c141.25 11.03 349.06 39.1 586.2 5.63z" fill="var(--color-image-background)" />
+      </svg>
+      
       <section>
         <Container>
-        <div 
-        className="experience col-1-start col-8-end">
-        <h2>Experience</h2>
-        <ul>
-          <li>Product Designer
+          <div
+            className="experience col-1-start col-8-end">
+            <h2>Experience</h2>
+            <ul>
+              <li>Product Designer
             <span>CBORD & Horizon Software</span>
-            <span>Dec 2018 - Present</span>
-          </li>
-          <li>UI Developer
+                <span>Dec 2018 - Present</span>
+              </li>
+              <li>UI Developer
           <span>CBORD</span>
-            <span>May 2018 - Dec 2018</span>
-            <span></span>
-          </li>
-          <li>Software Development Intern
+                <span>May 2018 - Dec 2018</span>
+                <span></span>
+              </li>
+              <li>Software Development Intern
           <span>CBORD</span>
-            <span>Feb 2018 - May 2018</span>
-            <span></span>
-          </li>
+                <span>Feb 2018 - May 2018</span>
+                <span></span>
+              </li>
 
-        </ul>
-        </div>
+            </ul>
+          </div>
         </Container>
       </section>
 

@@ -74,7 +74,7 @@ button {
   background: var(--color-background);
 }
 
-.link, .mainContent a{
+.link, .mainContent a {
   color: var(--color-text-low-contrast);
   line-height: 1.5;
   position: relative;
@@ -99,7 +99,7 @@ button {
     content: '';
     background: rgba(var(--color-background-inverted-rgb), 0.00);
     border-radius: inherit;
-    transition: transform 0.2s cubic-bezier(0.345, 0.115, 0.135, 1.42),background 0.2s ease;
+    transition: transform 0.2s cubic-bezier(0.345, 0.115, 0.135, 1.42), background 0.2s ease;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.8) perspective(0.125rem);
@@ -347,12 +347,12 @@ article {
 .project-header-padding {
   /* margin: 0 calc(var(--large-image-gutter)* 2); */
   @media (--media-min-medium) {
-  @nest & > * {
-    padding: 0 var(--large-image-gutter);
+    @nest &>* {
+      padding: 0 var(--large-image-gutter);
+    }
   }
-}
   margin: 0 auto;
-  @media (--media-max-medium) { 
+  @media (--media-max-medium) {
     margin: 0 var(--gutter-padding);
   }
   max-width: 63.999rem;
@@ -373,11 +373,11 @@ article {
     border-radius: var(--border-radius);
   }
   @media (--media-min-medium) {
-  @nest & .col:not(:last-of-type) {
-    /* border-right: 0.125rem solid var(--color-border); */
-    margin-right: var(--gutter-padding);
+    @nest & .col:not(:last-of-type) {
+      /* border-right: 0.125rem solid var(--color-border); */
+      margin-right: var(--gutter-padding);
+    }
   }
-}
   @media (--media-max-medium) {
     display: block;
     @nest & .col {
@@ -397,7 +397,9 @@ article {
   font-weight: 700;
   display: block;
   text-transform: uppercase;
+  letter-spacing: 0.03125rem;
   margin: 1rem 0;
+  font-family: var(--font-family-display);
   @media (--media-max-medium) {
     margin-top: 1rem;
   }
@@ -521,7 +523,7 @@ img {
     padding: 0;
   }
   @media (--media-max-large) {
-    padding: 1rem 0 calc(var(--gutter-padding) * 8) 0;
+    padding: 1rem 0 calc(var(--gutter-padding) * 2) 0;
   }
 }
 
@@ -610,13 +612,11 @@ img {
     }
   }
   @media (--media-min-small) {
-    
     @nest & form {
       padding: calc(var(--gutter-padding) * 2);
     }
   }
   margin: calc(var(--gutter-padding) * 2);
-  
   @media (--media-max-medium) {
     margin: 0;
     padding: 0;
@@ -696,12 +696,13 @@ body.light .passwordWrapper {
     margin-bottom: var(--gutter-padding);
     padding-left: calc(var(--gutter-padding) * 1.5);
     font-size: 1.25rem;
-    
+    font-family: var(--font-family-display);
     @nest & span {
       width: 100%;
       font-weight: normal;
       font-size: 1rem;
       color: var(--color-text);
+      font-family: var(--font-family-sans);
     }
     &:before {
       content: '';

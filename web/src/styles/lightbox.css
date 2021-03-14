@@ -1,0 +1,92 @@
+.SRLControls button {
+    border-radius: calc(var(--border-radius) * 2);
+    transition: .15s ease all;
+    width: 3rem;
+    height: 3rem;
+    color: var(--color-text-inverted);
+    @nest &:hover {
+        background: rgba(var(--color-background-rgb), 0.15);
+    }
+}
+
+/* close icon */
+
+.SRLControls {
+    top: calc(var(--gutter-padding) / 2) !important;
+    right: calc(var(--gutter-padding) / 2) !important;
+}
+
+.SRLCloseButton svg {
+    display: none !important;
+}
+
+.SRLCloseButton div {
+    box-sizing: border-box !important;
+    position: relative !important;
+    display: block !important;
+    transform: scale(var(--ggs, 1));
+    width: 22px !important;
+    height: 22px !important;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    padding: 0 !important;
+}
+
+.SRLCloseButton div::after, .SRLCloseButton div::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 1px
+}
+
+.SRLCloseButton div::after {
+    transform: rotate(-45deg)
+}
+
+::root {
+    --top-gap: calc(var(--gutter-padding) * 3);
+}
+
+.SRLElementWrapper img {
+    background: var(--color-image-background);
+}
+
+.SRLStage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--top-gap) calc(100vh - var(--top-gap));
+    gap: 0em 0px;
+    grid-template-areas: "controls" "container";
+}
+
+.SRLControls {
+    display: grid !important;
+    grid-area: controls;
+    position: unset !important;
+}
+
+.SRLContainer {
+    display: grid !important;
+    grid-area: container;
+    grid-template-columns: 1fr;
+    grid-template-rows: calc(100vh - var(--top-gap)) var(--top-gap) !important;
+    grid-template-areas: "element" "caption";
+    height: 100% !important;
+}
+
+.SRLCaptionContainer {
+    display: grid !important;
+    grid-area: caption;
+}
+
+.SRLElementContainer {
+    display: grid !important;
+    grid-area: element;
+}

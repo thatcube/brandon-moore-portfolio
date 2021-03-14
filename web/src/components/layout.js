@@ -3,34 +3,38 @@ import Header from "./header";
 import Container from "../components/container";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
 import PageTransition from "gatsby-plugin-page-transitions";
+// import SimpleReactLightbox from 'simple-react-lightbox'
 
 
 import "../styles/normalize.css";
 import "../styles/layout.css";
 import "../styles/global.css";
+// import "../styles/lightbox.css";
 
 import style from "../components/social.module.css";
 import styles from "../components/layout.module.css";
+import { Spring } from 'react-spring/renderprops'
+import { Transition, animated } from 'react-spring/renderprops'
 
 
 const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
     <div id="top-of-page"></div>
     <Header siteTitle={siteTitle} onHideNav={onHideNav} onShowNav={onShowNav} showNav={showNav} />
-    <PageTransition
-      defaultStyle={{
-        transition: 'all 250ms cubic-bezier(0.47, 0, 0.75, 0.72)'
+
+    <Spring
+      from={{
+        opacity: 0,
+        transform: 'translate(0, 2rem)',
       }}
-      transitionStyles={{
-        entering: { transform: 'translateY(1rem)', opacity: 0 },
-        entered: { transform: 'translateY(0)', opacity: 1 },
-        exiting: { transform: 'translateY(1rem)', opacity: 0 },
-        exited: { transform: 'translateY(1rem)', opacity: 0 },
-      }}
-      transitionTime={250}
-    >
-      {children}
-    </PageTransition>
+      to={{
+        opacity: 1,
+        transform: 'translate(0,0)',
+      }}>
+      {props => <div style={props}>
+        {children}
+      </div>}
+    </Spring>
     <footer className={style.social}>
       <Container>
         <div className="col-1-start col-6-end">

@@ -12,6 +12,8 @@ import ProjectPreviewGrid from "../components/project-preview-grid";
 import SEO from "../components/seo";
 import LayoutContainer from "../containers/layout"
 import { hero } from "../components/hero.module.css";
+import { Spring } from 'react-spring/renderprops'
+
 
 
 export const query = graphql`
@@ -91,31 +93,33 @@ const IndexPage = props => {
 
   return (
     <div className="hc-bg">
-    <LayoutContainer>
-      <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <Container>
-        <div className="col-1-start col-9-end fade-zoom">
-          <div className={hero}>
-            <h1>
-              Brandon Moore.
+      <LayoutContainer>
+        <SEO title={site.title} description={site.description} keywords={site.keywords} />
+        <Container>
+         <div className="col-1-start col-9-end">
+            <div className={hero}>
+              
+                <h1>
+                  Brandon Moore.
             <br />
               Product Designer at CBORD.
             </h1>
-            <h2>
-              <span>Crafting digital</span>
-              <span>experiences built</span>
-              <span>for all people.</span>
-            </h2>
+              
+              <h2>
+                <span>Crafting digital</span>
+                <span>experiences built</span>
+                <span>for all people.</span>
+              </h2>
+            </div>
           </div>
-        </div>
-      </Container>
-      {/* <button className="button" onClick={() => scrollTo('#projects')}>My link</button> */}
-      <Container>
-        <div id="projects" className="col-1-start col-9-end">
-          {projectNodes && <ProjectPreviewGrid nodes={projectNodes} />}
-        </div>
-      </Container>
-    </LayoutContainer>
+        </Container>
+        {/* <button className="button" onClick={() => scrollTo('#projects')}>My link</button> */}
+        <Container>
+          <div id="projects" className="col-1-start col-9-end">
+            {projectNodes && <ProjectPreviewGrid nodes={projectNodes} />}
+          </div>
+        </Container>
+      </LayoutContainer>
     </div>
   );
 };

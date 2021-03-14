@@ -1,9 +1,11 @@
 import { Link } from "gatsby";
+import TransitionLink from 'gatsby-plugin-transition-link';
 import React from "react";
 import { cn } from "../lib/helpers";
 import Headroom from "react-headroom";
 
 import styles from "./header.module.css";
+
 
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <Headroom>

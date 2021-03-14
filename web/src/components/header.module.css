@@ -38,6 +38,7 @@
     }
     & svg {
       position: relative;
+      transition: .8s cubic-bezier(0.68, -0.6, 0.32, 1.6) all;
     }
     &:before {
       border-radius: 100% !important;
@@ -118,11 +119,11 @@
       }
       @nest & a:before {
         transition: 0s ease transform, 0.2s ease background;
-        transform: translate(-50%, -50%) scale(1) perspective(0.125rem);
+        transform: translate(-50%, -50%) scale(1) perspective(0.5rem);
       }
       @nest & a:active:before {
         /* transition: 0s ease transform, 0.2s ease background; */
-        transform: translate(-50%, -50%) scale(1) perspective(0.125rem);
+        transform: translate(-50%, -50%) scale(1) perspective(0.5rem);
       }
     }
   }

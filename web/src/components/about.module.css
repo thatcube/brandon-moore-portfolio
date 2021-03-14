@@ -3,21 +3,25 @@
 
 .image {
   display: block;
-  margin: 0 auto -30rem auto;
+  margin: 0 auto;
   width: calc(100% - var(--gutter-padding));
   border-radius: var(--border-radius);
   box-sizing: border-box;
+  box-shadow: 0 0 0 0.25rem var(--color-image-background);
 
   @media (--media-max-large) {
     max-width: 50%;
     width: auto;
-    margin-top: -12rem;
     margin-bottom: 0;
   }
 
   @media (--media-max-medium) {
     max-width: 66.6666%;
     border-width: 0.5rem;
+  }
+
+  @media (--media-min-large) {
+    transform: translateY(24rem);
   }
 }
 

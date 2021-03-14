@@ -23,14 +23,14 @@
   font-style: normal;
   font-display: fallback;
 }
-/* @font-face {
+@font-face {
   font-family: 'Gilroy';
   src: url('../font/gilroy-extrabold-webfont.eot');
   src: url('../font/gilroy-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../font/gilroy-extrabold-webfont.woff2') format('woff2'), url('../font/gilroy-extrabold-webfont.woff') format('woff'), url('../font/gilroy-extrabold-webfont.ttf') format('truetype'), url('../font/gilroy-extrabold-webfont.svg#gilroyextrabold') format('svg');
   font-weight: bold;
   font-style: normal;
   font-display: fallback;
-} */
+}
 
 /* @font-face {
   font-family: 'Gilroy';
