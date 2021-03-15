@@ -15,7 +15,7 @@ export default ({ node }) => {
   return (
     <figure className={styles.root}>
       <Img fluid={fluidProps} alt={node.alt} />
-      {/* {node.caption && <figcaption>{node.caption}</figcaption>} */}
+      {node.caption && <figcaption className={styles.fullCaption}>{node.caption}</figcaption>}
     </figure>
   );
 };
