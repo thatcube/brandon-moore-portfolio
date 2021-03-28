@@ -2,18 +2,12 @@
 @import '../styles/custom-media.css';
 
 .root {
-  width: calc(100vw - var(--large-image-gutter));
+  width: calc(100vw - var(--gutter-padding-double));
   padding: 0;
   margin: 2rem 0;
+  border-radius: var(--border-radius);
 
-  @media (--media-min-extralarge) {
-    width: 100vw;
-    transform: translateX(calc((64rem - 100vw)/2));
-
-    @nest & img {
-      border-radius: 0;
-    }
-  }
+  
   @nest & div:after {
     position: absolute;
     content: '';
@@ -22,7 +16,18 @@
     z-index: 2;
     box-shadow: inset 0 0 0 0.125rem var(--color-foreground);
     pointer-events: none;
-    /* box-shadow: inset 0 0 0 0.125rem rgba(var(--color-background-inverted-rgb), 0.05); */
+    border-radius: var(--border-radius);
+  }
+  @media (--media-min-extralarge) {
+    width: 100vw;
+    transform: translateX(calc((64rem - 100vw)/2));
+
+    @nest & img {
+      border-radius: 0;
+    }
+    @nest & div:after {
+      border-radius: 0;
+    }
   }
 }
 

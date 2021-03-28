@@ -11,7 +11,8 @@ const serializers = {
     largeImage: LargeImage,
     youtube: ({ node }) => {
       const opts = {
-        width: '100%',
+        width: '374',
+        height: '810',
         playerVars: {
           // https://developers.google.com/youtube/player_parameters
           // autoplay: 1,
@@ -22,11 +23,11 @@ const serializers = {
           // controls: 0,
         },
       };
-        const { url } = node
+      const { url } = node
       const id = getYouTubeId(url)
-      return(<YouTube className="youtubeVideo" opts={opts} videoId = { id } />)
-      }
+      return (<div className="youtubeVideoContainer"><YouTube className="youtubeVideo" opts={opts} videoId={id} /></div>)
     }
-  };
+  }
+};
 
-  export default serializers;
+export default serializers;
