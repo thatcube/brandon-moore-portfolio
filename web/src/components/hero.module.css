@@ -101,7 +101,7 @@
   }
   @media (min-width: 1920px) {
     & h2 {
-      font-size: 6.875;
+      font-size: 6.875rem;
       line-height: 8rem;
     }
   }
