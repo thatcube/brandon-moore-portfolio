@@ -102,7 +102,7 @@ const IndexPage = props => {
                 <h1>
                   Brandon Moore.
             <br />
-              Product Designer at CBORD.
+              Product Designer, Accessibility at Microsoft.
             </h1>
               
               <h2>
