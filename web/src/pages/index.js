@@ -100,9 +100,9 @@ const IndexPage = props => {
             <div className={hero}>
               
                 <h1>
-                  Brandon Moore.
+                  Brandon Moore
             <br />
-              Product Designer, Accessibility at Microsoft.
+              Designer at Microsoft
             </h1>
               
               <h2>
