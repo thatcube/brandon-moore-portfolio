@@ -79,7 +79,7 @@ const AboutPage = props => {
             className="experience col-1-start col-8-end">
             <h2>Experience</h2>
             <ul>
-            <li>Product Designer, Accessibility
+            <li>Product Designer
             <span>Microsoft</span>
                 <span>April 2021 - Present</span>
               </li>
